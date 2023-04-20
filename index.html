@@ -5,76 +5,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@500;900&family=EB+Garamond&family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@500;900&family=EB+Garamond&family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Noticias - Prensa Del Plata - Toda la actualidad del mundo.</title>
 
   </head>
   <body>
     <div class="contenedor">
-
       <header>
         <div class="contenedor-navbar">
-            <nav class="navbar">
-                <div class="logo"><img src="assets/img/logo.png" alt="Logo de prensa del Plata"></div>
-                <ul class="nav">
-                  <li class="nav-item"><a href="#">Inicio</a></li>
-                  <li class="nav-item"><a href="#">Nacionales</a></li>
-                  <li class="nav-item"><a href="#">Deportes</a></li>
-                  <li class="nav-item"><a href="#">Tecnología</a></li>
-                  <li class="nav-item"><a href="#">Internacionales</a></li>
-                </ul>
+          <nav class="navbar">
+            <div class="logo">
+              <img src="assets/img/logo.png" alt="Logo de prensa del Plata" />
+            </div>
+            <ul class="nav">
+              <li class="nav-item"><a href="#">Inicio</a></li>
+              <li class="nav-item"><a href="#">Nacionales</a></li>
+              <li class="nav-item"><a href="#">Deportes</a></li>
+              <li class="nav-item"><a href="#">Tecnología</a></li>
+              <li class="nav-item"><a href="#">Internacionales</a></li>
+            </ul>
 
-                <div class="inicio-sesion">
-                  <button>Iniciar Sesión</button>
-                </div>
-              </nav>
+            <div class="inicio-sesion">
+              <button>Iniciar Sesión</button>
+            </div>
+          </nav>
         </div>
 
-          
         <div class="noticiasFlash">
           <div class="flash-estilo">Noticias flash</div>
           <div class="marquesina-noticia">
             <div class="marquesina">
-            <span>Dragon edsfsdf dfdfd</span>
-            <span>Dragon edsfsdf dfdfd</span>
-            <span>Dragon edsfsdf df55dfd</span>
-            <span>Dragon edsfsdf df232dfd</span>
-            <span>Dragon edsfsdf df77dfd</span>
-            <span>Dragddson edsfsdf dfdfd</span>
-            <span>Dragon edsfsdf dfdfd</span>
-            <span>555</span>
+              <span>Dragon edsfsdf dfdfd</span>
+              <span>Dragon edsfsdf dfdfd</span>
+              <span>Dragon edsfsdf df55dfd</span>
+              <span>Dragon edsfsdf df232dfd</span>
+              <span>Dragon edsfsdf df77dfd</span>
+              <span>Dragddson edsfsdf dfdfd</span>
+              <span>Dragon edsfsdf dfdfd</span>
+              <span>555</span>
+            </div>
           </div>
-        </div>
 
           <div class="tiempo">
             <div class="clima">
-                <div class="icon">
-                  <i class="fa fa-sun-o spin glow"></i>
-                  <i class="fa fa-cloud wind"></i>
-                  <i class="fa fa-cloud two"></i>
-                </div>
-                  <div class="grados">
-                    <b><i>18&deg;</i></b>
-                  </div>
+              <div class="icon">
+                <i class="fa fa-sun-o spin glow"></i>
+                <i class="fa fa-cloud wind"></i>
+                <i class="fa fa-cloud two"></i>
+              </div>
+              <div class="grados">
+                <b><i>18&deg;</i></b>
+              </div>
             </div>
-            <div>3 de abril de 2023</div>
-             </div>
-             </div>
-
+            <div>
+              <time id="fecha-actual"></time>
+            </div>
           </div>
         </div>
       </header>
+
       <main>
         <div class="contenido">
-            <p>hola</p>
+          <article class="principal">
+            <img width="600" src="assets/img/leo.jpg" alt="Imagen" />
+            <div class="capa2">
+              <h2>Título de la imagen</h2>
+              <p>Texto descriptivo de la imagen</p>
+              
+            </div>
+          </article>
         </div>
+        <aside class="sidebar">
+          <h3>SIDEBAR</h3>
+        </aside>
       </main>
-      <footer><p>Footer</p>
-        <button class="ir-al-inicio" title="Ir arriba"><i class="fa fa-angle-up"></i></button>
+
+      <footer>
+        <p>Footer</p>
+        <button class="ir-al-inicio" title="Ir arriba">
+          <i class="fa fa-angle-up"></i>
+        </button>
       </footer>
     </div>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
