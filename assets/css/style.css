@@ -90,6 +90,52 @@
   padding: 10px;
 }
 
+.buscador {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.buscador .buscador-input {
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  padding: 6px;
+	background: #d3d6db; 
+
+  color: #6c6c6c;
+
+  border:none;
+  transition: all .4s;
+}
+
+.buscador .buscador-input:focus {
+  border:none;
+  outline:none;
+  box-shadow: 0 1px 12px #b8c6db;
+}
+
+.buscador .buscador-boton {
+  background-color: transparent;
+  font-size: 15px;
+  padding: 6px 12px;
+  margin-left:-38px;
+  border:none;
+  color: #6c6c6c;
+  transition: all .4s;
+}
+
+.buscador .buscador-boton:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  color: black;
+}
+
+.buscador .buscador-boton:focus {
+  outline:none;
+  color:black;
+}
+
 .inicio-sesion {
   display: flex;
   justify-content: flex-end;
