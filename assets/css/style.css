@@ -4,16 +4,16 @@
 }
 
 .contenedor {
-
   display: grid;
-	grid-gap: 10px;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(4, auto);
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
 
-	grid-template-areas: "header header header"
-						 "contenido contenido sidebar"
-						 "contenido contenido sidebar"
-						 "footer footer footer";
+  grid-template-areas:
+    "header header header"
+    "contenido contenido sidebar"
+    "contenido contenido sidebar"
+    "footer footer footer";
 }
 
 .contenedor header {
@@ -29,17 +29,16 @@
 }
 
 .contenedor .sidebar {
-	background: #fAA43D;
-	min-height: 100px;
-	grid-area: sidebar;
+  background: #faa43d;
+  min-height: 100px;
+  grid-area: sidebar;
 }
 
 .contenedor-navbar {
   width: 100%;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-
+  position: fixed;
+  background-color: white;
+  z-index: 2;
 }
 
 .principal {
@@ -49,13 +48,12 @@
 
 .capa2 {
   position: relative;
-  bottom:78px;
+  bottom: 78px;
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   padding: 1em;
   box-sizing: border-box;
   width: 600px;
-
 }
 
 .navbar {
@@ -75,6 +73,7 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   font-family: "Lato", sans-serif;
+  gap: 10px;
 }
 
 .nav-item a {
@@ -124,7 +123,7 @@
   );
   font-size: 24px;
   padding-top: 5px;
-  margin-top: 16px;
+  margin-top: 78px;
 }
 
 .noticiasFlash .flash-estilo {
@@ -266,7 +265,7 @@
   position: fixed;
   bottom: 10px;
   right: 20px;
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
 .ir-al-inicio:hover {
