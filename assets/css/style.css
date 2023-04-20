@@ -41,19 +41,24 @@
   z-index: 2;
 }
 
-.principal {
-  display: flex;
-  flex-direction: column;
+.titular-noticia {
+  position: relative;
+  display: inline-block;
 }
 
-.capa2 {
-  position: relative;
-  bottom: 78px;
+.titular-noticia img {
+  width: 600px;
+}
+
+.titular-noticia .capa-titulo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   padding: 1em;
   box-sizing: border-box;
-  width: 600px;
 }
 
 .navbar {
