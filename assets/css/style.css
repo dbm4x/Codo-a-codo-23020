@@ -360,6 +360,10 @@
     height: 80px;
   }
 
+  .menu-item {
+    margin:10px;
+  }
+
 }
 
 .ir-al-inicio {
