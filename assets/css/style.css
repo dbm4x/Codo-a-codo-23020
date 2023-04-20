@@ -330,6 +330,12 @@
   }
 }
 
+
+@media screen and (max-width: 480px) {
+  
+}
+
+
 @media screen and (max-width: 768px) {
   .contenedor {
     grid-template-areas:
@@ -387,4 +393,142 @@
 
 footer {
   grid-area: footer;
+}
+
+footer {
+  background-color: #111;
+  font-family: sans-serif;
+  padding: 2em 1em 1em 1em;
+}
+
+footer .container {
+  display: grid;
+  grid-template-columns: 2fr 4fr 4fr;
+  grid-template-rows: repeat(1,auto);
+  grid-template-areas: 
+    "nosotros nosotros enlaces contacto"
+    "copyrightext copyrightext copyrightext copyrightext";
+}
+
+
+
+footer .container h2 {
+  position: relative;
+  color: #Fff;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+footer .container img{
+  width:50%;
+  margin-bottom: 20px;
+}
+
+footer .container h2::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: #f00;
+}
+
+footer p {
+  color: #999;
+
+}
+
+.nosotros {
+  grid-area: nosotros;
+}
+
+.redes {
+  margin-top: 20px;
+  display: flex;
+}
+
+.redes li {
+  list-style: none;
+}
+
+.redes li a {
+
+  width: 40px;
+  height: 40px;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 4px;
+  margin: 2px;
+  list-style: none;
+}
+
+.redes li a:hover {
+  background-color: #f00;
+}
+
+.redes li a i {
+  color: #fff;
+  font-size: 20px;
+}
+
+.enlaces ul li {
+  list-style: none;
+}
+
+.enlaces {
+  grid-area: enlaces;
+}
+
+.enlaces ul li a {
+  color: #999;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: inline-block;
+
+}
+
+.enlaces ul li a:hover {
+  color: #fff;
+}
+
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  grid-area: contacto;
+  margin-right: 20px;
+}
+
+.contacto ul li {
+  list-style: none;
+}
+
+.contacto .info li span:nth-child(1){
+  color: #fff;
+  font-size: 20px;
+}
+
+.contacto .info li span{
+  color: #999;
+}
+
+.contacto .info li a{
+  color: #999;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.copyrightext{
+    grid-area: copyrightext;
+   
+    text-align: center;
+
+    margin-top: 30px;
+
+    font-family: sans-serif;
 }
