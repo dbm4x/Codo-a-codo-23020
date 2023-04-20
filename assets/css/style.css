@@ -223,3 +223,26 @@ header {
       "footer footer footer";
   }
 }
+
+.ir-al-inicio {
+  background-color: white;
+  color: red;
+  border: 2px solid red;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 30px;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+.ir-al-inicio:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+  grid-area: footer;
+}
