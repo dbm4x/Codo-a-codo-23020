@@ -4,6 +4,7 @@
 }
 
 .contenedor {
+  
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(3, 1fr);
@@ -29,9 +30,10 @@
 .contenedor .sidebar {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  background: #faa43d;
   gap: 5px;
   margin-right: 5px;
+  background: radial-gradient(circle at 0% 0.5%, rgb(241, 241, 242) 0.1%, rgb(224, 226, 228) 100.2%);
+
 }
 
 .dolar .indicador {
@@ -398,22 +400,17 @@
 
 
 @media screen and (max-width: 480px) {
-    footer .container {
-      display: grid;
-      grid-template-areas: 
-        "nosotros"
-        "enlaces"
-        "contacto"
-        "copyrightext";
-    }
-
-    .footer .sobre.nosotros p {
-      display: none;
-    }
+    
 }
 
 
 @media screen and (max-width: 768px) {
+
+
+  .footer .sobre.nosotros p {
+    display: none;
+  }
+
   .contenedor {
     grid-template-areas:
       "header header header"
@@ -431,6 +428,10 @@
   }
 
   .noticiasFlash .tiempo {
+    display: none;
+  }
+
+  .barra-dolar-search .dolar {
     display: none;
   }
 
@@ -476,7 +477,7 @@ footer {
 
 footer .container {
   display: grid;
-  grid-template-columns: 2fr 4fr 4fr;
+  grid-template-columns: 2fr 3fr 3fr;
   grid-template-rows: repeat(1,auto);
   grid-template-areas: 
     "nosotros nosotros enlaces contacto"
