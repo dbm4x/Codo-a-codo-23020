@@ -1,637 +1,236 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.loader{display: table; height: 100%; position: fixed; width: 100%; z-index: 1200;}
-.loader-bg{background: #fff}
-.loader-inner {display: table-cell; text-align: center; vertical-align: middle;}
-
-.contenedor {
-  
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(3, 1fr);
-
-  grid-template-areas:
-    "header header header"
-    "contenido sidebar sidebar"
-    "footer footer footer";
-}
-
-.animacion {
-  background-color: #ffffff;
-  animation: cambio-color 1s infinite alternate ease-in-out;
-}
-
-@keyframes cambio-color {
-  from { background-color: #ffffff; }
-  to { background-color: #000000; }
-}
-
-.contenedor header {
-  grid-area: header;
-}
-
-.contenedor .contenido {
-  grid-area: contenido;
-}
-
-.contenedor .sidebar {
-  grid-area: sidebar;
-}
-
-.contenedor .sidebar {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 5px;
-  margin-right: 5px;
-  background: radial-gradient(circle at 0% 0.5%, rgb(241, 241, 242) 0.1%, rgb(224, 226, 228) 100.2%);
-
-}
-
-.navbar .logo {
-  display: flex;
-  flex-direction: column;
-  justify-self: flex-start;
-  align-items: center;
-  margin-left: 15px;
-  margin-top: 4px;
-}
-
-.navbar .logo .logosize {
-  height: 45px;
-  width: auto;
-}
-
-
-.dolar .indicador {
-  color: green;
-  border-style: solid;
-  border-width: 0 5px 10px 5px;
-  border-right-color: transparent;
-  border-left-color: transparent;
-  border-top-color: transparent;
-  display: inline-block;
-}
-
-.dolar span {
-  color:green;
-}
-
-.noticia {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.noticia h2 {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-}
-
-.noticia .titulo {
-  border-bottom: 3px solid #333;
-}
-
-.noticia .titulo h3 {
-  background: black;
-  color: white;
-  width: 90px;
-  text-align: center;
-  padding: 10px;
-}
-
-
-.fila {
-  margin-top: 5px;
-}
-.fila img {
-  width: 280px;
-}
-.fila h3 {
-  margin-top:3px;
-}
-
-.noticia-columna {
-  display: flex;
-  align-items: center;
-  margin-top: 5px;
-}
-
-.noticia-columna img {
-  max-width: 150px;
-  margin-right: 5px;
-}
-
-
-.noticia-columna .contenidos {
-  flex-grow: 1;
-}
-
-.noticia-columna .contenidos h2 {
-  margin: 0;
-}
-
-.noticia-columna p {
-  margin-top: 0;
-}
-
-.noticia-columna .autor {
-  font-style: italic;
-}
-
-
-.fecha-autor {
-  color: #999;
-  margin-bottom: 5px;
-  font-size: 12px;
-}
-
-
-
-.contenedor-navbar {
-  width: 100%;
-  position: fixed;
-  background-color: white;
-  z-index: 2;
-}
-
-.titular-noticia {
-  position: relative;
-  display: inline-block;
-}
-
-.titular-noticia img {
-  max-width: 650px;
-}
-
-.titular-noticia .capa-titulo {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  padding: 1em;
-  box-sizing: border-box;
-}
-
-.navbar {
-  display: grid;
-  grid-template-columns: 2fr 8fr 2fr;
-  align-items: center;
-  height: 60px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-top: 4px solid #d62828;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-top: 8px;
-
-}
-
-.navbar .slogan {
-  position: relative;
-  left:16px;
-  top:-9px;
-}
-
-.navbar ul {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  font-family: "Lato", sans-serif;
-  gap: 10px;
-}
-
-.nav-item a {
-  color: #000;
-  font-size: 1rem;
-  font-weight: 400;
-  text-decoration: none;
-  transition: color 0.3s ease-out;
-}
-
-.navbar ul li a:hover {
-  color: white;
-  background-color: #333;
-  padding: 10px;
-}
-
-.buscador {
-  display: flex;
-  padding: 10px;
-}
-
-.barra-dolar-search {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.buscador .buscador-input {
-
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  padding: 6px;
-	background: #d3d6db; 
-
-  color: #6c6c6c;
-
-  border:none;
-  transition: all .4s;
-}
-
-.temas-hoy {
-  font-size: 13px;
-}
-.temas-hoy a {
-  margin: 2px;
-}
-
-.temas-hoy b {
-  font-size: 14px;
-}
-
-.buscador .buscador-input:focus {
-  border:none;
-  outline:none;
-  box-shadow: 0 1px 12px #b8c6db;
-}
-
-.buscador .buscador-boton {
-  background-color: transparent;
-  font-size: 15px;
-  padding: 6px 12px;
-  margin-left:-38px;
-  border:none;
-  color: #6c6c6c;
-  transition: all .4s;
-}
-
-.buscador .buscador-boton:hover {
-  transform: scale(1.2);
-  cursor: pointer;
-  color: black;
-}
-
-.buscador .buscador-boton:focus {
-  outline:none;
-  color:black;
-}
-
-.inicio-sesion {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 20px;
-}
-
-.inicio-sesion button {
-  padding: 5px 10px;
-  border-radius: 2px;
-  background-color: #333;
-  color: #fff;
-  cursor: pointer;
-}
-
-
-.noticiasFlash {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: radial-gradient(
-    circle at 0% 0.5%,
-    rgb(241, 241, 242) 0.1%,
-    rgb(224, 226, 228) 100.2%
-  );
-  font-size: 24px;
-  padding-top: 5px;
-  margin-top: 88px;
-}
-
-.noticiasFlash .flash-estilo {
-  display: flex;
-  background-color: #fc0404;
-  white-space: nowrap;
-  z-index: 1;
-  border-top: 1px solid #fc0404;
-  color: white;
-  font-weight: 400;
-  padding-left: 3px;
-}
-.flash-estilo:after {
-  content: "";
-  position: relative;
-  right: -12px;
-  border-right: 12px solid transparent;
-  border-left: 0 solid transparent;
-  border-top: 27px solid #fc0404;
-}
-
-.marquesina-noticia {
-  border-top: 1px solid #fc0404;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 50%;
-  margin-right: auto;
-  background: lightgray;
-}
-
-.marquesina-noticia .marquesina {
-  display: inline-block;
-  animation: moverNoticia 80s linear infinite;
-}
-
-.marquesina-noticia .marquesina span {
-  margin-right: 20px;
-}
-
-.marquesina-noticia:hover .marquesina {
-  animation-play-state: paused;
-}
-
-@keyframes moverNoticia {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-.tiempo {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  margin-left: 5px;
-  margin-right: 10px;
-  white-space: nowrap;
-}
-
-.clima {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.icon {
-  color: gold;
-}
-
-.icon .fa-sun-o {
-  font-size: 18pt;
-  position: absolute;
-}
-.icon .fa-cloud {
-  font-size: 12pt;
-  position: relative;
-  top: -1px;
-  left: 20px;
-  color: rgba(255, 255, 255, 0.9);
-}
-.icon .fa-cloud + .two {
-  top: 0;
-  left: -12px;
-  position: relative;
-  font-size: 12pt;
-  color: #fff;
-}
-.grados {
-  font-size: 18pt;
-  text-align: center;
-}
-
-.spin {
-  animation: spin 15s linear infinite;
-}
-
-@keyframes spin {
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes glow {
-  50% {
-    text-shadow: 0 0 5px #fff;
-  }
-}
-
-.wind {
-  animation: wind 6s ease-in-out infinite;
-}
-
-@keyframes wind {
-  50% {
-    top: 2px;
-  }
-}
-
-
-@media screen and (max-width: 480px) {
-    
-}
-
-
-@media screen and (max-width: 768px) {
-
-
-  .footer .sobre.nosotros p {
-    display: none;
-  }
-
-  .contenedor {
-    grid-template-areas:
-      "header header header"
-      "contenido contenido contenido"
-      "sidebar sidebar sidebar"
-      "footer footer footer";
-  }
-
-  .contenedor-navbar .inicio-sesion {
-    display: none;
-  }
-
-  .noticiasFlash {
-    margin-top: 120px;
-  }
-
-  .noticiasFlash .tiempo {
-    display: none;
-  }
-
-  .barra-dolar-search .dolar {
-    display: none;
-  }
-
-  .contenedor-navbar .navbar {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .navbar {
-    height: 95px;
-  }
-
-}
-
-.ir-al-inicio {
-  background-color: white;
-  color: red;
-  border: 2px solid red;
-  padding: 10px;
-  border-radius: 5px;
-  font-size: 30px;
-  position: fixed;
-  bottom: 10px;
-  right: 20px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-}
-
-.ir-al-inicio:hover {
-  background-color: red;
-  color: white;
-  cursor: pointer;
-}
-
-footer {
-  grid-area: footer;
-}
-
-footer {
-  background-color: #111;
-  font-family: sans-serif;
-  padding: 2em 1em 1em 1em;
-}
-
-footer .container {
-  display: grid;
-  grid-template-columns: 2fr 3fr 3fr;
-  grid-template-rows: repeat(1,auto);
-  grid-template-areas: 
-    "nosotros nosotros enlaces contacto"
-    "copyrightext copyrightext copyrightext copyrightext";
-}
-
-
-
-footer .container h2 {
-  position: relative;
-  color: #Fff;
-  font-weight: 500;
-  margin-bottom: 15px;
-}
-
-footer .container img{
-  width:50%;
-  margin-bottom: 20px;
-}
-
-footer .container h2::before {
-  content: '';
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 50px;
-  height: 2px;
-  background: #f00;
-}
-
-footer p {
-  color: #999;
-
-}
-
-.nosotros {
-  grid-area: nosotros;
-}
-
-.redes {
-  margin-top: 20px;
-  display: flex;
-}
-
-.redes li {
-  list-style: none;
-}
-
-.redes li a {
-
-  width: 40px;
-  height: 40px;
-  background-color: #222;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  border-radius: 4px;
-  margin: 2px;
-  list-style: none;
-}
-
-.redes li a:hover {
-  background-color: #f00;
-}
-
-.redes li a i {
-  color: #fff;
-  font-size: 20px;
-}
-
-.enlaces ul li {
-  list-style: none;
-}
-
-.enlaces {
-  grid-area: enlaces;
-}
-
-.enlaces ul li a {
-  color: #999;
-  text-decoration: none;
-  margin-bottom: 10px;
-  display: inline-block;
-
-}
-
-.enlaces ul li a:hover {
-  color: #fff;
-}
-
-
-.contacto {
-  display: flex;
-  flex-direction: column;
-  grid-area: contacto;
-  margin-right: 20px;
-}
-
-.contacto ul li {
-  list-style: none;
-}
-
-.contacto .info li span:nth-child(1){
-  color: #fff;
-  font-size: 20px;
-}
-
-.contacto .info li span{
-  color: #999;
-}
-
-.contacto .info li a{
-  color: #999;
-  text-decoration: none;
-  margin-bottom: 10px;
-  display: inline-block;
-}
-
-.copyrightext{
-    grid-area: copyrightext;
-   
-    text-align: center;
-
-    margin-top: 30px;
-
-    font-family: sans-serif;
-}
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/loaders.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@500;900&family=EB+Garamond&family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Noticias - Prensa Del Plata - Toda la actualidad del mundo.</title>
+
+  </head>
+  <body>
+    <div class="loader loader-bg">
+      <div class="loader-inner ball-pulse-rise">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+    <div class="contenedor">
+      <header>
+        <div class="contenedor-navbar">
+          <nav class="navbar">
+            <div class="logo">
+              <img class="logosize" src="assets/img/logo.png" alt="Logo de prensa del Plata" />
+              <div class="slogan">
+                <p><i>20 años informando</i></p>
+               </div>
+            </div>
+            <ul class="menu-item">
+              <li class="nav-item"><a href="#">Inicio</a></li>
+              <li class="nav-item"><a href="#">Nacionales</a></li>
+              <li class="nav-item"><a href="#">Deportes</a></li>
+              <li class="nav-item"><a href="#">Tecnología</a></li>
+              <li class="nav-item"><a href="#">Internacionales</a></li>
+            </ul>
+
+            <div class="inicio-sesion">
+              <button>Iniciar Sesión</button>
+            </div>
+          </nav>
+        </div>
+
+        <div class="noticiasFlash">
+          <div class="flash-estilo">Noticias flash</div>
+          <div class="marquesina-noticia">
+            <div class="marquesina">
+              <span>Un conductor alcoholizado y drogado chocó de frente a un delivery</span>
+              <span>Se sorteó el Mundial Sub 20: Argentina tendrá un grupo accesible y Brasil estará en la zona más difícil</span>
+              <span>PSG buscará acercarse al título en la Ligue 1 en su visita a Angers, en vivo: hora, TV y formaciones</span>
+              <span>Desbarataron una banda que lavaba dinero en Mar del Plata: secuestraron 240 vehículos y hay cinco detenidos</span>
+              <span>Cacho Garay fue imputado por abuso sexual y le dictaron prisión domiciliaria</span>
+            </div>
+          </div>
+
+          <div class="tiempo">
+            <div class="clima">
+              <div class="icon">
+                <i class="fa fa-sun-o spin glow"></i>
+                <i class="fa fa-cloud wind"></i>
+                <i class="fa fa-cloud two"></i>
+              </div>
+              <div class="grados">
+                <b><i>18&deg;</i></b>
+              </div>
+            </div>
+            <div>
+              <time id="fecha-actual"></time>
+            </div>
+          </div>
+        </div>
+        <div class="barra-dolar-search">
+          <div class="temas-hoy">
+          <b>Temas de hoy:</b> <a href="#">Crisis económica</a> <a href="#">Interna en el FdT Dólar</a> <a href="#">blue hoy</a> <a href="#">Supercohete “Starship”</a> <a href="#">River Plate</a>
+          </div>
+          <div class="dolar">
+          DÓLAR BLUE <strong>$432,00</strong> <span class="indicador"></span><span> 2,13%</span>
+          DÓLAR BNA <strong>$224,50</strong> <span class="indicador"></span><span> 0,22%</span>
+        </div>
+        <div class="buscador">
+          <input class="buscador-input" type="text" placeholder="Buscar ...">
+          <button class="buscador-boton"><i class="fa fa-search"></i></button>
+        </div>
+      </div>
+      </header>
+      <main>
+        <div class="contenido">
+          <article class="titular-noticia">
+            <img src="https://eranews.joomlatema.net/cache/mod_bt_contentslider/b44864168bbf88789e22cd0b23915b3d-leonardo-dicaprio.jpg" alt="Imagen" />
+            <div class="capa-titulo">
+              <h2>Título de la imagen</h2>
+              <p>Texto descriptivo de la imagen</p>
+            </div>
+          </article>
+        </div>
+      </main>
+      <div class="sidebar">
+        <div class="noticia">
+          <div>
+            <div class="titulo">
+            <h3>Destacados</h3>
+          </div>
+          <div class="fila">
+            <img src="https://www.infobae.com/new-resizer/oBfVHmp9ZpO8yomIRqUlp-cHdrM=/1200x675/filters:format(webp):quality(85)//cloudfront-us-east-1.images.arcpublishing.com/infobae/F3XVJG3Q2OQCWTQYLMF7ADP2EQ.jpg" alt="Imagen 1">
+            <h3>Alberto Fernández se bajó de la reelección y no será candidato a presidente</h3>
+            <p class="fecha-autor">Fecha: 21/04/2023 | Autor: Juan Manuel</p>
+            <p>A través de las redes sociales confirmó que bajó su candidatura y argumentó: "No logramos todo lo que nos propusimos".</p>      
+        </div>
+            <div class="fila">
+                <img src="https://www.infobae.com/new-resizer/NizoGUK70K893NdALb4ZUIiVzxI=/1440x810/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/RINUMOBGJNFKJGN6LASR36VJ4I.png" alt="Imagen 1">
+                <h3>Elecciones en CABA</h3>
+                <p class="fecha-autor">Fecha: 21/04/2023 | Autor: Juan Manuel</p>
+                <p>El ente que deberá implementar la Boleta Única Electrónica pasará al Ministerio de Justicia.</p>      
+            </div>
+          </div>
+        </div>  
+        <div class="noticia">
+          <div>
+            <div class="titulo">
+            <h3>Espectáculo</h3>
+          </div>
+          <div class="noticia-columna">
+            <img src="https://tn.com.ar/resizer/xE0ShPxql5GFyUnW4TpREvKNZaw=/450x0/smart/filters:format(webp)/cloudfront-us-east-1.images.arcpublishing.com/artear/TE3CDN3KQ5FUTEI5I5SC7EDA3Q.jpg" alt="Imagen 1">
+            <div class="contenidos">
+              <h3>La contundente respuesta de la madre de Gerard Piqué cuando le preguntaron por Shakira</h3>
+              <p class="fecha-autor">Fecha: 21/04/2023 | Autor: Rocío Alen</p>
+
+            </div>
+          </div>
+          <div class="noticia-columna">
+            <img src="https://tn.com.ar/resizer/qxa0S4Kpa_T21ontYVPouRGbc5Y=/350x0/smart/filters:format(webp)/cloudfront-us-east-1.images.arcpublishing.com/artear/6VHUXYZGLFH27GEFLKUK2NRW6M.jpg" alt="Imagen 1">
+            <div class="contenidos">
+              <h3>Ricardo Darín opinó sobre la película alemana que venció a "Argentina, 1985" en los Oscar: "No es mejor"</h3>
+              <p class="fecha-autor">Fecha: 21/04/2023 | Autor: Rocío Alen</p>
+
+            </div>
+          </div>
+          <div class="noticia-columna">
+            <img src="https://www.infobae.com/new-resizer/erzoBTW8_LBLy02TU3gOuwDWR28=/992x558/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/J6IHJDP3IVDIDNA4SL3JT26KV4.jpg" alt="Imagen 1">
+            <div class="contenidos">
+              <h3>Bizarrap deslumbró en su primer show propio: Duki de invitado, homenaje a Lionel Messi y una puesta 360°</h3>
+              <p class="fecha-autor">Fecha: 21/04/2023 | Autor: Rocío Alen</p>
+
+            </div>
+          </div>
+          <div>
+            <div class="titulo">
+            <h3>Deportes</h3>
+          </div>
+          <div class="noticia-columna">
+            <img src="https://www.infobae.com/new-resizer/w5VmNNJcdboVIp5ebuYGyln0BMo=/992x558/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/2VRUZ6OMIRBULADQIWQEIVQ5MY.jpg" alt="Imagen 1">
+            <div class="contenidos">
+              <h3>Se sorteó el Mundial Sub 20: Argentina tendrá un grupo accesible y Brasil estará en la zona más difícil</h3>
+              <p class="fecha-autor">Fecha: 21/04/2023 | Autor: Rocío Alen</p>
+
+            </div>
+          </div>
+          <div class="noticia-columna">
+            <img src="https://www.infobae.com/new-resizer/dRRLqQWrEbwTk1RGPfe3p-PA9JE=/992x558/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/IBVFIGG7L53ZEZCKPUHNZMIZZI.jpg" alt="Imagen 1">
+            <div class="contenidos">
+              <h3>A todo o nada: el Mundial que se disputa en Kazajistán trajo el recuerdo de las grandes batallas en la historia del ajedrez</h3>
+              <p class="fecha-autor">Fecha: 21/04/2023 | Autor: Rocío Alen</p>
+
+            </div>
+          </div>
+          </div>
+        </div>  
+      </div>
+    </div>
+          <footer class="footer">
+      <div class="container">
+        <div class="sobre nosotros">
+          <img src="assets/img/logo.png" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dolor sit voluptas, accusamus, veritatis eligendi ab exercitationem commodi reprehenderit quae deserunt magni unde voluptatum molestiae ea iste necessitatibus ex qui.</p>
+
+          <ul class="redes">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+          </ul>
+        </div>
+        <div class="sobre enlaces">
+          <h2>Enlánces rapidos</h2>
+          <ul>
+            <li class="nav-item"><a href="#">Inicio</a></li>
+            <li class="nav-item"><a href="#">Nacionales</a></li>
+            <li class="nav-item"><a href="#">Deportes</a></li>
+            <li class="nav-item"><a href="#">Tecnología</a></li>
+            <li class="nav-item"><a href="#">Internacionales</a></li>
+          </ul>
+        </div>
+        <div class="sobre contacto">
+          <h2>Información de contacto</h2>
+          <ul class="info">
+            <li>
+              <span><i class="fa-solid fa-location-dot"></i></span>
+              <span>Nro. 820 - La Plata - Pcia. de Bs. As.</span>
+            </li>
+            <li>
+              <span><i class="fa fa-phone"></i></span>
+              <p><a href="tel:123456789">+549110543345</a></p>
+            </li>
+            <li>
+              <span><i class="fa fa-envelope-o"></i></span>
+              <p><a href="mailto:PrensaDelPlata@gmail.com">PrensaDelPlata@gmail.com</a></p>
+            </li>
+          </ul>
+        </div>
+         <div class="copyrightext">
+          <p>© 2023 Prensa Del Plata - Todos los derechos reservados.</p>
+        </div>
+      </div>
+      <button class="ir-al-inicio" title="Ir arriba">
+        <i class="fa fa-angle-up"></i>
+      </button>
+      </div>
+
+    </footer>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
