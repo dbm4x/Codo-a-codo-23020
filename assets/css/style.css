@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+.loader{display: table; height: 100%; position: fixed; width: 100%; z-index: 1200;}
+.loader-bg{background: #fff}
+.loader-inner {display: table-cell; text-align: center; vertical-align: middle;}
+
 .contenedor {
   
   display: grid;
@@ -13,6 +17,16 @@
     "header header header"
     "contenido sidebar sidebar"
     "footer footer footer";
+}
+
+.animacion {
+  background-color: #ffffff;
+  animation: cambio-color 1s infinite alternate ease-in-out;
+}
+
+@keyframes cambio-color {
+  from { background-color: #ffffff; }
+  to { background-color: #000000; }
 }
 
 .contenedor header {
