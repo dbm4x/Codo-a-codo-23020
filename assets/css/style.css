@@ -1,3 +1,5 @@
+/*fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Noto+Serif&family=Roboto+Condensed:ital@1&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -217,6 +219,7 @@
   font-weight: 400;
   text-decoration: none;
   transition: color 0.3s ease-out;
+  font-family: 'Noto Serif', serif;
 }
 
 .navbar ul li a:hover {
@@ -351,6 +354,7 @@
 
 .marquesina-noticia .marquesina span {
   margin-right: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .marquesina-noticia:hover .marquesina {
