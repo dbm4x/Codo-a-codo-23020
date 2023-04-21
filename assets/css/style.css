@@ -3,6 +3,7 @@
   padding: 0;
 }
 
+
 .loader{display: table; height: 100%; position: fixed; width: 100%; z-index: 1200;}
 .loader-bg{background: #fff}
 .loader-inner {display: table-cell; text-align: center; vertical-align: middle;}
@@ -16,18 +17,17 @@
   grid-template-areas:
     "header header header"
     "contenido sidebar sidebar"
+    "contenido-2 contenido-2 contenido-2"
     "footer footer footer";
+    
 }
 
-.animacion {
-  background-color: #ffffff;
-  animation: cambio-color 1s infinite alternate ease-in-out;
+
+.contenedor .contenido-2 {
+  grid-area: contenido-2;
 }
 
-@keyframes cambio-color {
-  from { background-color: #ffffff; }
-  to { background-color: #000000; }
-}
+
 
 .contenedor header {
   grid-area: header;
@@ -38,7 +38,10 @@
 }
 
 .contenedor .sidebar {
+
+
   grid-area: sidebar;
+
 }
 
 .contenedor .sidebar {
@@ -635,3 +638,5 @@ footer p {
 
     font-family: sans-serif;
 }
+
+
