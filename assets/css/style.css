@@ -310,7 +310,7 @@
 
 .marquesina-noticia .marquesina {
   display: inline-block;
-  animation: moverNoticia 25s linear infinite;
+  animation: moverNoticia 80s linear infinite;
 }
 
 .marquesina-noticia .marquesina span {
