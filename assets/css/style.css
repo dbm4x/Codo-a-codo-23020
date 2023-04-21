@@ -254,16 +254,18 @@
   border:none;
   transition: all .4s;
 }
-
+/*temas de hoy*/
 .temas-hoy {
-  font-size: 13px;
+  font-size: 15px;
 }
 .temas-hoy a {
-  margin: 2px;
+  margin: 4px;
+  text-decoration: none;
+  color: #060505;
 }
 
 .temas-hoy b {
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .buscador .buscador-input:focus {
