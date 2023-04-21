@@ -36,6 +36,21 @@
 
 }
 
+.navbar .logo {
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-start;
+  align-items: center;
+  margin-left: 15px;
+  margin-top: 4px;
+}
+
+.navbar .logo .logosize {
+  height: 45px;
+  width: auto;
+}
+
+
 .dolar .indicador {
   color: green;
   border-style: solid;
@@ -157,7 +172,14 @@
   border-top-right-radius: 10px;
   border-top: 4px solid #d62828;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-top: 10px;
+  margin-top: 8px;
+
+}
+
+.navbar .slogan {
+  position: relative;
+  left:20px;
+  top:-7px;
 }
 
 .navbar ul {
@@ -258,13 +280,6 @@
   cursor: pointer;
 }
 
-.navbar img {
-  height: 45px;
-  width: auto;
-  justify-self: start;
-  margin-left: 20px;
-  margin-top: 4px;
-}
 
 .noticiasFlash {
   display: flex;
