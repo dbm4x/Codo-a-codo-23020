@@ -5,6 +5,7 @@
   padding: 0;
 }
 
+
 .loader{display: table; height: 100%; position: fixed; width: 100%; z-index: 1200;}
 .loader-bg{background: #fff}
 .loader-inner {display: table-cell; text-align: center; vertical-align: middle;}
@@ -18,18 +19,17 @@
   grid-template-areas:
     "header header header"
     "contenido sidebar sidebar"
+    "contenido-2 contenido-2 contenido-2"
     "footer footer footer";
+    
 }
 
-.animacion {
-  background-color: #ffffff;
-  animation: cambio-color 1s infinite alternate ease-in-out;
+
+.contenedor .contenido-2 {
+  grid-area: contenido-2;
 }
 
-@keyframes cambio-color {
-  from { background-color: #ffffff; }
-  to { background-color: #000000; }
-}
+
 
 .contenedor header {
   grid-area: header;
@@ -40,7 +40,10 @@
 }
 
 .contenedor .sidebar {
+
+
   grid-area: sidebar;
+
 }
 
 .contenedor .sidebar {
@@ -104,12 +107,19 @@
   padding: 10px;
 }
 
-
+/*estilos modo tarjeta*/
 .fila {
   margin-top: 5px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+.fila:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 .fila img {
   width: 280px;
+  border-radius: 5px 5px 0 0;
 }
 .fila h3 {
   margin-top:3px;
@@ -244,17 +254,19 @@
   border:none;
   transition: all .4s;
 }
-
+/*temas de hoy*/
 .temas-hoy {
-  font-size: 13px;
+  font-size: 15px;
 }
 .temas-hoy a {
-  margin: 2px;
+  margin: 4px;
+  text-decoration: none;
+  color: #060505;
 }
 
 .temas-hoy b {
-  font-size: 14px;
   font-family: 'Poppins', sans-serif;
+  font-size: 20px;
 }
 
 .buscador .buscador-input:focus {
@@ -640,3 +652,5 @@ footer p {
 
     font-family: sans-serif;
 }
+
+
