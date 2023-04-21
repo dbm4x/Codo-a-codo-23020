@@ -1,5 +1,5 @@
 /*fuentes*/
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Noto+Serif&family=Roboto+Condensed:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Noto+Serif&family=Poppins&family=Roboto+Condensed:ital@1&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -254,6 +254,7 @@
 
 .temas-hoy b {
   font-size: 14px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .buscador .buscador-input:focus {
