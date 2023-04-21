@@ -1,5 +1,3 @@
-/*fuentes*/
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Noto+Serif&family=Poppins&family=Roboto+Condensed:ital@1&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -36,6 +34,7 @@
 }
 
 .contenedor .contenido {
+
   grid-area: contenido;
 }
 
@@ -69,7 +68,10 @@
   width: auto;
 }
 
-
+.dolar {
+  font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
 .dolar .indicador {
   color: green;
   border-style: solid;
@@ -97,6 +99,8 @@
 
 .noticia .titulo {
   border-bottom: 3px solid #333;
+  font-weight: 400;
+  font-family: 'Asap Condensed', sans-serif;
 }
 
 .noticia .titulo h3 {
@@ -107,19 +111,12 @@
   padding: 10px;
 }
 
-/*estilos modo tarjeta*/
+
 .fila {
   margin-top: 5px;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-}
-.fila:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 .fila img {
   width: 280px;
-  border-radius: 5px 5px 0 0;
 }
 .fila h3 {
   margin-top:3px;
@@ -136,6 +133,15 @@
   margin-right: 5px;
 }
 
+.fila h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+.contenidos h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size:16px;
+}
 
 .noticia-columna .contenidos {
   flex-grow: 1;
@@ -158,6 +164,11 @@
   color: #999;
   margin-bottom: 5px;
   font-size: 12px;
+}
+
+.fecha-actual {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
 }
 
 
@@ -223,6 +234,7 @@
   text-decoration: none;
   transition: color 0.3s ease-out;
   font-family: 'Noto Serif', serif;
+
 }
 
 .navbar ul li a:hover {
@@ -244,7 +256,7 @@
 
 .buscador .buscador-input {
 
-  font-family: 'Montserrat', sans-serif;
+
   font-size: 16px;
   padding: 6px;
 	background: #d3d6db; 
@@ -254,19 +266,16 @@
   border:none;
   transition: all .4s;
 }
-/*temas de hoy*/
+
 .temas-hoy {
-  font-size: 15px;
+  font-size: 13px;
 }
 .temas-hoy a {
-  margin: 4px;
-  text-decoration: none;
-  color: #060505;
+  margin: 2px;
 }
 
 .temas-hoy b {
-  font-family: 'Poppins', sans-serif;
-  font-size: 15;
+  font-size: 14px;
 }
 
 .buscador .buscador-input:focus {
@@ -332,8 +341,8 @@
   z-index: 1;
   border-top: 1px solid #fc0404;
   color: white;
-  font-weight: 400;
   padding-left: 3px;
+  font-family: 'Lato', serif;
 }
 .flash-estilo:after {
   content: "";
@@ -361,6 +370,7 @@
 .marquesina-noticia .marquesina span {
   margin-right: 20px;
   font-family: 'Roboto Condensed', sans-serif;
+
 }
 
 .marquesina-noticia:hover .marquesina {
@@ -606,7 +616,7 @@ footer p {
 .enlaces ul li a {
   color: #999;
   text-decoration: none;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   display: inline-block;
 
 }
@@ -652,5 +662,3 @@ footer p {
 
     font-family: sans-serif;
 }
-
-
