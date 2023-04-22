@@ -11,6 +11,38 @@ if ((".loader").length) {
     });
 }
 
+const container = document.querySelector('.marquesina-noticia');
+let isDragging = false;
+let mouseDownX;
+
+container.addEventListener('mousedown', (e) => {
+  isDragging = true;
+  mouseDownX = e.clientX;
+  container.style.cursor = 'move';
+});
+
+container.addEventListener('mousemove', (e) => {
+  if (isDragging) {
+    const currentX = e.clientX;
+    const deltaX = currentX - mouseDownX;
+    if (deltaX !== 0) {
+      container.scrollLeft -= deltaX;
+      mouseDownX = currentX;
+    }
+  }
+});
+
+container.addEventListener('mouseup', () => {
+  isDragging = false;
+  container.style.cursor = 'grab';
+});
+
+container.addEventListener('mouseleave', () => {
+  isDragging = false;
+  container.style.cursor = 'grab';
+});
+
+
 /* PARA CONSUMIR API DE LA BUENARDA
 
 // Creamos una instancia del objeto XMLHttpRequest
