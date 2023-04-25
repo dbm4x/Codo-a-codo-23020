@@ -89,3 +89,37 @@ xhr.onreadystatechange = function () {
 };
 
 */
+
+const slide = document.querySelector(".carousel-slide");
+const prevBtn = document.querySelector(".carousel-prev");
+const nextBtn = document.querySelector(".carousel-next");
+let currentIndex = 0;
+
+// Mover al siguiente slide
+function nextSlide() {
+  if (currentIndex < 2) {
+    currentIndex++;
+  } else {
+    currentIndex = 0;
+  }
+  slide.style.transform = `translateX(-${currentIndex * document.querySelector(".carousel-slide").clientWidth}px)`;
+}
+
+// Mover al slide anterior
+function prevSlide() {
+  if (currentIndex > 0) {
+    currentIndex--;
+  } else {
+    currentIndex = 2;
+  }
+  slide.style.transform = `translateX(-${currentIndex * document.querySelector(".carousel-slide").clientWidth}px)`;
+}
+
+// Avanzar cada 3 segundos
+setInterval(() => {
+  nextSlide();
+}, 5000);
+
+// Agregar manejadores de eventos a los botones
+nextBtn.addEventListener("click", nextSlide);
+prevBtn.addEventListener("click", prevSlide);
