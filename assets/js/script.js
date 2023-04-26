@@ -43,13 +43,13 @@ container.addEventListener('mouseleave', () => {
 });
 
 
-/* PARA CONSUMIR API DE LA BUENARDA
+
 
 // Creamos una instancia del objeto XMLHttpRequest
 var xhr = new XMLHttpRequest();
 
 // Definimos la URL de la API
-var url = "https://api.example.com/users";
+var url = "https://api.bluelytics.com.ar/v2/latest";
 
 // Configuramos la solicitud XHR
 xhr.open("GET", url, true);
@@ -64,31 +64,13 @@ xhr.onreadystatechange = function () {
     // Procesamos la respuesta de la API
     var response = JSON.parse(xhr.responseText);
     
-    // Creamos una tabla HTML para mostrar los datos
-    var table = document.createElement("table");
     
-    // Creamos una fila para el encabezado de la tabla
-    var headerRow = table.insertRow(0);
-    var header1 = headerRow.insertCell(0);
-    var header2 = headerRow.insertCell(1);
-    header1.innerHTML = "Nombre";
-    header2.innerHTML = "Correo electrónico";
-    
-    // Agregamos filas con los datos de los usuarios
-    for (var i = 0; i < response.length; i++) {
-      var row = table.insertRow(i + 1);
-      var cell1 = row.insertCell(0);
-      var cell2 = row.insertCell(1);
-      cell1.innerHTML = response[i].name;
-      cell2.innerHTML = response[i].email;
-    }
-    
-    // Agregamos la tabla al elemento HTML
-    document.getElementById("myTable").appendChild(table);
+    document.getElementById('dolar-bna').innerHTML = "$"+response.oficial.value_sell;
+    document.getElementById('dolar-blue').innerHTML = "$"+response.blue.value_sell;
+
   }
 };
 
-*/
 
 const slide = document.querySelector(".carousel-slide");
 const prevBtn = document.querySelector(".carousel-prev");
@@ -97,7 +79,7 @@ let currentIndex = 0;
 
 // Mover al siguiente slide
 function nextSlide() {
-  if (currentIndex < 2) {
+  if (currentIndex < 3) {
     currentIndex++;
   } else {
     currentIndex = 0;
@@ -110,7 +92,7 @@ function prevSlide() {
   if (currentIndex > 0) {
     currentIndex--;
   } else {
-    currentIndex = 2;
+    currentIndex = 3;
   }
   slide.style.transform = `translateX(-${currentIndex * document.querySelector(".carousel-slide").clientWidth}px)`;
 }
