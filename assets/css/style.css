@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+ 
 }
 
 
@@ -53,7 +54,9 @@
   grid-template-rows: auto 1fr;
   grid-template-areas: "titular-noticia sidebar"
                        "contenido-2 contenido-2"
-                       "contenido-3 contenido-3";
+                       "contenido-3 contenido-3"
+                       "contenido-4 contenido-4"
+                       "contenido-5 contenido-5";
   gap: 5px;
 
 }
@@ -68,10 +71,30 @@
   grid-area: contenido-3;
   display: grid;
   grid-template-columns: 2fr 2fr 1fr;
-  justify-items: center;
   grid-template-areas: "contenido-3-noticia-1 contenido-3-noticia-2 ultimas";
   column-gap: 15px;
 }
+
+.contenido-4 {
+  grid-area: contenido-4;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 1.5fr;
+  grid-template-areas: "contenido-4-noticia-1 contenido-4-noticia-2 contenido-4-noticia-3 contenido-4-noticia-4";
+  column-gap: 10px;
+}
+
+
+.contenido-5 {
+  grid-area: contenido-5;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "contenido-5-noticia-titulo contenido-5-noticia-titulo"
+  "contenido-5-noticia-1 contenido-5-noticia-2";
+  column-gap: 10px;
+  margin-top: 15px;
+}
+
 
 .contenido-3-noticia-1 {
 grid-area: contenido-3-noticia-1;
@@ -81,12 +104,38 @@ grid-area: contenido-3-noticia-1;
   grid-area: contenido-3-noticia-2;
 }
 
+.contenido-4-noticia-1 {
+  grid-area: contenido-4-noticia-1;
+}
+.contenido-4-noticia-2 {
+  grid-area: contenido-4-noticia-2;
+}
+.contenido-4-noticia-3 {
+  grid-area: contenido-4-noticia-3;
+}
+.contenido-4-noticia-4 {
+  grid-area: contenido-4-noticia-4;
+  align-self: center;
+}
+
+.contenido-5-noticia-titulo {
+  grid-area: contenido-5-noticia-titulo;
+}
+
+.contenido-5-noticia-1 {
+  grid-area: contenido-5-noticia-1;
+}
+
+.contenido-5-noticia-2 {
+  grid-area: contenido-5-noticia-2;
+}
+
+
 .ultimas {
 grid-area: ultimas;
 }
 
 .titular-noticia img {
-  
   width: 100%;
   height: auto;
 }
@@ -1124,5 +1173,128 @@ footer p {
 }
 
 [class^="contenido-3-noticia-"] .fila h3 {
+  margin-top:3px;
+}
+
+[class^="contenido-4-noticia-"] {
+  display: flex;
+}
+
+[class^="contenido-4-noticia-"] .fila {
+  margin-top: 5px;
+
+}
+
+[class^="contenido-4-noticia-"] .fila img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+}
+
+[class^="contenido-4-noticia-"] .fila h3 {
+  margin-top:3px;
+}
+
+
+
+.newsletter {
+
+}
+.newsletter .fas.fa-envelope {
+  color: #fff;
+  font-size: 2rem;
+  background: #333;
+  padding: 1rem;
+  border-radius: 100%;
+  margin: 0 0 1rem 0;
+}
+
+.newsletter .card-content {
+  max-width: 30rem;
+  background-color: #fff;
+
+
+  border-radius: 1rem;
+  padding: 4rem .5rem;
+  box-shadow: 1px 1px 1rem rgba(0,0,0,.3);
+  text-align: center;
+}
+
+.newsletter .card-content h1 {
+  text-transform: uppercase;
+  margin: 0 0 1rem 0;
+}
+
+.newsletter .card-content p {
+  font-size: .8rem;
+  margin: 0 0 2rem 0;
+}
+
+.newsletter input {
+  padding: .6rem 1rem;
+  width: 40%;
+  border-radius: 5rem;
+  outline: none;
+  border: .1rem solid #d1d1d1;
+  font-size: .6rem;
+  margin-bottom: 5px;
+}
+
+.newsletter .form-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter ::placeholder {
+  color: #d1d1d1;
+}
+
+.newsletter .subscribe-btn {
+  padding: .6rem 1.5rem;
+  border-radius: 5rem;
+  background: linear-gradient(90deg, #ff9966, #ff5e62);
+  color: #fff;
+  font-size: .6rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.contenido-5-noticia-2 .noticia-columna img {
+  max-width: 360px;
+  width: 100%;
+  height: auto;
+  margin-right: 5px;
+}
+
+.contenido-5-noticia-2 .noticia-columna .contenidos h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.contenido-5-noticia-2 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.contenido-5-noticia-2 .noticia-columna {
+  display: flex;
+  align-items: start;
+  margin-top: 5px;
+}
+
+.contenido-5-noticia-1 .fila {
+  display: flex;
+  flex-direction: column;
+}
+
+.contenido-5-noticia-1 .fila img {
+  max-width: 680px;
+  width: 100%;
+  height: auto;
+}
+.contenido-5-noticia-1 .fila h2 {
   margin-top:3px;
 }
