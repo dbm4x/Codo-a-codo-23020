@@ -10,7 +10,7 @@ Trabajo práctico de Desarrollo web con HTML, CSS y Javascript.
 - [@dbm4x](https://www.github.com/dbm4x)
 - [@Viruxx23](https://github.com/Viruxx23)
 - [@lid2021](https://www.github.com/lid2021)
-- Daniel
+- Pablo
 
 
 
