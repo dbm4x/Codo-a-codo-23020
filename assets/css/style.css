@@ -753,6 +753,10 @@ grid-area: ultimas;
     .noticia2 {
       display: none;
     }
+
+    .contenido-5-noticia-2 .noticia-columna {
+    flex-wrap: wrap;
+    }
   }
 
   @media screen and (min-width: 600px) and (max-width: 768px) {
@@ -1263,11 +1267,11 @@ footer p {
 }
 
 .contenido-5-noticia-2 .noticia-columna img {
-  max-width: 360px;
-  width: 100%;
+  max-width: 56%;
   height: auto;
-  margin-right: 5px;
+  margin-right: 10px;
 }
+
 
 .contenido-5-noticia-2 .noticia-columna .contenidos h2 {
   font-family: 'Roboto', sans-serif;
@@ -1276,13 +1280,14 @@ footer p {
 
 .contenido-5-noticia-2 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  flex-direction: column;
 }
+
 .contenido-5-noticia-2 .noticia-columna {
   display: flex;
-  align-items: start;
-  margin-top: 5px;
+  align-items: center;
+  margin:10px;
 }
 
 .contenido-5-noticia-1 .fila {
