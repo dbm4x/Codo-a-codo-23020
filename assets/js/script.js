@@ -65,8 +65,8 @@ xhr.onreadystatechange = function () {
     var response = JSON.parse(xhr.responseText);
     
     
-    document.getElementById('dolar-bna').innerHTML = "$"+response.oficial.value_sell;
-    document.getElementById('dolar-blue').innerHTML = "$"+response.blue.value_sell;
+    document.getElementById('dolar-bna').innerHTML = "$"+response.oficial.value_sell.toFixed(2);
+    document.getElementById('dolar-blue').innerHTML = "$"+response.blue.value_sell.toFixed(2);
 
   }
 };
