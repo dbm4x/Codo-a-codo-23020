@@ -121,17 +121,17 @@ createCarousel(".carousel-slide", ".carousel-prev", ".carousel-next",3,false);
 createCarousel(".carousel-slide-imagen-dia", ".carousel-prev-imagen-dia", ".carousel-next-imagen-dia",9,true);
 
 var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
-      spaceBetween: 30,
-	navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
-	},
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
+  slidesPerView: 3,
+
+navigation: {
+  nextEl: '.swiper-button-next',
+  prevEl: '.swiper-button-prev',
+},
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 
 
 var tag = document.createElement('script');
@@ -140,21 +140,19 @@ var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 function onYouTubeIframeAPIReady(id) {
-	let player = document.querySelectorAll('[iframe-video]');
-	let buttons = document.querySelectorAll('[video-buttons]');
+let player = document.querySelectorAll('[iframe-video]');
+let buttons = document.querySelectorAll('[video-buttons]');
 
-	player.forEach(item => {
-		var itemElem = item.dataset.videoLink;
-		itemElem = new YT.Player(item, {
-			videoId: 'V2cF4uE0mXs'
-		});
+player.forEach(item => {
+var itemElem = item.dataset.videoLink;
+itemElem = new YT.Player(item, {
+  videoId: 'V2cF4uE0mXs'
+});
 
-		buttons.forEach(item => {
-			item.addEventListener('click', function (e) {
-				itemElem.pauseVideo();
-			});
-		});
-	})
+buttons.forEach(item => {
+  item.addEventListener('click', function (e) {
+    itemElem.pauseVideo();
+  });
+});
+})
 }
-
-
