@@ -71,20 +71,22 @@ xhr.onreadystatechange = function () {
   }
 };
 
+function createCarousel(slideSelector, prevSelector, nextSelector, cantidad, opcion) {
 
-const slide = document.querySelector(".carousel-slide");
-const prevBtn = document.querySelector(".carousel-prev");
-const nextBtn = document.querySelector(".carousel-next");
+const slide = document.querySelector(slideSelector);
+const prevBtn = document.querySelector(prevSelector);
+const nextBtn = document.querySelector(nextSelector);
 let currentIndex = 0;
 
 // Mover al siguiente slide
 function nextSlide() {
-  if (currentIndex < 3) {
+  if (currentIndex < cantidad) {
     currentIndex++;
   } else {
     currentIndex = 0;
   }
-  slide.style.transform = `translateX(-${currentIndex * document.querySelector(".carousel-slide").clientWidth}px)`;
+  slide.style.transform = `translateX(-${currentIndex * document.querySelector(slideSelector).clientWidth}px)`;
+  contar();
 }
 
 // Mover al slide anterior
@@ -92,9 +94,16 @@ function prevSlide() {
   if (currentIndex > 0) {
     currentIndex--;
   } else {
-    currentIndex = 3;
+    currentIndex = cantidad;
   }
-  slide.style.transform = `translateX(-${currentIndex * document.querySelector(".carousel-slide").clientWidth}px)`;
+  slide.style.transform = `translateX(-${currentIndex * document.querySelector(slideSelector).clientWidth}px)`;
+  contar();
+}
+
+function contar() {
+if(opcion) {
+  document.querySelector(".numeroImagen").innerHTML = currentIndex+1+"/10";
+}
 }
 
 // Avanzar cada 3 segundos
@@ -105,3 +114,8 @@ setInterval(() => {
 // Agregar manejadores de eventos a los botones
 nextBtn.addEventListener("click", nextSlide);
 prevBtn.addEventListener("click", prevSlide);
+}
+
+
+createCarousel(".carousel-slide", ".carousel-prev", ".carousel-next",3,false);
+createCarousel(".carousel-slide-imagen-dia", ".carousel-prev-imagen-dia", ".carousel-next-imagen-dia",9,true);
