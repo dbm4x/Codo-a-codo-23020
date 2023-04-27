@@ -57,7 +57,8 @@
                        "contenido-3 contenido-3"
                        "contenido-4 contenido-4"
                        "contenido-5 contenido-5"
-                       "contenido-6 contenido-6";
+                       "contenido-6 contenido-6"
+                       "contenido-7 contenido-7";
   gap: 5px;
 
 }
@@ -76,6 +77,19 @@
   color:white;
 }
 
+
+.contenido-7 {
+  grid-area: contenido-7;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "videos";
+}
+
+.videos {
+  grid-area: videos;
+  padding:20px;
+
+}
 .imagen-dia {
   grid-area: imagen-dia;
   background-color: blueviolet;
@@ -1366,3 +1380,19 @@ right: 0;
 .contenido-5-noticia-1 .fila h2 {
   margin-top:3px;
 }
+
+.swiper {
+	margin:20px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
