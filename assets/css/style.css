@@ -872,6 +872,7 @@ grid-area: ultimas;
   bottom: 10px;
   right: 20px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  z-index: 32;
 }
 
 .ir-al-inicio:hover {
