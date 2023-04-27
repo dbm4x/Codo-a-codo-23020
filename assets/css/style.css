@@ -513,7 +513,7 @@ grid-area: ultimas;
   display: flex;
   justify-content: space-between;
   list-style: none;
-  margin: 10px;
+
 
 }
 
@@ -725,6 +725,8 @@ grid-area: ultimas;
 
   .nosotros img {
     max-width: 150px;
+    width: 100%;
+    height: auto;
     
   }
 
@@ -842,6 +844,22 @@ grid-area: ultimas;
   }
 
   @media screen and (min-width: 600px) and (max-width: 768px) { 
+
+
+    .menu-item {
+      margin-bottom: 20px;
+    }
+    .navbar li {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    
+    .redes {
+      margin-top: 0px;
+      display: flex;
+      flex-direction: column;
+
+    }
 
   .ads-tablet {
   
@@ -979,7 +997,7 @@ footer .container h2 {
 
 footer .container img{
   width:50%;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 footer .container h2::before {
@@ -1059,7 +1077,7 @@ footer p {
   display: flex;
   flex-direction: column;
   grid-area: contacto;
-  margin-right: 20px;
+  margin-right: 15px;
 }
 
 .contacto ul li {
