@@ -88,6 +88,7 @@
 .videos {
   grid-area: videos;
   padding:20px;
+  width: 60%;
 
 }
 .imagen-dia {
@@ -1382,10 +1383,8 @@ right: 0;
 }
 
 .swiper {
-	margin:20px;
-  position: relative;
   width: 100%;
-  height: 100%;
+  position: relative;
 }
 
     .swiper-slide {
@@ -1395,4 +1394,9 @@ right: 0;
       display: flex;
       justify-content: center;
       align-items: center;
+      
+    }
+
+    iframe {
+      margin: 15px;
     }
