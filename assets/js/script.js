@@ -1,3 +1,5 @@
+
+// Código para la fecha
 const fechaActual = new Date();
 const fechaFormato = fechaActual.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' });
 const fechaElemento = document.getElementById('fecha-actual');
@@ -5,12 +7,13 @@ fechaElemento.setAttribute('datetime', fechaActual.toISOString());
 fechaElemento.textContent = fechaFormato;
 
 if ((".loader").length) {
-    // show Preloader until the website ist loaded
+    // Chequear si la página cargo
     $(window).on('load', function () {
       $(".loader").fadeOut("slow");
     });
 }
 
+// Código para la marquesina
 const container = document.querySelector('.marquesina-noticia');
 let isDragging = false;
 let mouseDownX;
@@ -44,7 +47,7 @@ container.addEventListener('mouseleave', () => {
 
 
 
-
+// Código para la API del dólar
 // Creamos una instancia del objeto XMLHttpRequest
 var xhr = new XMLHttpRequest();
 
@@ -70,6 +73,8 @@ xhr.onreadystatechange = function () {
 
   }
 };
+
+//Código para el carousel
 
 function createCarousel(slideSelector, prevSelector, nextSelector, cantidad, opcion) {
 
@@ -119,6 +124,9 @@ prevBtn.addEventListener("click", prevSlide);
 
 createCarousel(".carousel-slide", ".carousel-prev", ".carousel-next",3,false);
 createCarousel(".carousel-slide-imagen-dia", ".carousel-prev-imagen-dia", ".carousel-next-imagen-dia",9,true);
+
+
+// Código para el carousel de los videos
 
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
