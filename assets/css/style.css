@@ -137,13 +137,14 @@
   grid-template-areas: 
   "contenido-5-noticia-titulo contenido-5-noticia-titulo"
   "contenido-5-noticia-1 contenido-5-noticia-2";
-  column-gap: 10px;
   margin-top: 15px;
 }
 
+.contenido-5-noticia-titulo .noticia {
+  margin-left: 0px;
+}
 .contenido-5-noticia-titulo .titulo {
   margin-bottom: 5px;
-
 }
 
 .contenido-6 .carousel-container .numeroImagen {
@@ -1340,7 +1341,7 @@ right: 0;
 }
 
 [class^="contenido-4-noticia-"] .fila img {
-  max-width: 500px;
+  max-width: 400px;
   width: 100%;
   height: auto;
 }
