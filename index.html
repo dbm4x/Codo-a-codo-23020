@@ -17,6 +17,7 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    
     <!-- FAVICON PARA TODOS LOS DISPOSITIVOS -->
     <link
       rel="apple-touch-icon-precomposed"
@@ -110,6 +111,7 @@
       name="msapplication-square310x310logo"
       content="assets/img/favicon/mstile-310x310.png"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <!-- FIN DE FAVICON PARA TODOS LOS DISPOSITIVOS -->
     <title>Noticias - Prensa Del Plata - Toda la actualidad del mundo</title>
   </head>
@@ -633,6 +635,21 @@
 
           </div>
         </article>
+        <article class="contenido-7">
+          <div class="videos">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><iframe id="player1" width="612" height="345" src="https://www.youtube.com/embed/V2cF4uE0mXs?enablejsapi=1&html5=1&rel=0" frameborder="0" allowfullscreen iframe-video></iframe></div>
+                <div class="swiper-slide"><iframe id="player2" width="612" height="345" src="https://www.youtube.com/embed/V2cF4uE0mXs?enablejsapi=1&html5=1&rel=0" frameborder="0" allowfullscreen iframe-video></iframe></div>
+                <div class="swiper-slide"><iframe id="player3" width="612" height="345" src="https://www.youtube.com/embed/V2cF4uE0mXs?enablejsapi=1&html5=1&rel=0" frameborder="0" allowfullscreen iframe-video></iframe></div>
+                <div class="swiper-slide"><iframe id="player4" width="612" height="345" src="https://www.youtube.com/embed/V2cF4uE0mXs?enablejsapi=1&html5=1&rel=0" frameborder="0" allowfullscreen iframe-video></iframe></div>
+              </div>
+              <div class="swiper-pagination"></div>
+            <div class="swiper-button-next -dark" video-buttons></div>
+            <div class="swiper-button-prev -dark" video-buttons></div>
+            </div>
+          </div>
+        </article>
         </article>
         <aside class="sidebar">
           <div class="noticia">
@@ -836,6 +853,7 @@
         </button>
       </footer>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
