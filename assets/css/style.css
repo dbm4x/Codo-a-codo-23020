@@ -262,14 +262,14 @@ grid-area: ultimas;
   flex-wrap: wrap;
 }
 
- .sidebar .sidebar-ads, .sidebar .ads-tablet {
+ .sidebar .sidebar-Ads, .sidebar .ads-tablet {
   display: flex;
   margin-top: 5px;
   align-items: end;
   width: 100%;
 }
 
- .sidebar .sidebar-ads img, .sidebar .ads-tablet img {
+ .sidebar .sidebar-Ads img, .sidebar .ads-tablet img {
   max-height: 70px;
   width: 100%;
   height: auto;
@@ -996,7 +996,7 @@ grid-area: ultimas;
     margin-bottom: 5px;
   }
 
-  .sidebar .sidebar-ads {
+  .sidebar .sidebarAds {
     display: none;
   }
 
