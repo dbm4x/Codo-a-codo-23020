@@ -269,7 +269,7 @@ grid-area: ultimas;
   width: 100%;
 }
 
- .sidebar .sidebar-ads img, .contenido .sidebar .ads-tablet img {
+ .sidebar .sidebar-ads, .contenido .sidebar .ads-tablet img {
   max-height: 70px;
   width: 100%;
   height: auto;
