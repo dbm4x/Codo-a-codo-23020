@@ -262,7 +262,7 @@ grid-area: ultimas;
   flex-wrap: wrap;
 }
 
- .sidebar .sidebar-ads, .contenido .sidebar .ads-tablet {
+ .sidebar .sidebar-ads, .contenido .sidebar .ads-tablet img {
   display: flex;
   margin-top: 5px;
   align-items: end;
