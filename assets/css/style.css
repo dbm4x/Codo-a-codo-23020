@@ -825,7 +825,7 @@ grid-area: ultimas;
     justify-self: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 10px;
+    margin-top: 12px;
   }
 
   .contenedor .navbar {
