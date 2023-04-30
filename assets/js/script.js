@@ -167,3 +167,16 @@ buttons.forEach(item => {
 });
 })
 }
+
+
+$("#search-icon").click(function() {
+  $(".menus").toggleClass("no-search");
+});
+
+$('.menuDrop').click(function(){
+   $(".menus").toggleClass("mobile-nav");
+   $(this).toggleClass("is-active");
+});
+
+
+
