@@ -262,14 +262,14 @@ grid-area: ultimas;
   flex-wrap: wrap;
 }
 
- .sidebar .sidebar-ads, .contenido .sidebar .ads-tablet {
+ .sidebar .sidebar-Ads, .contenido .sidebar .ads-tablet {
   display: flex;
   margin-top: 5px;
   align-items: end;
   width: 100%;
 }
 
- .sidebar .sidebar-ads img, .contenido .sidebar .ads-tablet img {
+ .sidebar .sidebar-Ads img, .contenido .sidebar .ads-tablet img {
   max-height: 70px;
   width: 100%;
   height: auto;
@@ -981,7 +981,7 @@ grid-area: ultimas;
     margin-bottom: 5px;
   }
 
-  .sidebar .sidebar-ads {
+  .sidebar .sidebar-Ads {
     display: none;
   }
 
