@@ -56,7 +56,7 @@
 .contenedor {
   
   display: grid;
-  grid-gap: 8px;
+  column-gap: 8px;
   grid-template-columns: repeat(3, 1fr);
 
   grid-template-areas:
@@ -262,14 +262,14 @@ grid-area: ultimas;
   flex-wrap: wrap;
 }
 
- .sidebar .sidebar-Ads, .sidebar .ads-tablet {
+ .sidebar .sidebar-ads, .contenido .sidebar .ads-tablet {
   display: flex;
   margin-top: 5px;
   align-items: end;
   width: 100%;
 }
 
- .sidebar .sidebar-Ads img, .sidebar .ads-tablet img {
+ .sidebar .sidebar-ads img, .contenido .sidebar .ads-tablet img {
   max-height: 70px;
   width: 100%;
   height: auto;
@@ -812,6 +812,8 @@ grid-area: ultimas;
   .footer .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-items: center;
+
     grid-template-areas: 
      
       "enlaces contacto"
@@ -825,7 +827,7 @@ grid-area: ultimas;
     justify-self: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 12px;
+    margin-top: 25px;
   }
 
   .contenedor .navbar {
@@ -833,10 +835,6 @@ grid-area: ultimas;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "logo menu";
-  }
-
-  .enlaces {
-    margin-left: 10px;
   }
 
   .nosotros img {
@@ -874,18 +872,6 @@ grid-area: ultimas;
     display: none;
   }
 
-  .contenedor {
-    grid-template-columns: 1fr;
-  }
-
-  .contenedor {
-    grid-template-areas:
-      "header header header"
-      "contenido contenido contenido"
-      "sidebar sidebar sidebar"
-      "footer footer footer";
-  }
-
 
   .navbar .suscripcion {
     display: none;
@@ -907,7 +893,6 @@ grid-area: ultimas;
   .barra-dolar-search .buscador {
     justify-self: end;
   }
-
 
 }
 
@@ -996,7 +981,7 @@ grid-area: ultimas;
     margin-bottom: 5px;
   }
 
-  .sidebar .sidebar-Ads {
+  .sidebar .sidebar-ads {
     display: none;
   }
 
@@ -1096,15 +1081,17 @@ footer {
   font-family: sans-serif;
   padding-top:2em;
   padding-bottom: 1em;
+  
 }
 
 footer .container {
   display: grid;
-  grid-template-columns: 1fr 4fr 3fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
   grid-template-areas: 
-    "nosotros nosotros enlaces contacto"
-    "copyrightext copyrightext copyrightext copyrightext";
+    "nosotros enlaces contacto"
+    "copyrightext copyrightext copyrightext ";
+    justify-items: center;
 }
 
 
@@ -1179,6 +1166,7 @@ footer p {
 
 .enlaces {
   grid-area: enlaces;
+  justify-self: center;
 }
 
 .enlaces ul li a {
@@ -1195,10 +1183,9 @@ footer p {
 
 
 .contacto {
-  display: flex;
-  flex-direction: column;
   grid-area: contacto;
-  margin-right: 15px;
+  justify-self: end;
+  margin-right: 10px;
 }
 
 .contacto ul li {
@@ -1218,7 +1205,6 @@ footer p {
   color: #999;
   text-decoration: none;
   margin-bottom: 10px;
-  display: inline-block;
 }
 
 .copyrightext{
