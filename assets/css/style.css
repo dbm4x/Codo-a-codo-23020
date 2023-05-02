@@ -778,7 +778,7 @@ grid-area: ultimas;
     justify-content: center;
     top: 90px;
     background-color: #fff;
-    width: 100%;
+    width: 97%;
     height: auto;
     transform: translate(-101%);
     text-align: center;
@@ -892,6 +892,98 @@ grid-area: ultimas;
 
   .barra-dolar-search .buscador {
     justify-self: end;
+  }
+
+  .contenedor .contenido {
+
+    grid-area: contenido;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "titular-noticia"
+                         "sidebar"
+                         "contenido-2"
+                         "contenido-3"
+                         "contenido-4"
+                         "contenido-5"
+                         "contenido-6"
+                         "contenido-7";
+  
+  }
+
+  .contenido-5 {
+    grid-area: contenido-5;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "contenido-5-noticia-titulo"
+    "contenido-5-noticia-1"
+    "contenido-5-noticia-2";
+    margin-top: 15px;
+  }
+
+  .contenido-4 {
+    grid-area: contenido-4;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: calc((100% - 20px) / 3)  calc((100% - 20px) / 3)  calc((100% - 20px) / 3);
+    grid-template-areas: "contenido-4-noticia-1 contenido-4-noticia-2 contenido-4-noticia-3 none";
+  }
+
+
+  .newsletter {
+    display: none;
+  }
+
+  .contenido-3 {
+    grid-area: contenido-3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "contenido-3-noticia-1 contenido-3-noticia-2"
+                         "ultimas ultimas";
+    column-gap: 10px;
+  }
+
+  .ultimas {
+    margin-top: 15px;
+  }
+
+  .contenido .sidebar {
+    grid-area: sidebar;
+  
+    background: radial-gradient(circle at 0% 0.5%, rgb(241, 241, 242) 0.1%, rgb(224, 226, 228) 100.2%);
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "noticia noticia2"
+                         "publicidad publicidad";
+  }
+
+  .sidebar-Ads {
+    grid-area: publicidad;
+  }
+
+  .noticia2 {
+    grid-area: noticia2;
+    margin-right: 0px;
+  }
+
+  .noticia2 .noticia-columna {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contenido-5-noticia-2 {
+    margin-top: 15px;
+  }
+  
+  .contenido-5-noticia-2 .noticia-columna {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contenido-5-noticia-2 .noticia-columna img {
+    width: 100%;
+    height: auto;
   }
 
 }
@@ -1170,6 +1262,7 @@ footer p {
 .enlaces {
   grid-area: enlaces;
   justify-self: center;
+  margin-left: 5px;
 }
 
 .enlaces ul li a {
