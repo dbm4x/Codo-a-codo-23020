@@ -1165,6 +1165,8 @@ footer p {
   list-style: none;
 }
 
+
+  
 .enlaces {
   grid-area: enlaces;
   justify-self: center;
@@ -1191,7 +1193,7 @@ footer p {
 
 .contacto ul li {
   list-style: none;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
   padding-right: 5px;
   
 }
