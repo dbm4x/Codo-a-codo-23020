@@ -957,6 +957,7 @@ grid-area: ultimas;
     }
 
     .menus {
+      margin-top: 5px;
       margin-bottom: 20px;
     }
     .navbar li {
@@ -1185,27 +1186,31 @@ footer p {
 .contacto {
   grid-area: contacto;
   justify-self: end;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .contacto ul li {
   list-style: none;
+  margin-bottom: 10px;
+  padding-right: 5px;
+  
 }
 
-.contacto .info li span:nth-child(1){
-  color: #fff;
-  font-size: 20px;
-}
 
-.contacto .info li span{
-  color: #999;
-}
-
-.contacto .info li a{
+.contacto ul li a {
   color: #999;
   text-decoration: none;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
+
+.contacto span {
+
+  margin-top: 15px;
+  color: #fff;
+  white-space:nowrap;
+
+}
+
 
 .copyrightext{
     grid-area: copyrightext;
