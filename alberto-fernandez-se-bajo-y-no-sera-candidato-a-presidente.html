@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/noticias.css" />
+    <link rel="stylesheet" href="assets/css/loaders.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Asap+Condensed:wght@400&family=Open+Sans&family=EB+Garamond&family=Lato&family=Montserrat:ital,wght@0,300;0,500;1,400&family=Roboto:wght@300;400;700&display=swap&family=Lora:ital@1&family=Noto+Serif&family=Roboto+Condensed:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.0/swiper-bundle.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- FAVICON PARA TODOS LOS DISPOSITIVOS -->
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="57x57"
+      href="assets/img/favicon/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="114x114"
+      href="assets/img/favicon/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="assets/img/favicon/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="assets/img/favicon/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="60x60"
+      href="assets/img/favicon/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="120x120"
+      href="assets/img/favicon/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="76x76"
+      href="assets/img/favicon/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="152x152"
+      href="assets/img/favicon/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/img/favicon/favicon-196x196.png"
+      sizes="196x196"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/img/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/img/favicon/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/img/favicon/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/img/favicon/favicon-128.png"
+      sizes="128x128"
+    />
+    <meta name="application-name" content="&nbsp;" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta
+      name="msapplication-TileImage"
+      content="assets/img/favicon/mstile-144x144.png"
+    />
+    <meta
+      name="msapplication-square70x70logo"
+      content="assets/img/favicon/mstile-70x70.png"
+    />
+    <meta
+      name="msapplication-square150x150logo"
+      content="assets/img/favicon/mstile-150x150.png"
+    />
+    <meta
+      name="msapplication-wide310x150logo"
+      content="assets/img/favicon/mstile-310x150.png"
+    />
+    <meta
+      name="msapplication-square310x310logo"
+      content="assets/img/favicon/mstile-310x310.png"
+    />
+
+    <!-- FIN DE FAVICON PARA TODOS LOS DISPOSITIVOS -->
+    <title>Noticias - Prensa Del Plata - Toda la actualidad del mundo</title>
+  </head>
+  <body>
+    <div class="loader loader-bg">
+      <div class="loader-inner ball-pulse-rise">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="contenedor">
+      <header>
+        <nav class="navbar" id="top">
+          <div class="logo">
+            <img
+              class="logosize"
+              src="assets/img/logo.png"
+              alt="Logo de prensa del Plata"
+            />
+            <div class="slogan">
+              <p><i>20 años informando</i></p>
+            </div>
+          </div>
+
+          <ul class="menus no-search">
+            <li class="nav-item"><a href="#">Inicio</a></li>
+            <li class="nav-item"><a href="#">Nacionales</a></li>
+            <li class="nav-item"><a href="#">Deportes</a></li>
+            <li class="nav-item"><a href="#">Tecnología</a></li>
+            <li class="nav-item"><a href="#">Internacionales</a></li>
+          </ul>
+
+          <div class="suscripcion">
+            <a href="#"><b>Suscribite por $95</b></a>
+          </div>
+
+          <div class="menuDrop" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+
+        <div class="noticiasFlash">
+          <div class="flash-estilo">Noticias flash</div>
+          <div class="marquesina-noticia">
+            <div class="marquesina">
+              <span
+                >Apuñalaron con un destornillador a un colectivero que atropelló
+                a un perro y no paró a auxiliarlo</span
+              >
+              <span
+                >Barras de Defensores se enfrentaron con la Policía en Belgrano:
+                hubo disparos y corridas</span
+              >
+              <span
+                >Docentes suspendieron las clases en un jardín de La Plata para
+                apoyar a un maestro condenado por abuso</span
+              >
+              <span
+                >Vecinos de Grand Bourg quisieron linchar a un hombre acusado de
+                abuso sexual y le incendiaron el autos</span
+              >
+              <span
+                >Rescatan a siete mujeres en Santa Cruz por un caso de trata de
+                personas
+              </span>
+            </div>
+          </div>
+          <div class="tiempo">
+            <div class="clima">
+              <div class="icon">
+                <i class="fa fa-sun-o spin glow"></i>
+                <i class="fa fa-cloud wind"></i>
+                <i class="fa fa-cloud two"></i>
+              </div>
+              <div class="grados">
+                <b><i>18&deg;</i></b>
+              </div>
+            </div>
+            <div>
+              <time id="fecha-actual" class="fecha-actual"></time>
+            </div>
+          </div>
+        </div>
+        <div class="barra-dolar-search">
+          <div class="temas-hoy">
+            <b>Temas de hoy:</b> <a href="#">Crisis económica</a>
+            <a href="#">Interna en el FdT</a><a href="#">Dólar</a>
+            <a href="#">blue hoy</a> <a href="#">Supercohete “Starship”</a>
+            <a href="#">River Plate</a>
+          </div>
+          <div class="dolar">
+            DÓLAR BLUE <strong id="dolar-blue">...</strong>
+            <span class="indicador"></span><span> 2,13%</span> DÓLAR BNA
+            <strong id="dolar-bna">...</strong> <span class="indicador"></span
+            ><span> 0,22%</span>
+          </div>
+          <div class="buscador">
+            <input
+              class="buscador-input"
+              type="text"
+              placeholder="Buscar ..."
+            />
+            <button class="buscador-boton"><i class="fa fa-search"></i></button>
+          </div>
+        </div>
+      </header>
+      <main class="contenido">
+        <section class="titular-noticia">
+          <article class="capa">
+            <div class="categoria">
+              <a aria-label="Política" href="#">Política</a>
+              <p>&nbsp;></p>
+            </div>
+            <h1>
+              Alberto Fernández se bajó de la reelección y no será candidato a
+              presidente
+            </h1>
+            <div class="autor">
+              <p class="fecha-autor">Fecha: 21/04/2023 | Autor: Juan Manuel</p>
+
+              <div class="compartir">
+                <a class="ic-d">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a class="ic-d">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a class="ic-d">
+                  <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                </a>
+                <a class="ic-d">
+                  <i class="fa fa-link" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <p class="subtitulo">
+              En la previa del Consejo del PJ publicó un video en el que anunció
+              que se corre de la pelea por una candidatura en Primarias. En Casa
+              Rosada aclararon que se pondrá “al frente del armado electoral”
+              del Frente de Todos
+            </p>
+            <img
+              src="https://www.infobae.com/new-resizer/45tPKgx5FBh6guY2NfyK6yheMs4=/992x614/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/EAGL6DQVJ2KXVECK5LY2P3FAK4.jpg"
+            />
+            <div class="noticia-desc">
+              <p>
+                <i
+                  >Argentina's President Alberto Fernandez attends the opening
+                  session of the 141st legislative term, at the National
+                  Congress, in Buenos Aires, Argentina March 1, 2023.
+                  REUTERS/Tomas Cuesta NO RESALES. NO ARCHIVES</i
+                >
+              </p>
+            </div>
+            <br />
+            <p class="texto">
+              Después de largos meses de expectativa y peleas internas en el
+              <b>Frente de Todos</b> por el rol que debería tener el
+              <b>Presidente</b> en las próximas elecciones,
+              <b>Alberto Fernández</b> anunció sorpresivamente esta mañana que
+              no se presentará para la reelección. Lo hizo en la previa del
+              <b>Consejo del PJ</b>, que preside el Jefe de Estado, instancia en
+              la cual el kirchnerismo había adelantado que presionaría, una vez
+              más, para pedirle que se corriera de la carrera electoral hacia
+              las <b>Primarias Abiertas Simultáneas y Obligatorias (PASO)</b>.
+            </p>
+
+            <p class="texto">
+              <b
+                >En un video publicado en Twitter, el primer mandatario
+                reivindicó su gestión, admitió las deudas políticas y sociales
+                -en especial las cifras de pobreza e inflación- y disparó contra
+                la facción kirchnerista de la coalición por sus “constantes
+                críticas”.</b
+              >
+            </p>
+
+            <p class="texto">
+              <b>Había premura por hacer el anuncio lo antes posible.</b> Para
+              esta tarde está convocado el Consejo del PJ, que él preside, y
+              durante los últimos días había dudas sobre el tono que tendría la
+              esperada reunión, que también había tardado en convocar. En el ala
+              moderada aseguraban que sería un encuentro
+              <b>“protocolar” y “formal”</b>, y en algunos sectores del
+              kirchnerismo coincidían en que sólo se leería la orden del día
+              para hacer el llamado al Congreso del PJ, para mayo.
+            </p>
+
+            <div class="lee-tambien">
+              <i
+                ><b>Leé también: </b
+                ><a href="#"
+                  >Javier Milei le respondió a Cristina Kirchner luego de que
+                  ella lo confrontara: “Está aterrada”.</a
+                >
+              </i>
+            </div>
+
+            <p class="texto">
+              Pero ayer, el ministro del Interior,
+              <b>Eduardo “Wado” de Pedro</b>, ladero de Cristina Kirchner, dejó
+              saber que los consejeros de La Cámpora y fuerzas aliadas que
+              denostan su gestión irían al cónclave, una vez más, con un reclamo
+              fuerte contra el primer mandatario de cara a las PASO. La última
+              vez había sido en la mesa política del 16 de febrero, en la sede
+              del PJ, donde el jefe camporista <b>Máximo Kirchner</b>, y el
+              gobernador bonaerense cristinista, <b>Axel Kicillof</b>, entre
+              otros, habían deslizado que era “raro” que el Presidente
+              compitiera en una interna y habían pedido que se bajara.
+            </p>
+            <p class="texto">
+              De todas formas, el Presidente prolongaba la expectativa, y hasta
+              ayer en la Casa de Gobierno deslizaban que no se conocería su
+              futuro político inmediato hasta mayo, e inclusive junio (el cierre
+              de listas es el 24 de ese mes).
+              <b
+                >Finalmente, lo hizo esta mañana, a dos meses de la fecha
+                límite.</b
+              >
+            </p>
+            <p class="texto">
+              El Presidente aparecía muy golpeado en las encuestas, pero en su
+              entorno sostenían que se mantenía competitivo en relación a sus
+              pares (excepto por Cristina Kirchner, la dirigente que más mide
+              del espacio, que supuestamente no figuraría en las nóminas). Su
+              decisión acerca de una candidatura era uno de los principales
+              temas pendientes para el resto de los espacios y dirigentes para
+              avanzar con el armado electoral.
+            </p>
+            <p class="texto">
+              Ahora quedan en pie como posibles competidores en la interna del
+              FDT el embajador en Brasil, <b>Daniel Scioli</b>; el ministro K
+              <b>De Pedro</b>; el gobernador de Chaco,
+              <b>Jorge Capitanich y el dirigente social Juan Grabois (MTE).</b>
+              También aparece como posible presidenciable el ministro de
+              Economía, <b>Sergio Massa</b>, que en los últimos días dejó saber
+              que probablemente presente candidatos para todas las categorías,
+              pero demora su decisión, que, por lo menos hasta ahora, en
+              Hacienda siguen atando al rumbo de la economía.
+            </p>
+            <p class="texto">
+              Por último, resta conocer las principal incógnita, sobre
+              <b>Cristina Kirchner</b>, que había dicho que no sería candidata
+              en diciembre tras su condena en la causa Vialidad, pero cuyo
+              entorno brinda señales confusas y abre la puerta a una
+              candidatura.
+              <b
+                >Todos los presidenciables se enteraron a través del video, hace
+                algunas horas.</b
+              >
+            </p>
+
+            <img
+              src="https://www.infobae.com/new-resizer/vChIDcHGi8VIzmp6cRupvZaVM6k=/1440x960/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/3KOFIQ2VLKDHR5JJZQURNH22JE.jpg"
+            />
+            <div class="noticia-desc">
+              <p>
+                <i
+                  >Cristina Kirchner desaprobaba la reelección de Alberto
+                  Fernández
+                </i>
+              </p>
+            </div>
+            <br />
+            <p class="texto">
+              Al promediar el video, el jefe de Estado admitie los principales
+              problemas de la gestión: menciona <b>“los bajos ingresos”</b> y
+              <b>“la pobreza”</b>, y describie las derrotas de la gestión
+              económica -que manejó durante la primera parte de su gestión
+              <b>Martín Guzmán</b> y que ahora lidera <b>Sergio Massa</b> -como
+              “proyectos y sueños que no pudieron concretarse”. Sin embargo,
+              cierra ese fragmento con una frase de auto reivindicación: “Tengo
+              la certeza de que no tomé una sola medida contra nuestro pueblo”.
+            </p>
+            <p class="texto">
+              El video termina con una alusión directa a la interna que jaqueó a
+              su gobierno desde el primer año de su mandato, por la expresa
+              desaprobación de <b>Cristina Kirchner</b> -con quien no se
+              encuentra desde hace meses- a la gestión y los constantes ataques
+              de parte de sus espadas políticas más filosas. “En estos años tuve
+              que soportar críticas y nunca respondí a los intentos de
+              <b>desprestigio</b>. Evité toda escalada en el <b>conflicto</b>,
+              siempre para garantizar la <b>unidad del espacio politico”</b>,
+              dice, sin mencionar a quien lo designó como candidato en 2019, ni
+              a De Pedro, ni a Máximo Kirchner, ni Axel Kicillof y ni al
+              ministro de Desarrollo Bonaerense, Andrés “Cuervo” Larroque, que
+              responden a la vice y se despacharon contra la Casa Rosada y
+              dependencias afines en numerosas entrevistas, actos, y
+              declaraciones off the record.
+            </p>
+            <p class="texto">
+              “Llegamos unidos para iniciar una nueva contienda electoral. (El
+              Frente) se fortalecerá con la competencia, y la búsqueda de nuevas
+              conquistas”, decidió justificar el Presidente. En el círculo de
+              Olivos habían deslizado varias veces que una posibilidad bastante
+              certera era que su jefe político abrazara como principal logro, en
+              lugar de un segundo mandato, el establecimiento inédito de una
+              competencia primaria en el peronismo, habituado a las candidaturas
+              a dedo desde la cúpula, en un sistema de distribución
+              verticalista. En las últimas semanas, la discusión ya no era sobre
+              si habría o no PASO -el kirchnerismo las resistía el año pasado,
+              pero terminó cediendo el mes pasado- sino acerca de la forma en
+              que se celebrarían.
+            </p>
+            <p class="texto">
+              “Hago un llamamiento para que todos transitemos este tiempo
+              electoral,
+              <b
+                >tan proclive a los excesos, con el mayor de los respetos por
+                nuestros contendientes”</b
+              >, dice, en ese sentido, el Presidente en el spot. “Podemos
+              efectuar desde los espacios públicos, todos y todas, un aporte
+              genuino <b>para mejorar el debate político que nos merecemos</b>”.
+            </p>
+            <p class="texto">
+              La decisión estuvo atravesada en buena parte por el crecimiento en
+              las investigaciones de opinión pública de los referentes de
+              derecha de la oposición, con Javier Milei (La Libertad Avanza) y
+              Patricia Bullrich (Pro) a la cabeza; y, muy cercano en intención
+              de voto, el jefe de gobierno porteño, Horacio Rodríguez Larreta
+              (Pro). Aunque el FDT aparece en un virtual empate contra Juntos
+              por el Cambio, la fragmentación interna, según los críticos de la
+              candidatura del Presidente, podía dificultar las ya complicadas
+              chances del oficialismo de imponerse en las Primarias, y peor, en
+              la primera vuelta. Después del renunciamiento de Alberto Fernández
+              quedan por develar varias incógnitas, pero el terreno para el
+              resto de los aspirantes, con el líder institucional fuera de la
+              contienda, quedó despejado.
+            </p>
+            <div class="lee-tambien">
+              <i
+                ><b>Te puede interesar también:</b><br /><br />
+                <p>
+                  <a href="#"
+                    >El gobernador de Córdoba, Juan Schiaretti, anunció que será
+                    precandidato presidencial</a
+                  >
+                </p>
+                <br />
+                <p>
+                  <a href="#"
+                    >Soledad Acuña bajó su candidatura en CABA: Jorge Macri y
+                    Quirós siguen en carrera y hay expectativa por Vidal</a
+                  >
+                </p>
+              </i>
+            </div>
+
+            <div class="tags">
+              <h2>Tags de este artículo:</h2>
+              <div class="noticia-tags">
+                <a class="noticia-tag" href="#">Alberto Fernández</a
+                ><a class="noticia-tag" href="#">PASO 2023</a
+                ><a class="noticia-tag" href="#">Elecciones 2023 Argentina</a
+                ><a class="noticia-tag" href="#">Últimas noticias</a
+                ><a class="noticia-tag" href="#">Cristina Kirchner</a>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="contenido-4">
+          <article class="contenido-4-noticia-1">
+            <div class="contenido-4-fila">
+              <img
+                src="https://www.infobae.com/new-resizer/vHdn9cMpmj0JxuZ5BpsnpKBozzM=/1440x810/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/NDMVP75JK5BRTCZD2VLYGUDJDY.jpg"
+                alt="Imagen 1"
+              />
+              <h3>
+                Victoria Tolosa Paz: “El Presidente y la Vicepresidenta se tienen que sentar como lo hicieron en mayo de 2019″
+              </h3>
+              <p class="contenido-4-autor">Fecha: 21/04/2023 | Autor: Juan Manuel</p>
+              <p>
+                La ministra de Desarrollo Social planteó que es necesario un acuerdo entre Alberto Fernández y Cristina Kirchner para comenzar a definir las candidaturas del Frente de Todos
+              </p>
+            </div>
+          </article>
+          <article class="contenido-4-noticia-2">
+            <div class="contenido-4-fila">
+              <img
+                src="https://www.infobae.com/new-resizer/cKw83sIQ5T_n5AYjadXGyn6Zb1Q=/1440x810/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/LVWVQQVHJNBFBOEAPIFZTIQJSM.jpg"
+                alt="Imagen 1"
+              />
+              <h3>
+                El Gobierno diseñó una estrategia para fortalecer las reservas del Banco Central que depende de Biden, Lula y Xi Jinping
+              </h3>
+              <p class="contenido-4-autor">Fecha: 21/04/2023 | Autor: Juan Manuel</p>
+              <p>
+                Alberto Fernández y Sergio Massa negocian con el FMI, buscan un punto de encuentro con la burocracia financiera de Brasil y aguardan una decisión política de los BRICS, que es avalada por el líder chino
+              </p>
+            </div>
+          </article>
+          <article class="contenido-4-noticia-3">
+            <div class="contenido-4-fila">
+              <img
+                src="https://www.infobae.com/new-resizer/O7uNAEIF5GRVPBIgQ_Sw28XSpZY=/1440x960/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/JBQNDWTOYBCSNGJJ7IVVNPJHEU.JPG"
+                alt="Imagen 1"
+              />
+              <h3>
+                Crece la polémica por el basural a cielo abierto en Luján: auditores externos del BID podrían viajar a la Argentina
+              </h3>
+              <p class="contenido-4-autor">Fecha: 21/04/2023 | Autor: Juan Manuel</p>
+              <p>
+                La planta de tratamiento y reciclado se realiza con un préstamo del banco. Infobae anticipó que la oficina de Mecanismo Independiente de Consulta e Investigación (MICI) investiga si se incumplieron políticas y estándares sociales y ambientales
+              </p>
+            </div>
+          </article>
+        </section>
+
+        <section class="contenido-5">
+          <div class="contenido-5-noticia-titulo">
+            <div class="noticia">
+              <div class="titulo">
+                <h3>Economía</h3>
+              </div>
+            </div>
+          </div>
+          <article class="contenido-5-noticia-1">
+            <div class="fila">
+              <img
+                src="https://tn.com.ar/resizer/-loVD7q5pqN0gr3QSB23spYesaQ=/650x0/smart/filters:format(webp)/cloudfront-us-east-1.images.arcpublishing.com/artear/MSEVCJNOQ5HRJFRMTZQNN3BGHY.jpg"
+                alt="Imagen 1"
+              />
+              <div class="contenidos">
+              <h2>
+                Con las reservas al límite, Massa acelera negociaciones con EEUU, Brasil y China para conseguir dólares para el Banco Central
+              </h2>
+              <p class="fecha-autor">Fecha: 21/04/2023 | Autor: Juan Manuel</p>
+              <p>
+                El ministro de Economía sabe que las arcas del BCRA están en una situación crítica, cerca de los mínimos de los últimos años. Con la sequía y un “dólar agro” que no termina de arrancar, el Gobierno tiene que recurrir a vías alternativas.
+              </p>
+            </div>
+            </div>
+          </article>
+          <article class="contenido-5-noticia-2">
+            <div class="noticia-columna">
+              <img
+                src="https://www.infobae.com/new-resizer/-pCUoDQLt2JTkSencrouWUBPLJI=/1440x810/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/DC4N77VUS5B3ZNUY47RLICM5WM"
+                alt="Imagen 1"
+              />
+              <div class="contenidos">
+                <h2>
+                  Los alimentos volvieron a escalar fuerte en abril: la proyección de los analistas y los planes del Gobierno
+                </h2>
+                <p class="fecha-autor">Fecha: 21/04/2023 | Autor: Rocío Alen</p>
+                <p>
+                  Algunas consultoras estiman que el rubro trepó dos dígitos el mes pasado. El Indec postergó la publicación del IPC para el próximo lunes. El impacto del dólar y la incertidumbre
+                </p>
+              </div>
+            </div>
+            <div class="noticia-columna">
+              <img
+                src="https://www.infobae.com/new-resizer/zgPaWLW_bsq9e4LYPWYfRPuWyiI=/1440x1440/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/MUADE2W3TZF4VK5ZOFMWQ5KRDA.jpg"
+                alt="Imagen 1"
+              />
+              <div class="contenidos">
+                <h2>
+                  El nuevo billete de 2.000 pesos podría empezar a circular antes de lo previsto
+                </h2>
+                <p class="fecha-autor">Fecha: 21/04/2023 | Autor: Rocío Alen</p>
+                <p>
+                  Las operadoras de cajeros automáticos harán pruebas para adaptar sus sistemas de seguridad. Cuál sería la nueva fecha en que comenzará a utilizarse para realizar pagos y cobros
+                </p>
+              </div>
+            </div>
+          </article>
+        </section>
+        <aside class="sidebar">
+          <div class="noticia">
+            <div>
+              <div class="titulo">
+                <h3>Últimas noticias</h3>
+              </div>
+              <div class="fila">
+                <img
+                  src="https://www.infobae.com/new-resizer/MVByVnD0EFr3edP3urDVBy1ShV8=/992x558/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/YIIWPMRJ7BFYBLR3FKKDFWN5GA.jpg"
+                  alt="Imagen 1"
+                />
+                <p>
+                  La Embajada de EEUU en Ucrania advirtió que Rusia prepara
+                  ataques sobre Kiev tras el supuesto atentado en el Kremlin
+                </p>
+              </div>
+              <div class="titulo"></div>
+              <div class="fila">
+                <img
+                  src="https://www.infobae.com/new-resizer/Q9aUk7CdVmciy2NH2oRvR4VVHZI=/768x432/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/7ZFLEI6IN5FLRPBTHED6XNPNSQ.jpg"
+                  alt="Imagen 1"
+                />
+                <p>
+                  Casi la mitad de los alumnos no alcanzan el nivel mínimo en
+                  lectura y lanzan una campaña para revertirlo
+                </p>
+              </div>
+
+              <div class="titulo"></div>
+              <div class="fila">
+                <img
+                  src="https://www.infobae.com/new-resizer/MLCekXhpeTa8OT32kkNrxFUuFE4=/768x432/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/XF7WOHPDZRE3HI72QJF6EDD5SY.jfif"
+                  alt="Imagen 1"
+                />
+                <p>
+                  Con autoridad, Boca Juniors le ganó 2-0 a Colo Colo en Chile y
+                  lidera el Grupo F de la Copa Libertadores
+                </p>
+              </div>
+              <div class="titulo"></div>
+              <div class="fila">
+                <img
+                  src="https://www.infobae.com/new-resizer/V3JztcAO4XLx1JW5mVCOwkwkt7U=/768x432/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/5CRZGYPSD3IUW63SJHBWXC47LU.jpg"
+                  alt="Imagen 1"
+                />
+                <p>
+                  Enfocado en la gestión, Massa estira hasta la previa del
+                  cierre de listas el congreso del Frente de Renovador
+                </p>
+              </div>
+
+              <div class="titulo"></div>
+              <div class="fila">
+                <img
+                  src="https://www.infobae.com/new-resizer/I6Kp70Pbw1T3T4AUdlf31zBswP0=/768x432/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/VQMLCM4IJRDQXIDZ7KSNWDICQQ.jpg"
+                  alt="Imagen 1"
+                />
+                <p>
+                  Brote de dengue en Argentina: por qué predomina el serotipo 2
+                  del virus y qué factores influyen en esta dinámica
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="noticia2">
+            <div>
+              <div class="titulo">
+                <h3>Más noticias</h3>
+              </div>
+              <div class="fila">
+                <img
+                  src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTf73JDqy7W5IQYtlwlEVWECQbz2EMvzCctXS4K2pgfGKHSdPyy"
+                  alt="Imagen 1"
+                />
+                <p>
+                  María Becerra compartió un adelanto de su canción para Rápidos
+                  y Furiosos 10
+                </p>
+              </div>
+              <div class="titulo"></div>
+              <div class="fila">
+                <img
+                  src="https://www.infobae.com/new-resizer/-e-DUCDi46l8yYGewVcag8mwiJM=/992x558/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/ECYAHYPKPBDG7A6IX3RPG4GKRA.jpg"
+                  alt="Imagen 1"
+                />
+                <p>
+                  Con el corazón partido y obligados a estar bien: cuatro
+                  historias de padres de jóvenes que decidieron dejar el país
+                </p>
+              </div>
+
+              <div class="titulo"></div>
+              <div class="fila">
+                <img
+                  src="https://www.infobae.com/new-resizer/qbSpuwT_wNWiy_s-OUFnYwTZyI8=/768x432/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/XALXRCNWGRBETMMY5KYPJLH6GM"
+                  alt="Imagen 1"
+                />
+                <p>
+                  Marcha atrás del Indec: finalmente, no postergará la
+                  publicación del dato de inflación de abril
+                </p>
+              </div>
+              <div class="titulo"></div>
+              <div class="fila">
+                <img
+                  src="https://www.infobae.com/new-resizer/W6C8aANXO7A25OmPqYIxPwlYgEM=/768x432/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/FRYA4CF6AREEVB6TMQLWH5LAKY.jpg"
+                  alt="Imagen 1"
+                />
+                <p>
+                  Paro de subte: este jueves los metrodelegados interrumpirán el
+                  servicio de las líneas A y C
+                </p>
+              </div>
+
+              <div class="titulo"></div>
+              <div class="fila">
+                <img
+                  src="https://www.infobae.com/new-resizer/SSX0H6Uu6YwFOzPfmUdHyckxQA4=/768x432/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/5WD4CMMK5RF6LL2MGVSXHRZQOU.jpg"
+                  alt="Imagen 1"
+                />
+                <p>
+                  Cómo será la versión del premio que impulsa la comunicación de
+                  la ciencia con perspectiva de género
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="newsletter">
+            <form action="#" class="card-content">
+              <div class="container">
+                <div class="image">
+                  <i class="fa fa-envelope fa-2x"></i>
+                </div>
+                <h1>Recibí todas las novedades</h1>
+                <p>Suscribíte al newsletter y mantenete informado.</p>
+              </div>
+              <div class="form-input">
+                <label for="email"></label>
+                <input type="email" placeholder="E-mail" />
+                <button class="subscribe-btn">Subscribirme</button>
+              </div>
+            </form>
+          </div>
+        </aside>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="sobre nosotros">
+            <img src="assets/img/logo.png" alt="" />
+            <p>
+              Prensa del Plata es una empresa de periodismo nacida en Buenos
+              Aires. Hoy en día, Prensa del Plata es una de las empresas de
+              periodismo más importantes del país. A través de su sitio web y
+              sus redes sociales, la empresa sigue contando las historias que
+              importan y llevando la información a todos los rincones del país.
+            </p>
+            <ul class="redes">
+              <li>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="sobre enlaces">
+            <h2>Enlaces rápidos</h2>
+            <ul>
+              <li class="nav-item"><a href="#">Inicio</a></li>
+              <li class="nav-item"><a href="#">Nacionales</a></li>
+              <li class="nav-item"><a href="#">Deportes</a></li>
+              <li class="nav-item"><a href="#">Tecnología</a></li>
+              <li class="nav-item"><a href="#">Internacionales</a></li>
+            </ul>
+          </div>
+          <div class="sobre contacto">
+            <h2>Información de contacto</h2>
+            <ul class="info">
+              <li>
+                <span
+                  ><i class="fa fa-phone"></i>
+                  <a href="tel:123456789">+549110543345</a></span
+                >
+              </li>
+              <li>
+                <span
+                  ><i class="fa fa-map-marker"></i>
+                  <a href="#"> Nro. 820 - La Plata - Pcia. de Bs. As.</a>
+                </span>
+              </li>
+
+              <li>
+                <span
+                  ><i class="fa fa-comment-o"></i>
+
+                  <a href="#">¿Cómo anunciar?</a>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="copyrightext">
+            <p>© 2023 Prensa Del Plata - Todos los derechos reservados</p>
+            <p>Términos y condiciones - Privacidad</p>
+          </div>
+        </div>
+        <a href="#top"
+          ><button class="ir-al-inicio" title="Ir arriba">
+            <i class="fa fa-angle-up"></i></button
+        ></a>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.0/swiper-bundle.min.js"></script>
+    <script src="assets/js/noticias.js"></script>
+  </body>
+</html>
