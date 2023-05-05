@@ -5,6 +5,10 @@
 }
 
 
+.contenedor .logo a, .contenedor .logo a:hover, .contenedor .logo a:link, .contenedor .logo a:visited {
+  text-decoration: none;
+  color: inherit;
+}
 
 .no-search {
   transform: translate(0);
