@@ -121,10 +121,10 @@ nextBtn.addEventListener("click", nextSlide);
 prevBtn.addEventListener("click", prevSlide);
 }
 
-
+if(document.querySelector('.carousel-slide')) {
 createCarousel(".carousel-slide", ".carousel-prev", ".carousel-next",3,false);
 createCarousel(".carousel-slide-imagen-dia", ".carousel-prev-imagen-dia", ".carousel-next-imagen-dia",9,true);
-
+}
 
 // Código para el carousel de los videos
 
@@ -177,5 +177,6 @@ $('.menuDrop').click(function(){
    $(".menus").toggleClass("mobile-nav");
    $(this).toggleClass("is-active");
 });
+
 
 
