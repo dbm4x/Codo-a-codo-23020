@@ -1,116 +1,159 @@
-class LiteYTEmbed extends HTMLElement {
 
+// Código para la fecha
+const fechaActual = new Date();
+const fechaFormato = fechaActual.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' });
+const fechaElemento = document.getElementById('fecha-actual');
+fechaElemento.setAttribute('datetime', fechaActual.toISOString());
+fechaElemento.textContent = fechaFormato;
 
-    connectedCallback() {
-
-        
-        this.videoId = this.getAttribute('videoid');
-        let playBtnEl = this.querySelector('.lty-playbtn');
-        this.playLabel = (playBtnEl && playBtnEl.textContent.trim()) || this.getAttribute('playlabel') || 'Play';
-        if (!this.style.backgroundImage) {
-            this.style.backgroundImage = `url("https://i.ytimg.com/vi/${this.videoId}/hqdefault.jpg")`;
-        }
-        if (!playBtnEl) {
-            playBtnEl = document.createElement('button');
-            playBtnEl.type = 'button';
-            playBtnEl.classList.add('lty-playbtn');
-            this.append(playBtnEl);
-        }
-        if (!playBtnEl.textContent) {
-            const playBtnLabelEl = document.createElement('span');
-            playBtnLabelEl.className = 'lyt-visually-hidden';
-            playBtnLabelEl.textContent = this.playLabel;
-            playBtnEl.append(playBtnLabelEl);
-        }
-        playBtnEl.removeAttribute('href');
-        this.addEventListener('pointerover', LiteYTEmbed.warmConnections, {once: true});
-        this.addEventListener('click', this.addIframe);
-        this.needsYTApiForAutoplay = navigator.vendor.includes('Apple') || navigator.userAgent.includes('Mobi');
-
-    }
-    static addPrefetch(kind, url, as) {
-        const linkEl = document.createElement('link');
-        linkEl.rel = kind;
-        linkEl.href = url;
-        if (as) {
-            linkEl.as = as;
-        }
-        document.head.append(linkEl);
-    }
-    static warmConnections() {
-        if (LiteYTEmbed.preconnected) return;
-
-        // The iframe document and most of its subresources come right off youtube.com
-        LiteYTEmbed.addPrefetch('preconnect', 'https://www.youtube-nocookie.com');
-        // The botguard script is fetched off from google.com
-        LiteYTEmbed.addPrefetch('preconnect', 'https://www.google.com');
-
-        // Not certain if these ad related domains are in the critical path. Could verify with domain-specific throttling.
-        LiteYTEmbed.addPrefetch('preconnect', 'https://googleads.g.doubleclick.net');
-        LiteYTEmbed.addPrefetch('preconnect', 'https://static.doubleclick.net');
-
-        LiteYTEmbed.preconnected = true;
-    }
-
-    fetchYTPlayerApi() {
-        if (window.YT || (window.YT && window.YT.Player)) return;
-
-        this.ytApiPromise = new Promise((res, rej) => {
-            var el = document.createElement('script');
-            el.src = 'https://www.youtube.com/iframe_api';
-            el.async = true;
-            el.onload = _ => {
-                YT.ready(res);
-            };
-            el.onerror = rej;
-            this.append(el);
-
-        });
-        
-    }
-
-    async addYTPlayerIframe(params) {
-        this.fetchYTPlayerApi();
-        await this.ytApiPromise;
-
-        const videoPlaceholderEl = document.createElement('div')
-        this.append(videoPlaceholderEl);
-
-        const paramsObj = Object.fromEntries(params.entries());
-
-        new YT.Player(videoPlaceholderEl, {
-            videoId: this.videoId,
-            playerVars: paramsObj,
-            events: {
-                'onReady': event => {
-                    event.target.playVideo();
-                }
-            }
-        });     
-            
-    }
-
-    async addIframe(){
-        if (this.classList.contains('lyt-activated')) return;
-        this.classList.add('lyt-activated');
-
-        const params = new URLSearchParams(this.getAttribute('params') || []);
-        params.append('autoplay', '1');
-        params.append('playsinline', '1');
-
-        if (this.needsYTApiForAutoplay) {
-            return this.addYTPlayerIframe(params);
-        }
-
-        const iframeEl = document.createElement('iframe');
-        iframeEl.title = this.playLabel;
-        iframeEl.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture';
-        iframeEl.allowFullscreen = true;
-        iframeEl.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(this.videoId)}?${params.toString()}`;
-        this.append(iframeEl);
-        iframeEl.focus();
-
-        
-    }
+if ((".loader").length) {
+    // Chequear si la página cargo
+    $(window).on('load', function () {
+      $(".loader").fadeOut("slow");
+    });
 }
-customElements.define('lite-youtube', LiteYTEmbed);
+
+// Código para la marquesina
+const container = document.querySelector('.marquesina-noticia');
+let isDragging = false;
+let mouseDownX;
+
+container.addEventListener('mousedown', (e) => {
+  isDragging = true;
+  mouseDownX = e.clientX;
+  container.style.cursor = 'move';
+});
+
+container.addEventListener('mousemove', (e) => {
+  if (isDragging) {
+    const currentX = e.clientX;
+    const deltaX = currentX - mouseDownX;
+    if (deltaX !== 0) {
+      container.scrollLeft -= deltaX;
+      mouseDownX = currentX;
+    }
+  }
+});
+
+container.addEventListener('mouseup', () => {
+  isDragging = false;
+  container.style.cursor = 'grab';
+});
+
+container.addEventListener('mouseleave', () => {
+  isDragging = false;
+  container.style.cursor = 'grab';
+});
+
+
+
+// Código para la API del dólar
+// Creamos una instancia del objeto XMLHttpRequest
+var xhr = new XMLHttpRequest();
+
+// Definimos la URL de la API
+var url = "https://api.bluelytics.com.ar/v2/latest";
+
+// Configuramos la solicitud XHR
+xhr.open("GET", url, true);
+xhr.setRequestHeader("Content-Type", "application/json");
+
+// Enviamos la solicitud
+xhr.send();
+
+// Esperamos a la respuesta de la API
+xhr.onreadystatechange = function () {
+  if (xhr.readyState === 4 && xhr.status === 200) {
+    // Procesamos la respuesta de la API
+    var response = JSON.parse(xhr.responseText);
+    
+    
+    document.getElementById('dolar-bna').innerHTML = "$"+response.oficial.value_sell.toFixed(2);
+    document.getElementById('dolar-blue').innerHTML = "$"+response.blue.value_sell.toFixed(2);
+
+  }
+};
+
+//Código para el carousel
+
+function createCarousel(slideSelector, prevSelector, nextSelector, cantidad, opcion) {
+
+const slide = document.querySelector(slideSelector);
+const prevBtn = document.querySelector(prevSelector);
+const nextBtn = document.querySelector(nextSelector);
+let currentIndex = 0;
+
+// Mover al siguiente slide
+function nextSlide() {
+  if (currentIndex < cantidad) {
+    currentIndex++;
+  } else {
+    currentIndex = 0;
+  }
+  slide.style.transform = `translateX(-${currentIndex * document.querySelector(slideSelector).clientWidth}px)`;
+  contar();
+}
+
+// Mover al slide anterior
+function prevSlide() {
+  if (currentIndex > 0) {
+    currentIndex--;
+  } else {
+    currentIndex = cantidad;
+  }
+  slide.style.transform = `translateX(-${currentIndex * document.querySelector(slideSelector).clientWidth}px)`;
+  contar();
+}
+
+function contar() {
+if(opcion) {
+  document.querySelector(".numeroImagen").innerHTML = currentIndex+1+"/10";
+}
+}
+
+// Avanzar cada 3 segundos
+setInterval(() => {
+  nextSlide();
+}, 5000);
+
+// Agregar manejadores de eventos a los botones
+nextBtn.addEventListener("click", nextSlide);
+prevBtn.addEventListener("click", prevSlide);
+}
+
+if(document.querySelector('.carousel-slide')) {
+createCarousel(".carousel-slide", ".carousel-prev", ".carousel-next",3,false);
+createCarousel(".carousel-slide-imagen-dia", ".carousel-prev-imagen-dia", ".carousel-next-imagen-dia",9,true);
+}
+
+// Código para el carousel de los videos
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 20,
+
+
+navigation: {
+  nextEl: '.swiper-button-next',
+  prevEl: '.swiper-button-prev',
+},
+autoplay: {
+  delay: 5000,
+},
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+$("#search-icon").click(function() {
+  $(".menus").toggleClass("no-search");
+});
+
+$('.menuDrop').click(function(){
+   $(".menus").toggleClass("mobile-nav");
+   $(this).toggleClass("is-active");
+});
+
+
+
