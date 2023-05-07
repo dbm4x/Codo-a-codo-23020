@@ -1,9 +1,9 @@
 
 # TPO Desarrollo Web - Codo a codo 4.0
 
-## Grupo 16
+## Comisión 23020
 
-### Grupo 16 - Comisión 23020
+### Grupo 16
 
 Trabajo práctico de Desarrollo web con HTML, CSS y Javascript.
 
