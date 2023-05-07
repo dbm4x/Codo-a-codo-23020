@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Formulario de contacto - Prensa del Plata</title>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Kalam:wght@700&family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/contacto.css" />
+
+	<link
+	rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  
+  <!-- FAVICON PARA TODOS LOS DISPOSITIVOS -->
+  <link
+	rel="apple-touch-icon-precomposed"
+	sizes="57x57"
+	href="assets/img/favicon/apple-touch-icon-57x57.png"
+  />
+  <link
+	rel="apple-touch-icon-precomposed"
+	sizes="114x114"
+	href="assets/img/favicon/apple-touch-icon-114x114.png"
+  />
+  <link
+	rel="apple-touch-icon-precomposed"
+	sizes="72x72"
+	href="assets/img/favicon/apple-touch-icon-72x72.png"
+  />
+  <link
+	rel="apple-touch-icon-precomposed"
+	sizes="144x144"
+	href="assets/img/favicon/apple-touch-icon-144x144.png"
+  />
+  <link
+	rel="apple-touch-icon-precomposed"
+	sizes="60x60"
+	href="assets/img/favicon/apple-touch-icon-60x60.png"
+  />
+  <link
+	rel="apple-touch-icon-precomposed"
+	sizes="120x120"
+	href="assets/img/favicon/apple-touch-icon-120x120.png"
+  />
+  <link
+	rel="apple-touch-icon-precomposed"
+	sizes="76x76"
+	href="assets/img/favicon/apple-touch-icon-76x76.png"
+  />
+  <link
+	rel="apple-touch-icon-precomposed"
+	sizes="152x152"
+	href="assets/img/favicon/apple-touch-icon-152x152.png"
+  />
+  <link
+	rel="icon"
+	type="image/png"
+	href="assets/img/favicon/favicon-196x196.png"
+	sizes="196x196"
+  />
+  <link
+	rel="icon"
+	type="image/png"
+	href="assets/img/favicon/favicon-96x96.png"
+	sizes="96x96"
+  />
+  <link
+	rel="icon"
+	type="image/png"
+	href="assets/img/favicon/favicon-32x32.png"
+	sizes="32x32"
+  />
+  <link
+	rel="icon"
+	type="image/png"
+	href="assets/img/favicon/favicon-16x16.png"
+	sizes="16x16"
+  />
+  <link
+	rel="icon"
+	type="image/png"
+	href="assets/img/favicon/favicon-128.png"
+	sizes="128x128"
+  />
+  <meta name="application-name" content="&nbsp;" />
+  <meta name="msapplication-TileColor" content="#FFFFFF" />
+  <meta
+	name="msapplication-TileImage"
+	content="assets/img/favicon/mstile-144x144.png"
+  />
+  <meta
+	name="msapplication-square70x70logo"
+	content="assets/img/favicon/mstile-70x70.png"
+  />
+  <meta
+	name="msapplication-square150x150logo"
+	content="assets/img/favicon/mstile-150x150.png"
+  />
+  <meta
+	name="msapplication-wide310x150logo"
+	content="assets/img/favicon/mstile-310x150.png"
+  />
+  <meta
+	name="msapplication-square310x310logo"
+	content="assets/img/favicon/mstile-310x310.png"
+  />
+
+  </head>
+
+  <body>
+    <div class="contenedor">
+      <div class="header">
+        <div class="row align-items-center">
+          <div class="col-2 logo">
+            <img src="assets/img/logo.png" alt="logo" />
+          </div>
+          <div class="col-10">
+            <h2 class="font-weight-bold">Anunciantes</h2>
+          </div>
+        </div>
+      </div>
+      <main class="contenido">
+        <section class="sectionForm">
+          <div class="form-container">
+            <div class="form-title-block">
+              <h3>¿Por qué anunciar en nuestro sitio web?</h3>
+              <br />
+              <p>
+                <i>
+                  Publicitar en nuestro sitio web es una gran ventaja para tu
+                  negocio. Al hacerlo, tu marca se presenta a una audiencia
+                  específica y comprometida. Además, nuestros visitantes ya
+                  están interesados en los productos o servicios que ofreces,
+                  por lo que hay una mayor probabilidad de que tus anuncios
+                  generen conversiones y ventas. En resumen, publicitar en
+                  nuestro sitio web es una excelente manera de llegar a una
+                  audiencia relevante y obtener un mayor retorno de inversión
+                  para tu negocio.</i
+                >
+              </p>
+              <br />
+              <h3>¿Querés anunciar en nuestro sitio web?</h3>
+
+              <p>
+                Dejanos tus datos y te contactaremos por uno de nuestros
+                representantes.
+              </p>
+            </div>
+            <form method="POST" action="/landings/contactopw" id="contact-form">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="group col-lg-6">
+                    <input type="text" name="name" id="name" required="" />
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Nombre *</label>
+                    <div id="name_error" class="error-form"></div>
+                  </div>
+                  <div class="group col-lg-6">
+                    <input
+                      type="text"
+                      name="last-name"
+                      id="last-name"
+                      required=""
+                    />
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Apellido *</label>
+                    <div id="last-name_error" class="error-form"></div>
+                  </div>
+                  <div
+                    class="group col-lg-8 col-md-8 col-sm-8 col-xs-8 p-right0"
+                  >
+                    <input
+                      type="text"
+                      name="email-alt"
+                      id="email-alt"
+                      required=""
+                    />
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Email *</label>
+                    <div id="email-alt_error" class="error-form"></div>
+                  </div>
+                  <div
+                    class="group col-lg-8 col-md-8 col-sm-8 col-xs-8 p-right0"
+                  >
+                    <input
+                      type="tel"
+                      name="phone"
+                      id="phone"
+                      maxlength="10"
+                      required=""
+                    />
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Celular de contacto *</label>
+                    <div style="margin-top: 5px; text-align: left">
+                      Ej. 1130450000
+                    </div>
+                    <div id="phone_error" class="error-form"></div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-lg-12 row label-right-block">
+                      ¿En qué horario preferís que te llamemos?
+                    </div>
+                    <select id="horario" name="horario" required="">
+                      <option selected="" disabled="">Elegir horario...</option>
+                      <option value="9_12">9 a 12hs</option>
+                      <option value="12_15">12 a 15hs</option>
+                      <option value="15_18">15 a 18hs</option>
+                      <option value="18_21">18 a 21hs</option>
+                      <option value="ALL">En cualquier horario</option>
+                    </select>
+                    <div id="horario_error" class="error-form"></div>
+                  </div>
+                  <div class="group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <select id="gender" name="gender" required="">
+                      <option selected="" disabled="">Género *</option>
+                      <option value="1">Femenino</option>
+                      <option value="2">Masculino</option>
+                    </select>
+                    <div id="gender_error" class="error-form"></div>
+                  </div>
+                  <div class="group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="col-lg-12 row label-right-block offer">
+                      ¿Qué oferta te interesa?
+                    </div>
+                    <ul class="offers-block">
+                      <li>
+                        <input
+                          type="radio"
+                          class="radio-button"
+                          id="oferta"
+                          name="oferta"
+                          value="Digital Clarín $95"
+                          checked=""
+                        />
+                        <span class="radio-button-label"
+                          >Digital Clarín Mensual $95</span
+                        >
+                        <span class="check"></span>
+                      </li>
+                      <li>
+                        <input
+                          type="radio"
+                          class="radio-button"
+                          id="oferta"
+                          name="oferta"
+                          value="Digital Clarín $3000"
+                          checked=""
+                        />
+                        <span class="radio-button-label"
+                          >Digital Clarín Anual $3000</span
+                        >
+                        <span class="check"></span>
+                      </li>
+                      <li>
+                        <input
+                          type="radio"
+                          class="radio-button"
+                          id="oferta"
+                          name="oferta"
+                          value="Full Digital  $110"
+                          checked=""
+                        />
+                        <span class="radio-button-label"
+                          >Full Digital Mensual $110</span
+                        >
+                        <span class="check"></span>
+                      </li>
+                    </ul>
+                    <div id="oferta_error" class="error-form"></div>
+                  </div>
+                </div>
+              </div>
+              <input
+                type="hidden"
+                name="utm-campaign"
+                value=""
+                id="utm-campaign"
+              />
+              <input type="hidden" name="paseId" value="0" id="paseId" />
+              <input type="hidden" name="form-source" value="uno" />
+              <div class="required-fields">* Campos obligatorios</div>
+              <input
+                class="btn btn-color"
+                type="submit"
+                name="enviar"
+                value="QUIERO SUSCRIBIRME"
+                id="enviar"
+              />
+            </form>
+            <div class="msj msj-ok">
+              <span
+                >En breve nos contactaremos para suscribirte a clarin.com.
+                Mientras, si tenés alguna duda o querés contratar otro producto,
+                visita el
+                <a
+                  href="https://www.clarin.com/contactenos.html"
+                  target="_blank"
+                  >“Centro de Ayuda”</a
+                ></span
+              >
+            </div>
+            <div class="msj msj-subscriber">
+              <span
+                >¿Tenés inconvenientes para acceder<br />al contenido de
+                Clarín?<br />Te ayudaremos a resolverlo.<br /><a
+                  href="/faqs/formSubscriptionStatus.html"
+                  target="_blank"
+                  class="btn-white"
+                  >INGRESÁ ACÁ</a
+                ></span
+              >
+            </div>
+          </div>
+        </section>
+
+        <div class="preg-frecuentes container">
+          <div
+            class="preg-frecuentes__imgs animacion-hijos"
+            data-animation="fadeInUp"
+            data-delay="0.2"
+          >
+            <div class="fadeInUp" style="animation-delay: 0s"></div>
+          </div>
+          <div
+            class="preg-frecuentes__descrip animacion-hijos"
+            data-animation="fadeInUp"
+            data-delay="0.2"
+          >
+            <article class="fadeInUp" style="animation-delay: 0s">
+              <h5>¿Cómo puedo saber si mi anuncio está generando resultados en tu sitio web?			</h5>
+              <p>
+				Puedes hacer seguimiento a tus anuncios a través de herramientas de análisis y seguimiento, como Google Analytics. Además, ofrecemos métricas de rendimiento de tus anuncios para que puedas evaluar su efectividad y realizar ajustes según sea necesario.
+              </p>
+            </article>
+            <!-- <article>
+					<h4>¿Cómo funciona?</h4>
+					<p>
+						Sin suscripción podés leer hasta 15 notas de LA NACION o revistas en un rango de 30 días. A partir de la nota 16 te pedimos que te suscribas para seguir leyendo de manera ilimitada. Para usar tu suscripción tenés que ingresar con tu cuenta de Acceso Digital.
+					</p>
+				</article> -->
+            <article class="fadeInUp" style="animation-delay: 0.2s">
+              <h5>¿Puedo personalizar la ubicación y el formato de mi anuncio en tu sitio web?</h5>
+              <p>
+				Sí, ofrecemos opciones de personalización de anuncios para que puedas elegir la ubicación y el formato que mejor se adapte a tus necesidades y objetivos de marketing.
+              </p>
+            </article>
+            <article class="fadeInUp" style="animation-delay: 0.4s">
+              <h5>¿Cómo puedo saber si mi anuncio cumple con los estándares y políticas publicitarias de tu sitio web?
+			</h5>
+              <p>
+				Antes de publicar cualquier anuncio, realizamos una revisión para asegurarnos de que cumpla con nuestras políticas y estándares publicitarios. Si tienes alguna duda o inquietud sobre tus anuncios, nuestro equipo de soporte está disponible para ayudarte y responder a tus preguntas.
+			</p>
+            </article>
+            <hr class="separador-gris fadeInUp" style="animation-delay: 0.6s" />
+            <article class="fadeInUp" style="animation-delay: 0.8s">
+              <p>
+                ¿Dudas?
+                <a
+                  rel="noopener noreferrer"
+                  href="https://micuenta.lanacion.com.ar/ayuda"
+                  target="_blank"
+                  >Consultá las Preguntas Frecuentes</a
+                >
+              </p>
+            </article>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="sobre nosotros">
+            <img src="assets/img/logo.png" alt="" />
+            <p>
+              Prensa del Plata es una empresa de periodismo nacida en Buenos
+              Aires. Hoy en día, Prensa del Plata es una de las empresas de
+              periodismo más importantes del país. A través de su sitio web y
+              sus redes sociales, la empresa sigue contando las historias que
+              importan y llevando la información a todos los rincones del país.
+            </p>
+            <ul class="redes">
+              <li>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="sobre enlaces">
+            <h2>Enlaces rápidos</h2>
+            <ul>
+              <li class="nav-item"><a href="#">Inicio</a></li>
+              <li class="nav-item"><a href="#">Nacionales</a></li>
+              <li class="nav-item"><a href="#">Deportes</a></li>
+              <li class="nav-item"><a href="#">Tecnología</a></li>
+              <li class="nav-item"><a href="#">Internacionales</a></li>
+            </ul>
+          </div>
+          <div class="sobre contacto">
+            <h2>Información de contacto</h2>
+            <ul class="info">
+              <li>
+                <span
+                  ><i class="fa fa-phone"></i>
+                  <a href="tel:123456789">+549110543345</a></span
+                >
+              </li>
+              <li>
+                <span
+                  ><i class="fa fa-map-marker"></i>
+                  <a href="#"> Nro. 820 - La Plata - Pcia. de Bs. As.</a>
+                </span>
+              </li>
+
+              <li>
+                <span
+                  ><i class="fa fa-comment-o"></i>
+
+                  <a href="#">¿Cómo anunciar?</a>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="copyrightext">
+            <p>© 2023 Prensa Del Plata - Todos los derechos reservados</p>
+            <p>Términos y condiciones - Privacidad</p>
+          </div>
+        </div>
+        <a href="#top"
+          ><button class="ir-al-inicio" title="Ir arriba">
+            <i class="fa fa-angle-up"></i></button
+        ></a>
+      </footer>
+    </div>
+    <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
