@@ -1,0 +1,651 @@
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+
+body {
+    background-color: #f0f0f0;
+    margin: 5px;
+    background: radial-gradient(circle at 50.3% 44.5%, rgb(165, 181, 198) 0%, rgb(43, 72, 104) 100.2%);
+
+
+}
+
+.header {
+    grid-area: header;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    z-index: 1;
+    width: 100%;
+    overflow-x: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: radial-gradient(486px at 37.5% -17.2%, rgb(255, 2, 2) 0%, rgb(254, 78, 172) 90%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .logo img {
+      position: relative;
+      max-width: 150px;
+      width: 100%;
+      height: auto;
+      margin-top:15px;
+      margin-bottom: 15px;
+      cursor: pointer;
+      margin-left: 3em;
+  }
+  
+
+  .contenedor {
+  
+    display: grid;
+    column-gap: 8px;
+    grid-template-columns: 1fr;
+  
+    grid-template-areas:
+      "header"
+      "contenido"
+      "footer"; 
+  }
+
+  .contenido {
+    grid-area: contenido;
+  }
+
+.sectionForm .form-container {
+
+    margin: 24px auto;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 40px 70px;
+}
+
+.sectionForm .form-container .form-title-block {
+    text-align: center;
+    margin-bottom: 60px
+}
+
+
+
+.sectionForm .form-container .form-title-block p {
+    font-size: 16px;
+    line-height: 1.63;
+    color: #617885
+}
+
+.sectionForm .form-container form .error-form {
+    font-family: roboto,sans-serif;
+    text-align: left;
+    color: #cf3141;
+    font-size: 14px;
+    position: relative;
+    margin: 2px 0;
+    font-weight: 700
+}
+
+.sectionForm .form-container form .group {
+    position: relative;
+    margin-bottom: 25px
+}
+
+.sectionForm .form-container form input,.sectionForm .form-container form select {
+    font-size: 16px;
+    padding: 8px 10px 8px 5px;
+    display: block;
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: inset 0 0 0 1px rgba(102,113,123,.25);
+    border: solid 1px #d9dfe2;
+    color: #212b36
+}
+
+.sectionForm .form-container form input.input-error,.sectionForm .form-container form select.input-error {
+    border: 1px solid #ea1f32
+}
+
+.sectionForm .form-container form input.radio-button {
+    border: 0;
+    box-shadow: none;
+    width: auto;
+    padding: 0
+}
+
+.sectionForm .form-container form .label-right-block {
+    font-family: roboto,sans-serif;
+    font-size: 16px;
+    color: #212b36;
+    margin-bottom: 13px;
+    text-align: left
+}
+
+.sectionForm .form-container form .label-right-block.offer {
+    padding-top: 10px
+}
+
+.sectionForm .form-container form .offers-block {
+    padding-left: 0;
+    list-style: none
+}
+
+.sectionForm .form-container form .offers-block li {
+    display: flex;
+    margin-bottom: 15px;
+    width: fit-content;
+    width: -moz-fit-content;
+    position: relative;
+    cursor: pointer
+}
+
+.sectionForm .form-container form .offers-block li input {
+    position: absolute;
+    opacity: 0
+}
+
+.sectionForm .form-container form .offers-block li input:checked~.radio-button-label {
+    color: #212b36
+}
+
+.sectionForm .form-container form .offers-block li input:checked~.check {
+    border: solid 4px #f02d3e
+}
+
+.sectionForm .form-container form .offers-block li span {
+    color: #899aa3;
+    margin-left: 25px
+}
+
+.sectionForm .form-container form .offers-block li .check {
+    margin-left: 0;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    border: solid 1px #979797;
+    border-radius: 50%
+}
+
+.sectionForm .form-container form div {
+    color: #212b36
+}
+
+.sectionForm .form-container form input:focus {
+    outline: 0
+}
+
+.sectionForm .form-container form select {
+    height: 40px;
+    background: 0
+}
+
+.sectionForm .form-container form .error-form {
+    text-align: left;
+    color: #ea1f32;
+    font-size: 12px;
+    position: relative;
+    font-weight: 500;
+    margin: 5px 0
+}
+
+.sectionForm .form-container form label {
+    color: #899aa3;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    pointer-events: none;
+    left: 20px;
+    top: 10px;
+    transition: .2s ease all;
+    -moz-transition: .2s ease all;
+    -webkit-transition: .2s ease all
+}
+
+.sectionForm .form-container form label.radio-button-label {
+    font-size: 14px;
+    line-height: 1.43;
+    color: #899aa3;
+    position: relative;
+    transition: none
+}
+
+.sectionForm .form-container form option,.sectionForm .form-container form select {
+    font-size: 16px;
+    font-weight: 400
+}
+
+.sectionForm .form-container form option:checked {
+    color: #999
+}
+
+.sectionForm .form-container form #horario,.sectionForm .form-container form #gender {
+    color: #999
+}
+
+.sectionForm .form-container form #horario option,.sectionForm .form-container form #gender option {
+    color: #333
+}
+
+.sectionForm .form-container form #horario option:disabled,.sectionForm .form-container form #gender option:disabled {
+    color: #999
+}
+
+.sectionForm .form-container form input:focus~label,.sectionForm .form-container form input:valid~label {
+    top: -10px;
+    font-size: 14px;
+    color: #666;
+    background: #fff;
+    display: block;
+    left: 31px;
+    padding: 0 4px
+}
+
+.sectionForm .form-container form input:focus~.bar:before,.sectionForm .form-container form input:focus~.bar:after {
+    width: 50%
+}
+
+.sectionForm .form-container form .highlight {
+    position: absolute;
+    height: 60%;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: .5
+}
+
+.sectionForm .form-container form input:focus~.highlight {
+    -webkit-animation: inputHighlighter .3s ease;
+    -moz-animation: inputHighlighter .3s ease;
+    animation: inputHighlighter .3s ease
+}
+
+.sectionForm .form-container form .required-fields {
+    font-family: roboto,sans-serif;
+    font-size: 12px;
+    line-height: 2.17;
+    text-align: center;
+    color: #617885;
+    margin: 10px auto
+}
+
+.sectionForm .form-container form .btn-color {
+    background: #f02d3e;
+    border-radius: 30px;
+    width: 230px;
+    height: 60px;
+    margin: 0 auto;
+    font-size: 14px!important;
+    color: #fff;
+    display: block;
+    line-height: 2.5;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-family: roboto,sans-serif;
+    border: 0;
+    box-shadow: none;
+    padding: 0
+}
+
+.sectionForm .form-container form .btn-color:hover {
+    color: #fff;
+    background: #ee3548!important
+}
+
+.sectionForm .form-container form .btn-color:focus {
+    color: #fff
+}
+
+.sectionForm .msj {
+    display: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 20px 10px;
+    border-radius: 5px;
+    position: relative;
+    max-width: 450px;
+    text-align: center;
+    margin: 25px auto 0
+}
+
+.sectionForm .msj span:after {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -10px;
+    right: 210px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent
+}
+
+.sectionForm .msj a {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 700
+}
+
+.sectionForm .msj.msj-ok {
+    background: #31b404
+}
+
+.sectionForm .msj.msj-ok span:after {
+    border-bottom: 20px solid #31b404
+}
+
+.sectionForm .msj.msj-subscriber {
+    background: #cf3141
+}
+
+.sectionForm .msj.msj-subscriber span:after {
+    border-bottom: 20px solid #cf3141
+}
+
+.sectionForm .msj.msj-subscriber a {
+    text-decoration: none
+}
+
+.sectionForm .msj .btn-white {
+    background: #fff!important;
+    color: #cf3141!important;
+    border-radius: 30px;
+    width: 200px;
+    height: 50px;
+    margin: 15px auto 0;
+    font-size: 14px!important;
+    display: block;
+    line-height: 3.5;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-family: roboto,sans-serif;
+    border: 0;
+    box-shadow: none;
+    padding: 0
+}
+
+.sectionForm .msj .btn-white:hover {
+    background: #fff!important;
+    color: #cf3141!important
+}
+
+@media(min-width: 1024px) and (max-width:1300px) {
+    .sectionForm .form-container {
+        width:80%
+    }
+}
+
+@media(max-width: 1023px) {
+    .sectionForm {
+        margin-bottom:20px
+    }
+
+    .sectionForm .form-container {
+        width: 100%;
+        padding: 40px 20px;
+        border-radius: unset
+    }
+
+    .sectionForm .form-container .form-title-block {
+        text-align: center;
+        margin-bottom: 60px
+    }
+
+    .sectionForm .form-container form .main-cols {
+        padding: 0 60px
+    }
+}
+
+@media(max-width: 700px) {
+    .sectionForm .form-container .form-title-block h3 {
+        font-size:16px
+    }
+
+    .sectionForm .form-container .form-title-block p {
+        font-size: 14px
+    }
+
+    .sectionForm .form-container form .main-cols {
+        padding: 0 10px
+    }
+}
+
+
+
+
+.preg-frecuentes__descrip>article:not(:last-child):before {
+    content: ">";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #0250c9;
+}
+
+.preg-frecuentes {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    border: thin solid #ccc;
+    border-radius: 6px;
+    padding: 40px;
+    background-color: #fefefe;
+    margin-bottom: 3em;
+    margin-top: 40px;
+}
+
+.preg-frecuentes__imgs {
+    display: none;
+    -ms-flex-preferred-size: 290px;
+    flex-basis: 290px;
+}
+
+.preg-frecuentes__descrip>article:not(:last-child) {
+    margin-bottom: 24px;
+    padding-left: 52px;
+}
+
+.preg-frecuentes__descrip>article {
+    position: relative;
+}
+
+.animacion, .animacion-hijos>article, .animacion-hijos>div {
+    opacity: 1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+.ir-al-inicio {
+    background-color: white;
+    color: red;
+    border: 2px solid red;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 30px;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    z-index: 32;
+  }
+  
+  .ir-al-inicio:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+  }
+  
+  footer {
+    grid-area: footer;
+  }
+  
+  footer {
+    background-color: #111;
+    font-family: sans-serif;
+    padding-top:2em;
+    padding-bottom: 1em;
+    
+  }
+  
+  footer .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    grid-template-areas: 
+      "nosotros enlaces contacto"
+      "copyrightext copyrightext copyrightext ";
+      justify-items: center;
+  }
+  
+  
+  
+  footer .container h2 {
+    position: relative;
+    color: #Fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  
+  footer .container img{
+    width:50%;
+    margin-bottom: 5px;
+  }
+  
+  footer .container h2::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+  }
+  
+  footer p {
+    color: #999;
+  
+  }
+  
+  .nosotros {
+    grid-area: nosotros;
+    margin-left: 10px;
+  }
+  
+  .redes {
+    margin-top: 20px;
+    display: flex;
+  }
+  
+  .redes li {
+    list-style: none;
+  }
+  
+  .redes li a {
+  
+    width: 40px;
+    height: 40px;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 2px;
+    list-style: none;
+  }
+  
+  .redes li a:hover {
+    background-color: #f00;
+  }
+  
+  .redes li a i {
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  .enlaces ul li {
+    list-style: none;
+  }
+  
+  
+    
+  .enlaces {
+    grid-area: enlaces;
+    justify-self: center;
+    margin-left: 5px;
+  }
+  
+  .enlaces ul li a {
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 6px;
+    display: inline-block;
+  
+  }
+  
+  .enlaces ul li a:hover {
+    color: #fff;
+  }
+  
+  
+  .contacto {
+    grid-area: contacto;
+    justify-self: end;
+    margin-right: 5px;
+  }
+  
+  .contacto ul li {
+    list-style: none;
+    margin-bottom: 16px;
+    padding-right: 5px;
+    
+  }
+  
+  
+  .contacto ul li a {
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 6px;
+  }
+  
+  .contacto span {
+  
+    margin-top: 15px;
+    color: #fff;
+  
+  
+  }
+  
+  
+  .copyrightext{
+      grid-area: copyrightext;
+     
+      text-align: center;
+  
+      margin-top: 30px;
+  
+      font-family: sans-serif;
+  }
