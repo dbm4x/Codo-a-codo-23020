@@ -10,19 +10,25 @@ Trabajo práctico de Desarrollo web con HTML, CSS y Javascript.
 Demo: https://dbm4x.github.io/Codo-a-codo-23020/
 
 
+
+
+
+
 ### Lo que incluye el proyecto:
 
-* 4 páginas HTML.
-* Etiquetas semánticas
+* Cuenta con 4 páginas HTML.
+* Se utilizan etiquetas semánticas
 * Maquetado en Grid/Flexbox
-* Formulario de contacto con validación Javascript y envió por un servicio externo.
-* Fuentes locales y Google Fonts
-* Iframe's
-* Diseño Responsivo con 3 puntos de corte (móvil, tablet y pc)
+* Contiene un formulario de contacto con validación Javascript y envió por un servicio externo.
+* Utiliza fuentes locales y fuentes de Google Fonts
+* Cuenta con iframe's
+* Es un diseño Responsivo con 3 puntos de corte (Móvil, Tablet y PC)
 * Animaciónes/Transiciones
 * API Rest desde JavaScript
-* Uso de Bootstrap en formulario de contacto
-* Subida a GitHub Pages
+* Se utilizo Bootstrap en el formulario de contacto
+* La web esta en GitHub Pages
+
+
 
 ## Autores
 
