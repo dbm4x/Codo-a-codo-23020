@@ -69,7 +69,7 @@ form.addEventListener('submit', e => {
     event.preventDefault();
   } else {
 
-    document.getElementById('envioSpinner').style.display = 'block';
+    document.getElementById('envioSpinner').style.display = 'inline-block';
     document.getElementById('botonEnvio').style.display = 'none';
 
     const enviar = new FormData();
@@ -107,14 +107,14 @@ form.addEventListener('submit', e => {
         const msjOk = document.querySelector('.msj-ok');
         msjOk.style.display = 'block';
         document.getElementById('envioSpinner').style.display = 'none';
-        document.getElementById('botonEnvio').style.display = 'block';
+        document.getElementById('botonEnvio').style.display = 'inline-block';
         form.reset();
     } else {
       response.json().then(data => {
         const msjError = document.getElementById('envio-error');
         msjError.style.display = 'block';
         document.getElementById('envioSpinner').style.display = 'none';
-        document.getElementById('botonEnvio').style.display = 'block';
+        document.getElementById('botonEnvio').style.display = 'inline-block';
 
       })
     }
@@ -122,7 +122,7 @@ form.addEventListener('submit', e => {
     const msjError = document.getElementById('envio-error');
         msjError.style.display = 'block';
         document.getElementById('envioSpinner').style.display = 'none';
-        document.getElementById('botonEnvio').style.display = 'block';
+        document.getElementById('botonEnvio').style.display = 'inline-block';
   });
 }
 
