@@ -71,6 +71,10 @@ Demo: https://dbm4x.github.io/Codo-a-codo-23020/
 
 <br>
 
+### Notas adicionales:
+
+Utilizamos un carrusel de videos de youtube con iframe en la página principal, pero por problemas de carga de la web (Los iframe de Youtube utilizan varios servicios de Google Analytics y analítica web que ralentizaban la web más de 30 segundos), personalizamos los iframe mediante javascript para cargalos al momentos de reproducirlo y evitar la carga innecesaria, de todas maneras utilizamos un iframe como tal que agregamos y utilizamos en la página de contacto ...
+
 ## Autores
 
 - [@dbm4x](https://www.github.com/dbm4x)
