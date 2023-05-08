@@ -19,7 +19,7 @@ Demo: https://dbm4x.github.io/Codo-a-codo-23020/
 * Cuenta con 4 páginas HTML.
 * Se utilizan etiquetas semánticas
 * Maquetado en Grid/Flexbox
-* Contiene un formulario de contacto con validación Javascript y envió por un servicio externo.
+* Contiene un formulario de contacto con validación Javascript y envió por un servicio externo
 * Utiliza fuentes locales y fuentes de Google Fonts
 * Cuenta con iframe's
 * Es un diseño Responsivo con 3 puntos de corte (Móvil, Tablet y PC)
