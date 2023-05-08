@@ -10,7 +10,7 @@ Trabajo práctico de Desarrollo web con HTML, CSS y Javascript.
 Demo: https://dbm4x.github.io/Codo-a-codo-23020/
 
 
-### Lo que incluye el proyecto
+### Lo que incluye el proyecto:
 
 * 4 páginas HTML.
 * Etiquetas semánticas
