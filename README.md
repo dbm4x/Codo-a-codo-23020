@@ -28,6 +28,15 @@ Demo: https://dbm4x.github.io/Codo-a-codo-23020/
 * Se utilizo Bootstrap en el formulario de contacto
 * La web esta en GitHub Pages
 
+### Ubicación de los enlaces:
+
+![Enlace ampliar noticia](https://i.ibb.co/4T1bZXr/Captura-de-pantalla-2023-05-08-070058.png)
+
+![Formulario de contacto](https://i.ibb.co/j9C6Lh0/anunciar.png)
+
+### Datos recibidos a través del formulario de contacto con un servicio externo
+
+![Datos enviados desde formulario hacia un servicio externo](https://i.ibb.co/Vp3vjs8/envio-de-form.png)
 
 
 ## Autores
