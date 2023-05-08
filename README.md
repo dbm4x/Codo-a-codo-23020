@@ -30,7 +30,7 @@ Demo: https://dbm4x.github.io/Codo-a-codo-23020/
 
 ### Ubicación de los enlaces:
 
-![Enlace ampliar noticia](https://i.ibb.co/4T1bZXr/Captura-de-pantalla-2023-05-08-070058.png)
+<img src="https://i.ibb.co/4T1bZXr/Captura-de-pantalla-2023-05-08-070058.png" alt="Enlace ampliar noticia" width="20%" height="auto">
 
 ![Formulario de contacto](https://i.ibb.co/j9C6Lh0/anunciar.png)
 
@@ -45,8 +45,6 @@ Demo: https://dbm4x.github.io/Codo-a-codo-23020/
 - [@Viruxx23](https://github.com/Viruxx23)
 - [@papombo](https://github.com/papombo)
 
-
-<img src="https://i.ibb.co/4T1bZXr/Captura-de-pantalla-2023-05-08-070058.png" alt="Enlace ampliar noticia" width="50%" height="50%">
 
 
 
