@@ -31,14 +31,16 @@ Demo: https://dbm4x.github.io/Codo-a-codo-23020/
 
 * Enlace 1 (Documentación): https://bluelytics.com.ar/#!/api
 * Enlace 2: https://api.bluelytics.com.ar/v2/latest
+* 
+### Ubicación:
+
+<img src="https://i.ibb.co/y59zcNw/dolar.png" alt="Api REST" width="20%" height="auto">
+
+<br>
 
 ### Servicio externo utilizado en el formulario de contacto
 
 * https://formspree.io/
-
-### Ubicación:
-
-<img src="https://i.ibb.co/y59zcNw/dolar.png" alt="Api REST" width="20%" height="auto">
 
 <br>
 
