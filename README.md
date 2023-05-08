@@ -9,9 +9,20 @@ Trabajo práctico de Desarrollo web con HTML, CSS y Javascript.
 
 Demo: https://dbm4x.github.io/Codo-a-codo-23020/
 
-- George Washington
-* John Adams
-+ Thomas Jefferson
+
+### Lo que incluye el proyecto
+
+* 4 páginas HTML.
+* Etiquetas semánticas
+* Maquetado en Grid/Flexbox
+* Formulario de contacto con validación Javascript y envió por un servicio externo.
+* Fuentes locales y Google Fonts
+* Iframe's
+* Diseño Responsivo con 3 puntos de corte (móvil, tablet y pc)
+* Animaciónes/Transiciones
+* API Rest desde JavaScript
+* Uso de Bootstrap en formulario de contacto
+* Subida a GitHub Pages
 
 ## Autores
 
