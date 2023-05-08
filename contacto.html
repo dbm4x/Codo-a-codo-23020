@@ -8,7 +8,7 @@
 
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic"
+      href="https://fonts.googleapis.com/css?family=Kalam:wght@700&family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic"
     />
     <link
       rel="stylesheet"
@@ -22,6 +22,11 @@
       rel="stylesheet"
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
     <!-- FAVICON PARA TODOS LOS DISPOSITIVOS -->
@@ -163,21 +168,21 @@
                 <div class="col-sm-12 col-md-6 col-lg-6">
                   <div class="row">
                     <div class="group col-6">
-                      <input type="text" name="nombre" id="nombre"/>
+                      <input type="text" name="nombre" id="nombre" placeholder=" " />
                       <label>Nombre *</label>
                       <div id="validacion-nombre" class="error-form">
                         <b>Ingrese un nombre</b>
                       </div>
                     </div>
                     <div class="group col-6">
-                      <input type="text" name="apellido" id="apellido"/>
+                      <input type="text" name="apellido" id="apellido" placeholder=" "/>
                       <label>Apellido *</label>
                       <div id="validacion-apellido" class="error-form">
                         <b>Ingrese un apellido</b>
                       </div>
                     </div>
                     <div class="group col">
-                      <input type="text" name="email" id="email"/>
+                      <input type="text" name="email" id="email" placeholder=" "/>
                       <label>Email *</label>
                       <div id="validacion-email-invalido" class="error-form">
                         <b>El e-mail es inválido</b>
@@ -190,6 +195,7 @@
                       name="telefono"
                       id="telefono"
                       maxlength="10"
+					  placeholder=" "
                     />
 
                     <label>Celular de contacto *</label>
@@ -215,7 +221,7 @@
                       <option value="Todos">En cualquier horario</option>
                     </select>
                     <div id="validacion-horario-invalido" class="error-form">
-                      <b>Eliga un horario</b>
+                      <b>Elige un horario</b>
                     </div>
                   </div>
                   <div class="group col">
@@ -226,7 +232,7 @@
                       <option value="Otro">Otro</option>
                     </select>
                     <div id="validacion-genero-invalido" class="error-form">
-                      <b>Eliga un genero</b>
+                      <b>Elige un genero</b>
                     </div>
                   </div>
                 </div>
@@ -268,8 +274,8 @@
           <div class="preg-frecuentes__descrip">
             
 				<div class="video">
-				  <iframe src="https://www.youtube.com/embed/ljB5JIRev_U?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-				</div>
+				 <!---<iframe src="https://www.youtube.com/embed/ljB5JIRev_U?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				 --></div>
 			
             <article>
               <h5>
@@ -350,7 +356,7 @@
           <div class="sobre enlaces">
             <h2>Enlaces rápidos</h2>
             <ul class="list-unstyled">
-              <li class="nav-item"><a href="./">Inicio</a></li>
+              <li class="nav-item"><a href="#">Inicio</a></li>
               <li class="nav-item"><a href="#">Nacionales</a></li>
               <li class="nav-item"><a href="#">Deportes</a></li>
               <li class="nav-item"><a href="#">Tecnología</a></li>
@@ -377,7 +383,7 @@
                 <span
                   ><i class="fa fa-comment-o"></i>
 
-                  <a href="./contacto.html">¿Cómo anunciar?</a>
+                  <a href="#">¿Cómo anunciar?</a>
                 </span>
               </li>
             </ul>
