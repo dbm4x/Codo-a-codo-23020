@@ -15,7 +15,8 @@ Demo: https://dbm4x.github.io/Codo-a-codo-23020/
 * Cuenta con 4 páginas HTML.
 * Se utilizan etiquetas semánticas
 * Maquetado en Grid/Flexbox
-* Contiene un formulario de contacto con validación Javascript y envío por un servicio externo
+* Contiene un formulario de contacto con validación Javascript y envío por un servicio externo a un e-mail.
+* Se utilizan iconos de FontAwesome.
 * Utiliza fuentes locales y fuentes de Google Fonts
 * Cuenta con iframe's
 * Es un diseño Responsivo con 3 puntos de corte (Móvil, Tablet y PC)
@@ -30,6 +31,10 @@ Demo: https://dbm4x.github.io/Codo-a-codo-23020/
 
 * Enlace 1 (Documentación): https://bluelytics.com.ar/#!/api
 * Enlace 2: https://api.bluelytics.com.ar/v2/latest
+
+### Servicio externo utilizado en el formulario de contacto
+
+* https://formspree.io/
 
 ### Ubicación:
 
@@ -58,7 +63,7 @@ Demo: https://dbm4x.github.io/Codo-a-codo-23020/
 
 <br>
 
-### Datos recibidos a través del formulario de contacto con un servicio externo:
+### Datos recibidos a través del formulario de contacto con un servicio externo que luego se envían a un email:
 
 <img src="https://i.ibb.co/Vp3vjs8/envio-de-form.png" alt="Formulario de contacto" width="20%" height="auto">
 
