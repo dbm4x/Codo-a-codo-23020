@@ -10,10 +10,6 @@ Trabajo práctico de Desarrollo web con HTML, CSS y Javascript.
 Demo: https://dbm4x.github.io/Codo-a-codo-23020/
 
 
-
-
-
-
 ### Lo que incluye el proyecto:
 
 * Cuenta con 4 páginas HTML.
@@ -28,16 +24,18 @@ Demo: https://dbm4x.github.io/Codo-a-codo-23020/
 * Se utilizo Bootstrap en el formulario de contacto
 * La web esta en GitHub Pages
 
+<br>
 
 ### Api REST utilizada:
 
-Enlace 1 (Documentación): https://bluelytics.com.ar/#!/api
-Enlace 2: https://api.bluelytics.com.ar/v2/latest
+* Enlace 1 (Documentación): https://bluelytics.com.ar/#!/api
+* Enlace 2: https://api.bluelytics.com.ar/v2/latest
 
 ### Ubicación:
 
 <img src="https://i.ibb.co/y59zcNw/dolar.png" alt="Api REST" width="20%" height="auto">
 
+<br>
 
 ### Ubicación de algunas animaciones y transiciones:
 
@@ -45,6 +43,7 @@ Enlace 2: https://api.bluelytics.com.ar/v2/latest
 
 <img src="https://i.ibb.co/G9ycHq2/animacion2.png" alt="Animación 2" width="20%" height="auto">
 
+<br>
 
 ### Ubicación de los enlaces:
 
@@ -57,13 +56,13 @@ Enlace 2: https://api.bluelytics.com.ar/v2/latest
 
 <img src="https://i.ibb.co/j9C6Lh0/anunciar.png" alt="Formulario de contacto" width="20%" height="auto">
 
-
+<br>
 
 ### Datos recibidos a través del formulario de contacto con un servicio externo:
 
 <img src="https://i.ibb.co/Vp3vjs8/envio-de-form.png" alt="Formulario de contacto" width="20%" height="auto">
 
-
+<br>
 
 ## Autores
 
