@@ -32,11 +32,14 @@ Demo: https://dbm4x.github.io/Codo-a-codo-23020/
 
 <img src="https://i.ibb.co/4T1bZXr/Captura-de-pantalla-2023-05-08-070058.png" alt="Enlace ampliar noticia" width="20%" height="auto">
 
-![Formulario de contacto](https://i.ibb.co/j9C6Lh0/anunciar.png)
+<img src="https://i.ibb.co/j9C6Lh0/anunciar.png" alt="Formulario de contacto" width="20%" height="auto">
+
+
 
 ### Datos recibidos a través del formulario de contacto con un servicio externo
 
-![Datos enviados desde formulario hacia un servicio externo](https://i.ibb.co/Vp3vjs8/envio-de-form.png)
+<img src="https://i.ibb.co/Vp3vjs8/envio-de-form.png" alt="Formulario de contacto" width="20%" height="auto">
+
 
 
 ## Autores
@@ -45,6 +48,8 @@ Demo: https://dbm4x.github.io/Codo-a-codo-23020/
 - [@Viruxx23](https://github.com/Viruxx23)
 - [@papombo](https://github.com/papombo)
 
+
+<img src="https://i.ibb.co/4T1bZXr/Captura-de-pantalla-2023-05-08-070058.png" alt="Enlace ampliar noticia" width="50%" height="50%">
 
 
 
