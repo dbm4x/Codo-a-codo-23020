@@ -28,6 +28,24 @@ Demo: https://dbm4x.github.io/Codo-a-codo-23020/
 * Se utilizo Bootstrap en el formulario de contacto
 * La web esta en GitHub Pages
 
+
+### Api REST utilizada:
+
+Enlace 1 (Documentación): https://bluelytics.com.ar/#!/api
+Enlace 2: https://api.bluelytics.com.ar/v2/latest
+
+### Ubicación:
+
+<img src="https://i.ibb.co/y59zcNw/dolar.png" alt="Api REST" width="20%" height="auto">
+
+
+### Ubicación de algunas animaciones y transiciones:
+
+<img src="https://i.ibb.co/mRSrGzp/animacion1.png" alt="Animación 1" width="20%" height="auto">
+
+<img src="https://i.ibb.co/G9ycHq2/animacion2.png" alt="Animación 2" width="20%" height="auto">
+
+
 ### Ubicación de los enlaces:
 
 ### Enlace ampliar noticia
