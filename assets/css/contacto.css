@@ -247,9 +247,17 @@ a {
     padding: 0 4px
 }
 
-.sectionForm .form-container form input:focus~.bar:before,.sectionForm .form-container form input:focus~.bar:after {
-    width: 50%
+.sectionForm .form-container form input:focus~label,.sectionForm .form-container form :not(:placeholder-shown)~label {
+    top: -10px;
+    font-size: 14px;
+    color: #666;
+    background: #fff;
+    display: block;
+    left: 31px;
+    padding: 0 4px
 }
+
+
 
 .sectionForm .form-container form .highlight {
     position: absolute;
@@ -260,11 +268,7 @@ a {
     opacity: .5
 }
 
-.sectionForm .form-container form input:focus~.highlight {
-    -webkit-animation: inputHighlighter .3s ease;
-    -moz-animation: inputHighlighter .3s ease;
-    animation: inputHighlighter .3s ease
-}
+
 
 .sectionForm .form-container form .required-fields {
     font-family: roboto,sans-serif;
