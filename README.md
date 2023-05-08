@@ -46,6 +46,7 @@ Demo: https://dbm4x.github.io/Codo-a-codo-23020/
 - [@papombo](https://github.com/papombo)
 
 
+<img src="https://i.ibb.co/4T1bZXr/Captura-de-pantalla-2023-05-08-070058.png" alt="Enlace ampliar noticia" width="50%" height="50%">
 
 
 
