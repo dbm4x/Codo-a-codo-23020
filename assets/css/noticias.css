@@ -8,6 +8,79 @@
     color: inherit;
   }
   
+.newsletter {
+    align-self: center;
+    position: sticky;
+    top: 80px;
+    height: auto;
+    margin: 5px;
+  }
+
+  .newsletter .fas.fa-envelope {
+    color: #fff;
+    font-size: 2rem;
+    background: #333;
+    padding: 1rem;
+    border-radius: 100%;
+    margin: 0 0 1rem 0;
+  }
+  
+  .newsletter .card-content {
+
+    max-width: 19rem;
+    background-color: #fff;
+    
+    border-radius: 1rem;
+    padding: 4rem .5rem;
+    box-shadow: 1px 1px 1rem rgba(0,0,0,.3);
+    text-align: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    
+  }
+  
+  .newsletter .card-content h1 {
+    text-transform: uppercase;
+    margin: 0 0 1rem 0;
+  }
+  
+  .newsletter .card-content p {
+    font-size: .8rem;
+    margin: 0 0 2rem 0;
+  }
+  
+  .newsletter input {
+    padding: .6rem 1rem;
+    width: 40%;
+    border-radius: 5rem;
+    outline: none;
+    border: .1rem solid #d1d1d1;
+    font-size: .6rem;
+    margin-bottom: 5px;
+  }
+  
+  .newsletter .form-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .newsletter ::placeholder {
+    color: #d1d1d1;
+  }
+  
+  .newsletter .subscribe-btn {
+    padding: .6rem 1.5rem;
+    border-radius: 5rem;
+    background: linear-gradient(90deg, #ff9966, #ff5e62);
+    color: #fff;
+    font-size: .6rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
   .no-search {
     transform: translate(0);
     transition: transform 0.7s ease-in-out;
@@ -1204,6 +1277,26 @@ line-height: 150%;
   
     @media screen and (min-width: 600px) and (max-width: 768px) { 
 
+         .newsletter {
+        top: 60px;
+      }
+    
+      .newsletter .fas.fa-envelope {
+        font-size: 1em;
+      }
+      
+      .newsletter .card-content {
+
+        padding: 2rem .5rem;
+    
+      }
+      
+      .newsletter .card-content h1 {
+        text-transform: uppercase;
+        margin: 0 0 1rem 0;
+        font-size: 16px;
+      }
+        
       .titular-noticia .capa .lee-tambien {
         font-size: 20px;
         }
@@ -1515,78 +1608,7 @@ line-height: 150%;
   
  
   
-  .newsletter {
-    align-self: center;
-    position: sticky;
-    top: 80px;
-    height: auto;
-    margin: 5px;
-  }
-
-  .newsletter .fas.fa-envelope {
-    color: #fff;
-    font-size: 2rem;
-    background: #333;
-    padding: 1rem;
-    border-radius: 100%;
-    margin: 0 0 1rem 0;
-  }
   
-  .newsletter .card-content {
-
-    max-width: 19rem;
-    background-color: #fff;
-    
-    border-radius: 1rem;
-    padding: 4rem .5rem;
-    box-shadow: 1px 1px 1rem rgba(0,0,0,.3);
-    text-align: center;
-    overflow: hidden;
-    box-sizing: border-box;
-    
-  }
-  
-  .newsletter .card-content h1 {
-    text-transform: uppercase;
-    margin: 0 0 1rem 0;
-  }
-  
-  .newsletter .card-content p {
-    font-size: .8rem;
-    margin: 0 0 2rem 0;
-  }
-  
-  .newsletter input {
-    padding: .6rem 1rem;
-    width: 40%;
-    border-radius: 5rem;
-    outline: none;
-    border: .1rem solid #d1d1d1;
-    font-size: .6rem;
-    margin-bottom: 5px;
-  }
-  
-  .newsletter .form-input {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .newsletter ::placeholder {
-    color: #d1d1d1;
-  }
-  
-  .newsletter .subscribe-btn {
-    padding: .6rem 1.5rem;
-    border-radius: 5rem;
-    background: linear-gradient(90deg, #ff9966, #ff5e62);
-    color: #fff;
-    font-size: .6rem;
-    border: none;
-    outline: none;
-    cursor: pointer;
-  }
   
   .contenido-5-noticia-2 .noticia-columna img {
     max-width: 56%;
