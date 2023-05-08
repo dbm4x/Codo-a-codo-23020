@@ -1,25 +1,66 @@
 
-
-
-
-
-
-
 * {
     margin: 0;
     padding: 0;
    
 }
 
-body {
-    background-color: #f0f0f0;
-    margin: 5px;
-    background: radial-gradient(circle at 50.3% 44.5%, rgb(165, 181, 198) 0%, rgb(43, 72, 104) 100.2%);
-
-
+.no-margin {
+    margin-bottom: 0;
 }
 
+#validacion-nombre {
+display:none;
+}
+
+#validacion-apellido {
+    display:none;
+}
+
+#validacion-email-invalido {
+    display:none;
+}
+
+#validacion-telefono-invalido {
+    display:none;
+}
+
+#validacion-horario-invalido {
+    display:none;
+}
+
+#validacion-genero-invalido {
+    display:none;
+}
+
+#envio-error {
+    display: none;
+}
+
+#envioSpinner {
+    display: none;
+}
+
+
+body {
+    background-color: #f0f0f0 !important;
+    margin: 5px;
+}
+
+a {
+    color: #0d6ccd;
+    text-decoration:none;
+}
+
+@font-face {
+    font-family: iconos;
+    src: url(../fonts/icon-font.ttf);
+}
+
+
 .header {
+    display: flex;
+    align-items: center;
     grid-area: header;
     background-color: white;
     position: sticky;
@@ -27,11 +68,11 @@ body {
     margin-top: 8px;
     margin-bottom: 8px;
     z-index: 1;
-    width: 100%;
+
     overflow-x: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    
+    white-space: nowrap;
   }
   
   .header::before {
@@ -57,17 +98,21 @@ body {
       margin-left: 3em;
   }
   
+  .header .slogan {
+    margin-left: 10px;
+  }
 
   .contenedor {
-  
     display: grid;
     column-gap: 8px;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
   
     grid-template-areas:
-      "header"
-      "contenido"
-      "footer"; 
+      "header header header"
+      "contenido contenido contenido"
+      "footer footer footer"; 
+      margin-left: 5px;
+      margin-right: 5px;
   }
 
   .contenido {
@@ -77,7 +122,7 @@ body {
 .sectionForm .form-container {
 
     margin: 24px auto;
-    background-color: #fff;
+    background-color: white;
     border-radius: 6px;
     padding: 40px 70px;
 }
@@ -125,12 +170,6 @@ body {
     border: 1px solid #ea1f32
 }
 
-.sectionForm .form-container form input.radio-button {
-    border: 0;
-    box-shadow: none;
-    width: auto;
-    padding: 0
-}
 
 .sectionForm .form-container form .label-right-block {
     font-family: roboto,sans-serif;
@@ -138,53 +177,6 @@ body {
     color: #212b36;
     margin-bottom: 13px;
     text-align: left
-}
-
-.sectionForm .form-container form .label-right-block.offer {
-    padding-top: 10px
-}
-
-.sectionForm .form-container form .offers-block {
-    padding-left: 0;
-    list-style: none
-}
-
-.sectionForm .form-container form .offers-block li {
-    display: flex;
-    margin-bottom: 15px;
-    width: fit-content;
-    width: -moz-fit-content;
-    position: relative;
-    cursor: pointer
-}
-
-.sectionForm .form-container form .offers-block li input {
-    position: absolute;
-    opacity: 0
-}
-
-.sectionForm .form-container form .offers-block li input:checked~.radio-button-label {
-    color: #212b36
-}
-
-.sectionForm .form-container form .offers-block li input:checked~.check {
-    border: solid 4px #f02d3e
-}
-
-.sectionForm .form-container form .offers-block li span {
-    color: #899aa3;
-    margin-left: 25px
-}
-
-.sectionForm .form-container form .offers-block li .check {
-    margin-left: 0;
-    position: absolute;
-    top: 5px;
-    left: 0;
-    width: 12px;
-    height: 12px;
-    border: solid 1px #979797;
-    border-radius: 50%
 }
 
 .sectionForm .form-container form div {
@@ -222,13 +214,7 @@ body {
     -webkit-transition: .2s ease all
 }
 
-.sectionForm .form-container form label.radio-button-label {
-    font-size: 14px;
-    line-height: 1.43;
-    color: #899aa3;
-    position: relative;
-    transition: none
-}
+
 
 .sectionForm .form-container form option,.sectionForm .form-container form select {
     font-size: 16px;
@@ -251,7 +237,7 @@ body {
     color: #999
 }
 
-.sectionForm .form-container form input:focus~label,.sectionForm .form-container form input:valid~label {
+.sectionForm .form-container form input:focus~label,.sectionForm .form-container form input:focus~label {
     top: -10px;
     font-size: 14px;
     color: #666;
@@ -289,32 +275,6 @@ body {
     margin: 10px auto
 }
 
-.sectionForm .form-container form .btn-color {
-    background: #f02d3e;
-    border-radius: 30px;
-    width: 230px;
-    height: 60px;
-    margin: 0 auto;
-    font-size: 14px!important;
-    color: #fff;
-    display: block;
-    line-height: 2.5;
-    letter-spacing: 1px;
-    font-weight: 500;
-    font-family: roboto,sans-serif;
-    border: 0;
-    box-shadow: none;
-    padding: 0
-}
-
-.sectionForm .form-container form .btn-color:hover {
-    color: #fff;
-    background: #ee3548!important
-}
-
-.sectionForm .form-container form .btn-color:focus {
-    color: #fff
-}
 
 .sectionForm .msj {
     display: none;
@@ -354,48 +314,32 @@ body {
     border-bottom: 20px solid #31b404
 }
 
-.sectionForm .msj.msj-subscriber {
-    background: #cf3141
+
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 38px;
 }
 
-.sectionForm .msj.msj-subscriber span:after {
-    border-bottom: 20px solid #cf3141
+.video iframe {
+    max-width: 560px;
+    width: 100%;
+
+    max-height: 315px;
+    height: 100%;
+    aspect-ratio: 16/9; /* relación de aspecto 16:9 */
+
 }
 
-.sectionForm .msj.msj-subscriber a {
-    text-decoration: none
-}
-
-.sectionForm .msj .btn-white {
-    background: #fff!important;
-    color: #cf3141!important;
-    border-radius: 30px;
-    width: 200px;
-    height: 50px;
-    margin: 15px auto 0;
-    font-size: 14px!important;
-    display: block;
-    line-height: 3.5;
-    letter-spacing: 1px;
-    font-weight: 700;
-    font-family: roboto,sans-serif;
-    border: 0;
-    box-shadow: none;
-    padding: 0
-}
-
-.sectionForm .msj .btn-white:hover {
-    background: #fff!important;
-    color: #cf3141!important
-}
-
-@media(min-width: 1024px) and (max-width:1300px) {
+@media(min-width: 880px) {
     .sectionForm .form-container {
         width:80%
     }
 }
 
-@media(max-width: 1023px) {
+@media(max-width: 880px) {
     .sectionForm {
         margin-bottom:20px
     }
@@ -418,11 +362,11 @@ body {
 
 @media(max-width: 700px) {
     .sectionForm .form-container .form-title-block h3 {
-        font-size:16px
+        font-size:24px
     }
 
     .sectionForm .form-container .form-title-block p {
-        font-size: 14px
+        font-size: 15px
     }
 
     .sectionForm .form-container form .main-cols {
@@ -433,14 +377,15 @@ body {
 
 
 
-.preg-frecuentes__descrip>article:not(:last-child):before {
-    content: ">";
+.preg-frecuentes__descrip>article:not(:last-child):not(:first-child):before {
+    content: "\E905";
     position: absolute;
     top: 3px;
     left: 0;
     font-size: 24px;
     font-weight: bold;
-    color: #0250c9;
+    color: #0d6ccd;
+    font-family: iconos;
 }
 
 .preg-frecuentes {
@@ -450,7 +395,7 @@ body {
     flex-wrap: nowrap;
     border: thin solid #ccc;
     border-radius: 6px;
-    padding: 40px;
+    padding: 35px;
     background-color: #fefefe;
     margin-bottom: 3em;
     margin-top: 40px;
@@ -477,7 +422,6 @@ body {
     animation-fill-mode: forwards;
 }
 
-
 .ir-al-inicio {
     background-color: white;
     color: red;
@@ -498,11 +442,11 @@ body {
     cursor: pointer;
   }
   
-  footer {
+   footer {
     grid-area: footer;
   }
   
-  footer {
+   .final {
     background-color: #111;
     font-family: sans-serif;
     padding-top:2em;
@@ -510,7 +454,7 @@ body {
     
   }
   
-  footer .container {
+   .final .contenido {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
@@ -520,21 +464,20 @@ body {
       justify-items: center;
   }
   
-  
-  
-  footer .container h2 {
+ .final .contenido h2 {
     position: relative;
     color: #Fff;
     font-weight: 500;
+    font-size: 24px;
     margin-bottom: 15px;
   }
   
-  footer .container img{
+   .final .contenido img{
     width:50%;
     margin-bottom: 5px;
   }
   
-  footer .container h2::before {
+ .final .contenido h2::before {
     content: '';
     position: absolute;
     bottom: -5px;
@@ -544,26 +487,27 @@ body {
     background: #f00;
   }
   
-  footer p {
+   .final p {
     color: #999;
   
   }
   
-  .nosotros {
+   .nosotros {
     grid-area: nosotros;
     margin-left: 10px;
   }
   
-  .redes {
+   .redes {
     margin-top: 20px;
     display: flex;
   }
   
-  .redes li {
+   .redes li {
     list-style: none;
+    
   }
   
-  .redes li a {
+   .redes li a {
   
     width: 40px;
     height: 40px;
@@ -577,28 +521,28 @@ body {
     list-style: none;
   }
   
-  .redes li a:hover {
+    .redes li a:hover {
     background-color: #f00;
   }
   
-  .redes li a i {
+    .redes li a i {
     color: #fff;
     font-size: 20px;
   }
   
-  .enlaces ul li {
+    .enlaces ul li {
     list-style: none;
   }
   
   
     
-  .enlaces {
+   .enlaces {
     grid-area: enlaces;
     justify-self: center;
     margin-left: 5px;
   }
   
-  .enlaces ul li a {
+    .enlaces ul li a {
     color: #999;
     text-decoration: none;
     margin-bottom: 6px;
@@ -606,18 +550,18 @@ body {
   
   }
   
-  .enlaces ul li a:hover {
+   .enlaces ul li a:hover {
     color: #fff;
   }
   
   
-  .contacto {
+   .contacto {
     grid-area: contacto;
     justify-self: end;
     margin-right: 5px;
   }
   
-  .contacto ul li {
+   .contacto ul li {
     list-style: none;
     margin-bottom: 16px;
     padding-right: 5px;
@@ -625,13 +569,13 @@ body {
   }
   
   
-  .contacto ul li a {
+    .contacto ul li a {
     color: #999;
     text-decoration: none;
     margin-bottom: 6px;
   }
   
-  .contacto span {
+   .contacto span {
   
     margin-top: 15px;
     color: #fff;
@@ -640,7 +584,7 @@ body {
   }
   
   
-  .copyrightext{
+   .copyrightext{
       grid-area: copyrightext;
      
       text-align: center;
@@ -649,3 +593,66 @@ body {
   
       font-family: sans-serif;
   }
+
+  @media screen and (max-width: 599px) {
+
+ 
+    
+    .header {
+        justify-content: center;
+    }
+
+    .logo img {
+    margin-left: 0px;
+    }
+
+    .final .contenido {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    
+        grid-template-areas: 
+         
+          "enlaces contacto"
+          "enlaces contacto"
+          "nosotros nosotros"
+          "copyrightext copyrightext";
+      }
+    
+      .nosotros {
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 25px;
+      }
+    
+      .nosotros img {
+        max-width: 150px;
+        width: 100%;
+        height: auto;
+        
+      }
+    
+      .nosotros .redes {
+        margin-top: 0px;
+      }
+
+      .final .sobre.nosotros p {
+        display: none;
+      }
+
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 768px) {
+    .redes {
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+  
+      }
+
+      .final .sobre.nosotros p {
+        display: none;
+      }
+  } 
