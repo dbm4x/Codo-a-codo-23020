@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/noticias.css" />
+    <link rel="stylesheet" href="assets/css/loaders.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Monoton&family=Libre+Franklin&family=Asap+Condensed:wght@400&family=Open+Sans&family=EB+Garamond&family=Lato&family=Montserrat:ital,wght@0,300;0,500;1,400&family=Roboto:wght@300;400;700&display=swap&family=Lora:ital@1&family=Noto+Serif&family=Roboto+Condensed:ital@1&display=swap"
+    rel="stylesheet"
+  />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.0/swiper-bundle.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- FAVICON PARA TODOS LOS DISPOSITIVOS -->
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="57x57"
+      href="assets/img/favicon/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="114x114"
+      href="assets/img/favicon/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="assets/img/favicon/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="assets/img/favicon/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="60x60"
+      href="assets/img/favicon/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="120x120"
+      href="assets/img/favicon/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="76x76"
+      href="assets/img/favicon/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="152x152"
+      href="assets/img/favicon/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/img/favicon/favicon-196x196.png"
+      sizes="196x196"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/img/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/img/favicon/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/img/favicon/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/img/favicon/favicon-128.png"
+      sizes="128x128"
+    />
+    <meta name="application-name" content="&nbsp;" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta
+      name="msapplication-TileImage"
+      content="assets/img/favicon/mstile-144x144.png"
+    />
+    <meta
+      name="msapplication-square70x70logo"
+      content="assets/img/favicon/mstile-70x70.png"
+    />
+    <meta
+      name="msapplication-square150x150logo"
+      content="assets/img/favicon/mstile-150x150.png"
+    />
+    <meta
+      name="msapplication-wide310x150logo"
+      content="assets/img/favicon/mstile-310x150.png"
+    />
+    <meta
+      name="msapplication-square310x310logo"
+      content="assets/img/favicon/mstile-310x310.png"
+    />
+
+    <!-- FIN DE FAVICON PARA TODOS LOS DISPOSITIVOS -->
+    <title>Noticias - Prensa Del Plata - Toda la actualidad del mundo</title>
+  </head>
+  <body>
+    <div class="loader loader-bg">
+      <div class="loader-inner ball-pulse-rise">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="contenedor">
+      <header>
+        <nav class="navbar" id="top">
+          <div class="logo">
+            <a href="./"
+              ><img
+                class="logosize"
+                src="assets/img/logo.png"
+                alt="Logo de prensa del Plata"
+              />
+              <div class="slogan">
+                <p><i>20 años informando</i></p>
+              </div>
+            </a>
+          </div>
+
+          <ul class="menus no-search">
+            <li class="nav-item"><a href="./">Inicio</a></li>
+            <li class="nav-item"><a href="#">Nacionales</a></li>
+            <li class="nav-item"><a href="#">Deportes</a></li>
+            <li class="nav-item"><a href="#">Tecnología</a></li>
+            <li class="nav-item"><a href="#">Internacionales</a></li>
+          </ul>
+
+          <div class="suscripcion">
+            <a href="#"><b>Suscribite por $95</b></a>
+          </div>
+
+          <div class="menuDrop" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+
+        <div class="noticiasFlash">
+          <div class="flash-estilo">Noticias flash</div>
+          <div class="marquesina-noticia">
+            <div class="marquesina">
+              <span
+                >Una niña de 9 años sufrió la amputación de un brazo y lucha por su vida tras el brutal ataque de una jauría</span
+              >
+              <span
+                >Paro de colectivos en el AMBA: qué líneas dejan de circular por el robo a un chofer</span
+              >
+              <span
+                >Un hombre raptó y abusó de una chica de 16 años: lo detuvieron cerca del lugar del ataque</span
+              >
+              <span
+                >Israel bombardeó la Franja de Gaza y mató a 13 palestinos, entre ellos a tres jefes de la Yihad Islámica</span
+              >
+              <span
+                >En Francia aseguran que Lionel Messi acordó un contrato récord para jugar en Al Hilal de Arabia Saudita
+              </span>
+            </div>
+          </div>
+          <div class="tiempo">
+            <div class="clima">
+              <div class="icon">
+                <i class="fa fa-sun-o spin glow"></i>
+                <i class="fa fa-cloud wind"></i>
+                <i class="fa fa-cloud two"></i>
+              </div>
+              <div class="grados">
+                <b><i>18&deg;</i></b>
+              </div>
+            </div>
+            <div>
+              <time id="fecha-actual" class="fecha-actual"></time>
+            </div>
+          </div>
+        </div>
+        <div class="barra-dolar-search">
+          <div class="temas-hoy">
+            <b>Temas de hoy:</b> <a href="#">Crisis económica</a>
+            <a href="#">Interna en el FdT</a><a href="#">Dólar</a>
+            <a href="#">blue hoy</a> <a href="#">Supercohete “Starship”</a>
+            <a href="#">River Plate</a>
+          </div>
+          <div class="dolar">
+            DÓLAR BLUE <strong id="dolar-blue">...</strong>
+            <span class="indicador"></span><span> 2,13%</span> DÓLAR BNA
+            <strong id="dolar-bna">...</strong> <span class="indicador"></span
+            ><span> 0,22%</span>
+          </div>
+          <div class="buscador">
+            <input
+              class="buscador-input"
+              type="text"
+              placeholder="Buscar ..."
+            />
+            <button class="buscador-boton"><i class="fa fa-search"></i></button>
+          </div>
+        </div>
+      </header>
+      <main class="contenido">
+        <section class="titular-noticia">
+          <article class="capa">
+            <div class="categoria">
+              <h1 class="neon" data-text="U">
+                <span class="flicker-slow">E</span>sp<span class="flicker-slow"
+                  >ectá</span
+                >c<span>u</span><span class="flicker-fast">L</span>O
+              </h1>
+            </div>
+            <h1>
+              Bizarrap deslumbró en su primer show propio: Duki de invitado,
+              homenaje a Lionel Messi y una puesta 360°
+            </h1>
+            <div class="autor">
+              <p class="fecha-autor">Fecha: 21/04/2023 | Autor: Juan Manuel</p>
+
+              <div class="compartir">
+                <a class="ic-d">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a class="ic-d">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a class="ic-d">
+                  <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                </a>
+                <a class="ic-d">
+                  <i class="fa fa-link" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <p class="subtitulo">
+              Con imponente show de luces dio un espectáculo histórico que será
+              bisagra en la escena musical. El productor deslumbró con un
+              setlist plagado de éxitos en el que recorrió sus mejores sessions
+            </p>
+            <img
+              src="https://www.infobae.com/new-resizer/EKW8oRejhw9EVY-LuP4OhE84CtM=/1440x960/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/6EU5VUA5T5AWFJCC5DIHWXH3JM.jpg"
+            />
+            <div class="noticia-desc">
+              <p>
+                <i
+                  >Bizarrap hizo delirar a 20.000 personas en una noche
+                  inolvidable</i
+                >
+              </p>
+            </div>
+            <br />
+            <p class="texto">
+              “No sé si saben pero es mi primer show propio, y la verdad que es
+              muy emocionante para mí que haya tanta gente. No…no sé, no me
+              salen las palabras, les juro que estoy muy emocionado”, decía
+              <b>Bizarrap</b> en una mezcla de nervios y emociones gigantes
+              minutos después de cerrar su primera noche en el
+              <b>Hipódromo de Palermo</b> ante 20.000 personas. A cinco años de
+              haber comenzado con las sessions, una noche confluyeron las
+              ansias, las expectativas y la emoción de cada una de esas tardes
+              de miércoles en las que cada fan esperaba la hora exacta para que
+              saliera una nueva. Toda esa mezcla de sentimientos se tradujeron
+              en esta cita inolvidable que marcará un antes y un después.
+            </p>
+
+            <p class="texto">
+              Entre una nube de humo y luces, mientras algunos fuegos
+              artificiales salían despedidos al cielo, el productor se hizo
+              presente en la noche porteña. Enseguida empezó a sonar el beat de
+              una de las session más escuchadas, la número #36 de
+              <b>Nathy Peluso</b>. A partir de entonces el tiempo pareció no
+              avanzar.
+            </p>
+
+            <div class="video">
+              <iframe
+                src="https://www.youtube.com/embed/kkdxas3YKyI"
+                title="Bizarrap rompió el Hipódromo de Palermo"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div class="lee-tambien">
+              <i
+                ><b>Leé también: </b
+                ><a href="#"
+                  >Bizarrap habló de su pasión por la música: “Si me encierro en
+                  un estudio, puedo pasar 20 horas”</a
+                >
+              </i>
+            </div>
+
+            <p class="texto">
+              Con un show único de 360° -y con transmisión de DirectTV y
+              DirecTVgo-, el artista que es profeta en su tierra comenzó un
+              espectáculo histórico que será bisagra en la escena musical. Desde
+              un escenario imponente y un sonido envolvente que hacía vivir la
+              experiencia desde cualquier lugar del campo unió éxito tras éxito.
+              Siguieron las Music Session de <b>L-Gante</b>, <b>Ptazeta</b>,
+              <b>Eladio Carrión</b>, <b>Chucky 73</b>, <b>Morad</b>,
+              <b>MHD</b> y <b>Residente</b>.
+            </p>
+
+            <p class="texto">
+              No importaba desde donde se viera o se escuchara, la experiencia
+              visual y sonora hacía que cualquier punto del predio fuera
+              excelente. En gran parte se debió a los 120 sistemas de sonido
+              distribuidos en las 13 torres de audio que rodeaban el Hipódromo
+              de Palermo. Sin embargo, la esencia estaba en el centro de ese
+              óvalo que reunía a 20.000 personas, desde ahí se apreciaban
+              enteramente las visuales y se podía tomar perspectiva de la
+              magnitud del show.
+            </p>
+
+            <img
+              src="https://www.infobae.com/new-resizer/d8ifFgQYKu9CqwGJ-A6xyqJZGoQ=/1440x960/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/TWPMJE6QFZGF7JM732BYZBLI5U.jpg"
+            />
+            <div class="noticia-desc">
+              <p>
+                <i
+                  >La noche comenzó con las session de Nathy Peluso, L-Gante,
+                  Ptazeta, Eladio Carrion y Chucky 73
+                </i>
+              </p>
+            </div>
+
+            <p class="texto">
+              En el centro del escenario, dirigiendo la fiesta, se encontraba
+              Bizarrap. Con su clásica gorra negra, sus lentes y su camperón
+              arengaba la noche. Con una mano en su consola y la otra alentando
+              para saltar cada vez más alto, el productor siguió con
+              <b>Dani</b>, <b>Aleman</b>, <b>YSY A</b>, <b>Polimá Westcoast</b>,
+              <b>Villano</b> Antillano y la más reciente de todas, la de
+              <b>Arcángel</b>.
+            </p>
+
+            <p class="texto">
+              El reloj marcó las 22 horas cuando Bizarrap recibió al único
+              invitado de la noche, Duki. Iniciando con ‘Bottas’, el trapero
+              recorrió todo el escenario hasta llegar al centro junto al
+              productor. Allí siguió con ' Sin Frenos’, hasta que en un momento
+              bajó la música y dijo: “A ver si se saben esta”. Así empezó a
+              rapear a capela su Music Session 50. Después del anhelado tema,
+              que había surgido de la promesa de si Argentina ganaba la Copa
+              América, el artista cerró su participación con ‘Givenchy’. Pero
+              antes de irse, Duki tuvo unas emotivas palabras para Bizarrap y el
+              público: “Gente, gracias por el amor, gracias por el lugar,
+              gracias por el respeto, gracias Argentina, gracias Buenos Aires
+              por criarme y verme nacer. Bizarrap hay uno solo y es argentino”.
+              A lo que enseguida Biza respondió: “Siempre te lo digo, para mi
+              este es el número uno y es lo más grande que hay el Duko, te amo
+              Dukito”.
+            </p>
+
+            <p class="texto">
+              <img
+                src="https://www.infobae.com/new-resizer/BDAOPM1aNFaBt1UfsQGY31Kp9MU=/1440x810/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/L2UO3ZWO3FEIZGYRH3JGC6JTQU.jpg"
+              />
+            </p>
+
+            <div class="lee-tambien">
+              <i
+                ><b>Leé también: </b
+                ><a href="#"
+                  >Todo lo que hay que saber sobre los shows que Bizarrap dará
+                  en Buenos Aires.</a
+                >
+              </i>
+            </div>
+
+            <p class="texto">
+              La noche también tuvo lugar para los homenajes de la Selección
+              Argentina, por la obtención de la tercera copa del mundo, y hasta
+              para Lionel Messi.
+            </p>
+            <p class="texto">
+              Para afirmar aún más este camino y dejar en claro que nada le vino
+              de arriba, Bizarrap cerró la noche mostrando que nunca conoció
+              límites. Ese mensaje lo dieron las session de
+              <b>Shakira</b> –trabajo que ingresó al Récord Guinness por todos
+              los récord que rompió– y la de <b>Quevedo</b>, dos éxitos
+              mundiales que muestran de qué es capaz Bizarrap.
+            </p>
+
+            <img
+              src="https://www.infobae.com/new-resizer/o8h78H72m27O3DMPhDLlSkBnuWg=/1440x960/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/MQEMR7DTTJEUXN3ELJJ4V7SVCU.jpg"
+            />
+            <div class="noticia-desc">
+              <p>
+                <i>El productor dio su primer show propio</i>
+              </p>
+            </div>
+
+            <p class="texto">
+              “Muchas gracias, no tengo nada más que agradecerles a todos por
+              estar acá. Para mi es un sueño todo esto que estoy viviendo y
+              gracias por acompañarme, en serio. Yo nunca soy muy expresivo pero
+              de verdad estoy muy emocionado, contento de que estén todos acá,
+              muchísimas gracias. No tengo palabras”, cerró el artista en una
+              mezcla de emociones mientras miraba al cielo y luego recorría con
+              una expresión atónita al público, mientras la gente coreaba: “Olé,
+              olé, olé, olé, Biza, Biza”.
+            </p>
+
+            <div class="lee-tambien">
+              <i
+                ><b>Te puede interesar también:</b><br /><br />
+                <p>
+                  <a href="#"
+                    >Gerard Piqué propuso hacer una sesión con Bizarrap para
+                    responderle a Shakira</a
+                  >
+                </p>
+                <br />
+                <p>
+                  <a href="#"
+                    >Shakira y Piqué facturan: las millonarias sumas que reciben
+                    los dos tras su separación</a
+                  >
+                </p>
+              </i>
+            </div>
+
+            <div class="tags">
+              <h2>Tags de este artículo:</h2>
+              <div class="noticia-tags">
+                <a class="noticia-tag" href="#">Bizarrap</a
+                ><a class="noticia-tag" href="#">BZRP Live Tour</a
+                ><a class="noticia-tag" href="#">Bizarrap Music Session</a
+                ><a class="noticia-tag" href="#">Hipódromo de Palermo</a
+                ><a class="noticia-tag" href="#">Duki</a>
+                <a class="noticia-tag" href="#">Últimas noticias</a>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="contenido-4">
+          <article class="contenido-4-noticia-1">
+            <div class="contenido-4-fila">
+              <img
+                src="https://www.infobae.com/new-resizer/UFzfBd_9bYkoW7cW-3mGPy-x9n0=/992x558/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/BOTIBPA5WFBHVPH6Q5R65TSCSY.jpg"
+                alt="Imagen 1"
+              />
+              <h3>
+                Roger Waters agotó su primera función y ya es récord: es el
+                artista con más shows en River de toda la historia
+              </h3>
+              <p class="fecha-autor">Fecha: 21/04/2023 | Autor: Juan Manuel</p>
+              <p>
+                El ex Pink Floyd se presentará el 21 de noviembre en el estadio
+                Más Monumental de Buenos Aires, en el marco de su gira despedida
+                This Is Not a Drill¡. Y la alta demanda de tiquets obligó a
+                sumar otro show, un día después
+              </p>
+            </div>
+          </article>
+          <article class="contenido-4-noticia-2">
+            <div class="contenido-4-fila">
+              <img
+                src="https://tn.com.ar/resizer/6Wma8XpwsZBNLEdphaYsv-ZymoI=/650x0/smart/filters:format(webp)/cloudfront-us-east-1.images.arcpublishing.com/artear/X3F54J3KCZH2LK4HZARK5AYU2M.jpg"
+                alt="Imagen 1"
+              />
+              <h3>
+                La primera foto de Mirtha Legrand a días de su cirugía: glamour
+                y té con amigas
+              </h3>
+              <p class="fecha-autor">Fecha: 21/04/2023 | Autor: Juan Manuel</p>
+              <p>
+                Luego de haberse sometido a una cirugía para colocarse un
+                marcapasos de última generación, Mirtha Legrand recibió el alta
+                médica y retomó sus reuniones sociales.
+              </p>
+            </div>
+          </article>
+          <article class="contenido-4-noticia-3">
+            <div class="contenido-4-fila">
+              <img
+                src="https://tn.com.ar/resizer/zGcFQu3roufrkiCgxgTR1VyNax0=/350x0/smart/filters:format(webp)/cloudfront-us-east-1.images.arcpublishing.com/artear/3WWCBDK7RVBMBATVXPSLEJES6M.jpg"
+                alt="Imagen 1"
+              />
+              <h3>
+                Los guionistas de Hollywood iniciaron un paro histórico que
+                frenó la producción de series y películas
+              </h3>
+              <p class="fecha-autor">Fecha: 21/04/2023 | Autor: Juan Manuel</p>
+              <p>
+                Los guionistas de Hollywood convocaron el pasado 2 de mayo a una
+                huelga general después de no llegar a un acuerdo con la Alianza
+                de Productores de Cine y Televisión (AMPTP). Si se sostienen las
+                manifestaciones del Sindicato de Escritores de América (WGA) en
+                Nueva York, Los Ángeles y Atlanta, los principales estudios
+                comunicaron que recurrirán a la suspensión de contratos.
+              </p>
+            </div>
+          </article>
+        </section>
+
+        <section class="contenido-5">
+          <div class="contenido-5-noticia-titulo">
+            <div class="noticia">
+              <div class="titulo">
+                <h3>Deportes</h3>
+              </div>
+            </div>
+          </div>
+          <article class="contenido-5-noticia-1">
+            <div class="fila">
+              <img
+                src="https://www.infobae.com/new-resizer/0T3XlBJ3sBqUMJ3hlQ6vjNijXiU=/992x558/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/K6HXBRRA7NBVDF3NXQV4MAE6TU"
+                alt="Imagen 1"
+              />
+              <div class="contenidos">
+                <h2>
+                  En Francia aseguran que Lionel Messi acordó un contrato récord
+                  para jugar en Al Hilal de Arabia Saudita
+                </h2>
+                <p class="fecha-autor">
+                  Fecha: 21/04/2023 | Autor: Juan Manuel
+                </p>
+                <p>
+                  Medios franceses y españoles aseguran que el capitán de la
+                  selección argentina avanzó en las negociaciones para emigrar
+                  al elenco conducido por su compatriota Ramón Díaz
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="contenido-5-noticia-2">
+            <div class="noticia-columna">
+              <img
+                src="https://www.infobae.com/new-resizer/h0O_k0a-3ykJ7OOiayShm1XUkZY=/768x432/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/OR3EOANMEJDELPBQ3KMHARELQM.JPG"
+                alt="Imagen 1"
+              />
+              <div class="contenidos">
+                <h2>
+                  Superclásico en la mira de la Justicia: las múltiples causas
+                  que se abrieron y las posibles sanciones
+                </h2>
+                <p class="fecha-autor">Fecha: 21/04/2023 | Autor: Rocío Alen</p>
+                <p>
+                  Además de Marcos Rojo, Agustín Palavecino y Luis V´zquez,
+                  otros futbolistas podrían quedar imputados. Hasta los festejos
+                  de cara a los hinchas de River quedaron bajo la lupa
+                </p>
+              </div>
+            </div>
+            <div class="noticia-columna">
+              <img
+                src="https://www.infobae.com/new-resizer/WtiHc2yCt1PEKEufq0CN6hmHBug=/992x558/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/Y4DSTYS7TRCWXJNUJGTVPA2A4M.png"
+                alt="Imagen 1"
+              />
+              <div class="contenidos">
+                <h2>
+                  Real Madrid recibe al Manchester City por la ida de las
+                  semifinales de la Champions League, en vivo: hora, TV y
+                  formaciones
+                </h2>
+                <p class="fecha-autor">Fecha: 21/04/2023 | Autor: Rocío Alen</p>
+                <p>
+                  El conjunto de Pep Guardiola visita el Santiago Bernabéu a
+                  partir de las 16 horas. Transmite Star+ y ESPN
+                </p>
+              </div>
+            </div>
+          </article>
+        </section>
+        <aside class="sidebar">
+          <div class="noticia">
+            <div>
+              <div class="titulo">
+                <h3>Últimas noticias</h3>
+              </div>
+              <div class="fila">
+                <img
+                  src="https://tn.com.ar/resizer/Bq_3MwuN-9XsHNuiF90Gb1cwD7s=/350x0/smart/filters:format(webp)/thumbs.vodgc.net/1-398-aaf3713e7e3b448eb8dfd290fa309e24-lDNARC1683591118050-1683594589.jpg"
+                  alt="Imagen 1"
+                />
+                <p>
+                  Se supo por qué Wanda Nara le puso fin a su historia con
+                  L-Gante: “Zaira no la bancó y su mamá se enojó”
+                </p>
+              </div>
+              <div class="titulo"></div>
+              <div class="fila">
+                <img
+                  src="https://tn.com.ar/resizer/pprZLd9glSzif7q9bgjewbHixm0=/500x0/smart/filters:format(webp)/cloudfront-us-east-1.images.arcpublishing.com/artear/5EPZ4OA64JFA3AHORXZX6ARQN4.jpg"
+                  alt="Imagen 1"
+                />
+                <p>
+                  Dalma y Gianinna Maradona le lanzaron una dura advertencia al
+                  médico Leopoldo Luque: “Tenés los días contados”
+                </p>
+              </div>
+
+              <div class="titulo"></div>
+              <div class="fila">
+                <img
+                  src="https://tn.com.ar/resizer/KLQrynxwFb3FBCGI4tCnVg3IBf4=/350x0/smart/filters:format(webp)/thumbs.vodgc.net/1-398-8b2816ddc9784c89a8a3b279f26a531b-tI4wU01683572492305-1683578060.jpg"
+                  alt="Imagen 1"
+                />
+                <p>
+                  Jey Mammon reapareció tras la denuncia de abuso sexual y
+                  advirtió: “Quienes hayan mentido irán a la Justicia”
+                </p>
+              </div>
+              <div class="titulo"></div>
+              <div class="fila">
+                <img
+                  src="https://tn.com.ar/resizer/U2KebydYrgqgAPjlDFZ9mK_STyY=/500x0/smart/filters:format(webp)/cloudfront-us-east-1.images.arcpublishing.com/artear/UCBW5ZCGQJC6NEL7S25NZ4VYMI.jpg"
+                  alt="Imagen 1"
+                />
+                <p>
+                  Jorge Rial compartió su primera selfie tras recibir el alta
+                  médica: “Próximo paso, vuelta a casa”
+                </p>
+              </div>
+
+              <div class="titulo"></div>
+              <div class="fila">
+                <img
+                  src="https://tn.com.ar/resizer/Vb7_3DdLhja5ze44JwcwkUgaNlI=/500x0/smart/filters:format(webp)/cloudfront-us-east-1.images.arcpublishing.com/artear/LFNJPRR4C5ESXD2B2VKNNY65W4.jpg"
+                  alt="Imagen 1"
+                />
+                <p>
+                    Confirmaron que La Joaqui, María Becerra, Trueno y L-Gante se presentarán en vivo en los Premios Gardel
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="noticia2">
+            <div>
+              <div class="titulo">
+                <h3>Más noticias</h3>
+              </div>
+              <div class="fila">
+                <img
+                  src="https://tn.com.ar/resizer/nJgW_DgeCMdoXj44eKGR2vBPN_Q=/767x0/smart/filters:format(webp)/thumbs.vodgc.net/1-398-8306e6c378da4b7b80d72eda413fcdea-E3prvo1683590633813-1683590903.jpg"
+                  alt="Imagen 1"
+                />
+                <p>
+                  Vivir aislado en el medio del paraíso: la historia de Simón,
+                  el hombre más solitario del país
+                </p>
+              </div>
+              <div class="titulo"></div>
+              <div class="fila">
+                <img
+                  src="https://tn.com.ar/resizer/sz2VT6WZ4wY4RsQrgJ2ISae8txM=/767x0/smart/filters:format(webp)/cloudfront-us-east-1.images.arcpublishing.com/artear/KRBARM6JHZDMXERPOTJERE2MLU.jpg"
+                  alt="Imagen 1"
+                />
+                <p>
+                  El escritor argentino Hernán Díaz ganó el Premio Pulitzer en
+                  la categoría Ficción por su novela “Fortuna”
+                </p>
+              </div>
+
+              <div class="titulo"></div>
+              <div class="fila">
+                <img
+                  src="https://tn.com.ar/resizer/qdlKGVwf8XmWWqNFL-TWO977XBk=/767x0/smart/filters:format(webp)/cloudfront-us-east-1.images.arcpublishing.com/artear/FXYPUQP3XZBVXJDHNNMQWPIENM.png"
+                  alt="Imagen 1"
+                />
+                <p>
+                  Paro de colectivos: qué líneas dejaron de circular en AMBA
+                </p>
+              </div>
+              <div class="titulo"></div>
+              <div class="fila">
+                <img
+                  src="https://tn.com.ar/resizer/McoVCb8ScwcZl4P9ol7vda3mJfY=/767x0/smart/filters:format(webp)/cloudfront-us-east-1.images.arcpublishing.com/artear/6BQHDQYZWRGBBNFOTHBURAAZR4.jpg"
+                  alt="Imagen 1"
+                />
+                <p>
+                  La historia de dos amigos que crearon un robot con
+                  Inteligencia Artificial para interpretar la lengua de señas
+                </p>
+              </div>
+
+              <div class="titulo"></div>
+              <div class="fila">
+                <img
+                  src="https://tn.com.ar/resizer/g8GDgx6B6weFkPhED1JgUxxw-2c=/767x0/smart/filters:format(webp)/thumbs.vodgc.net/1-14516-lnvqMS1683477001740-1683477600.jpg"
+                  alt="Imagen 1"
+                />
+                <p>
+                  Un avión hacía acrobacias en Río Negro, estrelló una de sus
+                  alas contra el suelo y casi provoca una tragedia
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="newsletter">
+            <form action="#" class="card-content">
+              <div class="container">
+                <div class="image">
+                  <i class="fa fa-envelope fa-2x"></i>
+                </div>
+                <h1>Recibí todas las novedades</h1>
+                <p>Suscribíte al newsletter y mantenete informado.</p>
+              </div>
+              <div class="form-input">
+                <label for="email"></label>
+                <input type="email" placeholder="E-mail" />
+                <button class="subscribe-btn">Subscribirme</button>
+              </div>
+            </form>
+          </div>
+        </aside>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="sobre nosotros">
+            <img src="assets/img/logo.png" alt="" />
+            <p>
+              Prensa del Plata es una empresa de periodismo nacida en Buenos
+              Aires. Hoy en día, Prensa del Plata es una de las empresas de
+              periodismo más importantes del país. A través de su sitio web y
+              sus redes sociales, la empresa sigue contando las historias que
+              importan y llevando la información a todos los rincones del país.
+            </p>
+            <ul class="redes">
+              <li>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="sobre enlaces">
+            <h2>Enlaces rápidos</h2>
+            <ul>
+              <li class="nav-item"><a href="./">Inicio</a></li>
+              <li class="nav-item"><a href="#">Nacionales</a></li>
+              <li class="nav-item"><a href="#">Deportes</a></li>
+              <li class="nav-item"><a href="#">Tecnología</a></li>
+              <li class="nav-item"><a href="#">Internacionales</a></li>
+            </ul>
+          </div>
+          <div class="sobre contacto">
+            <h2>Información de contacto</h2>
+            <ul class="info">
+              <li>
+                <span
+                  ><i class="fa fa-phone"></i>
+                  <a href="tel:123456789">+549110543345</a></span
+                >
+              </li>
+              <li>
+                <span
+                  ><i class="fa fa-map-marker"></i>
+                  <a href="#"> Nro. 820 - La Plata - Pcia. de Bs. As.</a>
+                </span>
+              </li>
+
+              <li>
+                <span
+                  ><i class="fa fa-comment-o"></i>
+
+                  <a href="./contacto.html">¿Cómo anunciar?</a>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="copyrightext">
+            <p>© 2023 Prensa Del Plata - Todos los derechos reservados</p>
+            <p>Términos y condiciones - Privacidad</p>
+          </div>
+        </div>
+        <a href="#top"
+          ><button class="ir-al-inicio" title="Ir arriba">
+            <i class="fa fa-angle-up"></i></button
+        ></a>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.0/swiper-bundle.min.js"></script>
+    <script src="assets/js/noticias.js"></script>
+  </body>
+</html>
