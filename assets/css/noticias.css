@@ -35,7 +35,7 @@
 .newsletter {
     align-self: center;
     position: sticky;
-    top: 80px;
+    top: 50px;
     height: auto;
     margin: 5px;
   }
@@ -1307,10 +1307,7 @@ line-height: 150%;
         .neon {
     font-size: 20px !important;
     }
-        
-         .newsletter {
-        top: 60px;
-      }
+       
     
       .newsletter .fas.fa-envelope {
         font-size: 1em;
