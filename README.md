@@ -63,6 +63,11 @@ Demo: https://dbm4x.github.io/Codo-a-codo-23020/
 
 <img src="https://i.ibb.co/j9C6Lh0/anunciar.png" alt="Formulario de contacto" width="20%" height="auto">
 
+### Enlace ver otra noticia
+
+<img src="https://i.ibb.co/4JgWTjK/link3.png" alt="Otra noticia" width="20%" height="auto">
+
+
 <br>
 
 ### Datos recibidos a través del formulario de contacto con un servicio externo que luego se envían a un email:
