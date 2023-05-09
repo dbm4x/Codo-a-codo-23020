@@ -65,7 +65,7 @@ Demo: https://dbm4x.github.io/Codo-a-codo-23020/
 
 ### Enlace ver otra noticia
 
-<img src="https://i.ibb.co/4JgWTjK/link3.png" alt="Otra noticia" width="40%" height="auto">
+<img src="https://i.ibb.co/4JgWTjK/link3.png" alt="Otra noticia" width="30%" height="auto">
 
 
 <br>
