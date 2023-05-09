@@ -52,7 +52,7 @@ Demo: https://dbm4x.github.io/Codo-a-codo-23020/
 
 <br>
 
-### Ubicación de los enlaces de las páginas:
+### Ubicación de los enlaces en la página:
 
 ### Enlace ampliar noticia
 
