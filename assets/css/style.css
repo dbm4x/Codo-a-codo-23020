@@ -267,6 +267,11 @@ grid-area: ultimas;
   flex-wrap: wrap;
 }
 
+.contenidos a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .sidebar .noticia .fila a, .sidebar  .noticia .fila a:hover, .sidebar  .noticia .fila a:link, .sidebar  .noticia .fila a:visited {
   text-decoration: none;
   color: inherit;
