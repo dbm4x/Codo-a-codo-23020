@@ -82,9 +82,9 @@ En nuestra página principal, hemos integrado un carrusel de videos de YouTube u
 
 ## Autores
 
-- [@dbm4x](https://www.github.com/dbm4x)
+- Lanfranco Darel Caballero [@dbm4x](https://www.github.com/dbm4x)
 - [@Viruxx23](https://github.com/Viruxx23)
-- [@papombo](https://github.com/papombo)
+- Pablo Pombo [@papombo](https://github.com/papombo)
 
 
 
