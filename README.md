@@ -76,10 +76,6 @@ Demo: https://dbm4x.github.io/Codo-a-codo-23020/
 
 <br>
 
-### Notas adicionales:
-
-En nuestra página principal, hemos integrado un carrusel de videos de YouTube utilizando iframes. Sin embargo, nos enfrentamos a problemas de carga  debido a que los iframes de YouTube utilizan varios servicios de Google Analytics y análitica web, lo que causaba una ralentización de más de 30 segundos. Para solucionar este problema, hemos personalizado los iframes mediante JavaScript para cargarlos solo al momento de reproducirlos, evitando así una carga innecesaria. Aun así, utilizamos un iframe como tal en nuestro formulario de contacto ...
-
 ## Autores
 
 - Lanfranco Darel Caballero [@dbm4x](https://www.github.com/dbm4x)
