@@ -14,7 +14,7 @@
     font-weight: 400;
     letter-spacing: 8px;
     margin-top: 15px;
-    text-shadow: 0 0 15px #FF0080, 0 0 20px #FF0080, 0 0 25px #FF0080, 0 0 30px #FF0080, 0 0 35px #FF0080, 0 0 40px #FFD5FF, 0 0 45px #FFD5FF, 0 0 50px #FFD5FF, 0 0 55px #FFD5FF;
+    text-shadow: 1px 0px 4px rgba(0, 206, 209, 0.4), 2px 0px 4px rgba(0, 206, 209, 0.4), 3px 0px 4px blueviolet, 8px 8px 3px rgb(61, 60, 60), 2px 3px 15px #2c3dd4, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #000, 40px 0vw 200px #000;
   }
 
  .contenido .video {
