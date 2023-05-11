@@ -775,6 +775,7 @@ grid-area: ultimas;
 
 	  .enlace {
   flex-wrap: wrap;
+		  margin-right:5px;
   }
 	
   .capa-titulo h2 {
