@@ -999,7 +999,7 @@ line-height: 150%;
   @media screen and (max-width: 599px) {
   
     .neon {
-         font-size:28px !important;
+         font-size:26px !important;
       }
       
 
@@ -1306,7 +1306,7 @@ line-height: 150%;
     @media screen and (min-width: 600px) and (max-width: 768px) { 
 
     .neon {
-         font-size:28px !important;
+         font-size:26px !important;
       }
        
     
