@@ -9,7 +9,7 @@
   }
    .neon {
     font-family: 'Monoton', cursive !important;
-    font-size:30px !important;
+    font-size:32px !important;
     color: #00CED1; /* Azul turquesa */
     font-weight: 400;
     letter-spacing: 8px;
@@ -998,7 +998,10 @@ line-height: 150%;
   
   @media screen and (max-width: 599px) {
   
-
+    .neon {
+         font-size:30px !important;
+      }
+      
 
     .contenido .titular-noticia h1 {
       font-size: 38px;
