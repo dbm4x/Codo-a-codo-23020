@@ -999,7 +999,7 @@ line-height: 150%;
   @media screen and (max-width: 599px) {
   
     .neon {
-         font-size:30px !important;
+         font-size:28px !important;
       }
       
 
@@ -1305,9 +1305,9 @@ line-height: 150%;
   
     @media screen and (min-width: 600px) and (max-width: 768px) { 
 
-        .neon {
-    font-size: 20px !important;
-    }
+    .neon {
+         font-size:28px !important;
+      }
        
     
       .newsletter .fas.fa-envelope {
