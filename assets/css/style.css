@@ -773,6 +773,10 @@ grid-area: ultimas;
 
 @media screen and (max-width: 599px) {
 
+	  .enlace {
+  flex-wrap: wrap;
+  }
+	
   .capa-titulo h2 {
     font-size: 16px;
   }
