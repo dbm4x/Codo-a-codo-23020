@@ -138,6 +138,10 @@
   border-bottom: dotted 2px gainsboro;
 }
 
+.contenido-7 .noticia {
+  margin-left: -2px;
+}
+
 .videos {
   grid-area: videos;
   padding:30px;
