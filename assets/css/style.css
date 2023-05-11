@@ -399,6 +399,12 @@ grid-area: ultimas;
  
 }
 
+.enlace {
+  display: flex;
+  align-items: start;
+  text-decoration: none;
+  color: inherit;
+}
 
 .noticia-columna img {
   max-width: 150px;
