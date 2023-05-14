@@ -263,17 +263,34 @@ grid-area: ultimas;
 }
 
  .contenido .sidebar {
+  display: grid;
   grid-area: sidebar;
 
   background: radial-gradient(circle at 0% 0.5%, rgb(241, 241, 242) 0.1%, rgb(224, 226, 228) 100.2%);
 
-  display: flex;
-  flex-wrap: wrap;
+  grid-template-columns: 2.1fr 3fr;
+  grid-template-areas: "vernoti1 vernoti2"
+                       "publicidad publicidad";
+  column-gap: 5px;
 }
 
 .contenidos a {
   text-decoration: none;
   color: inherit;
+}
+
+.sidebar .noticia {
+  grid-area: vernoti1;
+  margin-left: 5px;
+}
+
+.sidebar .noticia2 {
+  grid-area: vernoti2;
+  margin-right: 5px;
+}
+
+.sidebar-Ads {
+  grid-area: publicidad;
 }
 
 .sidebar .noticia .fila a, .sidebar  .noticia .fila a:hover, .sidebar  .noticia .fila a:link, .sidebar  .noticia .fila a:visited {
@@ -343,14 +360,7 @@ grid-area: ultimas;
   color:green;
 }
 
-.noticia {
-  margin-right: 5px;
-  flex-basis: 40%;
-  margin-left: 5px;
-}
-.noticia2 {
-  flex-basis: 56%;
-}
+
 
 .noticia h2, .noticia2 h2 {
   background-color: #333;
@@ -777,6 +787,12 @@ grid-area: ultimas;
 
 @media screen and (max-width: 599px) {
 
+
+  .sidebar .noticia2 {
+  
+    margin-right: 5px;
+  }
+
 	  .enlace {
   flex-wrap: wrap;
 		  margin-right:5px;
@@ -986,24 +1002,11 @@ grid-area: ultimas;
   }
 
   .contenido .sidebar {
-    grid-area: sidebar;
-  
-    background: radial-gradient(circle at 0% 0.5%, rgb(241, 241, 242) 0.1%, rgb(224, 226, 228) 100.2%);
-  
-    display: grid;
+ 
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "noticia noticia2"
-                         "publicidad publicidad";
   }
 
-  .sidebar-Ads {
-    grid-area: publicidad;
-  }
 
-  .noticia2 {
-    grid-area: noticia2;
-    margin-right: 0px;
-  }
 
   .noticia2 .noticia-columna {
     display: flex;
@@ -1033,9 +1036,20 @@ grid-area: ultimas;
 
 
   @media screen and (min-width: 768px) and (max-width: 880px) {
-    .noticia {
-      flex-basis: 100%;
+
+    .contenido .sidebar {
+ 
+      grid-template-columns: 1fr;
+      grid-template-areas:
+          "vernoti1"
+          "publicidad";
     }
+
+    .sidebar .noticia {
+      grid-area: vernoti1;
+      margin-right: 5px;
+    }
+
 
     .capa img {
       width: 512px;
@@ -1067,6 +1081,19 @@ grid-area: ultimas;
   }
 
   @media screen and (min-width: 600px) and (max-width: 768px) { 
+
+
+    .contenido .sidebar {
+ 
+      grid-template-columns: 1fr;
+      grid-template-areas:
+          "vernoti1";
+    }
+
+    .sidebar .noticia {
+      grid-area: vernoti1;
+      margin-right: 5px;
+    }
 
     .noticiasFlash {
       font-size: 20px;
