@@ -1579,7 +1579,6 @@ line-height: 150%;
   .enlaces {
     grid-area: enlaces;
     justify-self: center;
-    margin-left: 5px;
   }
   
   .enlaces ul li a {
@@ -1598,7 +1597,6 @@ line-height: 150%;
   .contacto {
     grid-area: contacto;
     justify-self: end;
-    margin-right: 5px;
   }
   
   .contacto ul li {
