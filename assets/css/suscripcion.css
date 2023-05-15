@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-
 }
 
 /*body*/
@@ -9,7 +8,15 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f0f0f0 !important;
+  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(https://cdn.pixabay.com/photo/2021/10/18/09/09/youtube-wallpaper-6720462_1280.jpg);
+
 }
+
+a {
+  color: #0d6ccd;
+  text-decoration:none;
+}
+
 
 /*contendor*/
 .contenedor {
@@ -20,85 +27,112 @@ body {
   grid-template-areas:
     "header header header"
     "contenido contenido contenido"
-    "footer footer footer";
-  margin-left: 5px;
-  margin-right: 5px;
+    "footer footer footer"; 
+    margin-left: 5px;
+    margin-right: 5px;
+    justify-items: center;
+
 }
 
-/*header*/
+.contenido {
+  grid-area: contenido;
+}
+
+.contenedor header {
+  grid-area: header;
+  width: 100%;
+}
+
+
+
+.contenido .titulo {
+  text-align: center;
+  margin-top:1.5em;
+}
+
+.contenido .mensaje {
+  font-family: 'Roboto',sans-serif;
+  text-align: center;
+  margin-top: 4em;
+  margin-bottom: 3em;
+  font-size: 20px;
+}
+
+.contenido .mensaje p {
+  margin: 5px;
+}
+
+.contenido .titulo h1 {
+  color: #069;
+  font-size: 2em;
+  line-height: 1.2em;
+  margin-bottom: .9375rem;
+}
+.contenido .titulo p {
+  color: #121212;
+  font-size: 1.25em;
+  line-height: 1.4em;
+}
+
 .header {
   display: flex;
   align-items: center;
   grid-area: header;
-  background-color: white;
-  top: 0px;
+
   margin-top: 8px;
   margin-bottom: 8px;
-  z-index: 1;
-  overflow-x: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  white-space: nowrap;
+
 }
 
-.header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  width: 100%;
-  background: radial-gradient(486px at 37.5% -17.2%, rgb(255, 2, 2) 0%, rgb(254, 78, 172) 90%);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+
+.logo img {
+    position: relative;
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+    margin-top:15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    margin-left: 3em;
 }
 
 .header .slogan {
   margin-left: 10px;
 }
 
-.logo img {
-  position: relative;
-  max-width: 150px;
-  width: 100%;
-  height: auto;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  cursor: pointer;
-  margin-left: 3em;
-}
-
 
 /*estilos de las tarjetas*/
 
 .price-table-container {
-  grid-area: contenido;
-  width: 900px;
+
+
   display: flex;
   align-items: center;
-  margin: 100px auto;
+  margin-top: 6em;
 }
 
 .price-table-container .table {
-  width: 300px;
+  min-width: 200px;
+  max-width: 300px;
+  width: 100%;
   height: 500px;
   padding: 30px;
   box-sizing: border-box;
   position: relative;
   z-index: 100;
-  background-color: #f0f0f0;
+  background-color: white;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin:5px;
+  box-shadow: 0 4px 8px 8px rgba(0, 0, 0, 0.15);
   /* Sombra inicial */
   transition: box-shadow 0.3s ease;
   /* Transición suave */
 }
 
 .price-table-container .table:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 16px 16px 0 rgba(0, 0, 0, 0.5);
   /* Sombra al pasar el mouse */
 
 }
@@ -112,6 +146,8 @@ body {
 }
 
 .price-table-container .table.recomendada {
+  min-width: 250px;
+  
   height: 600px;
   border-radius: 10px;
   padding: 50px 30px 60px 30px;
@@ -238,16 +274,14 @@ body {
 }
 
 /*responsive tarjetas*/
-@media screen and (max-width:970px) {
+
+@media screen and (max-width:768px) {
   .price-table-container {
     grid-area: contenido;
-    width: 900px;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    margin: 10px;
-    justify-content: center;
-    gap: 30px;
+    margin-top: 3em;
+    row-gap: 3em;
   }
 
   .price-table-container .table:first-child {
@@ -268,6 +302,7 @@ body {
 
 
 }
+
 
 @media screen and (max-width: 599px) {
 
