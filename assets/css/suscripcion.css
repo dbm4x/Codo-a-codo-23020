@@ -17,6 +17,14 @@ a {
   text-decoration:none;
 }
 
+.nav-item a {
+    color: #000;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    transition: color 0.3s ease-out;
+    font-family: 'Noto Serif', serif;
+}
 
 /*contendor*/
 .contenedor {
