@@ -52,7 +52,7 @@ container.addEventListener('mouseleave', () => {
 var xhr = new XMLHttpRequest();
 
 // Definimos la URL de la API
-var web = "https://api.bluelytics.com.ar/v2/latest";
+var apiUrl = "https://api.bluelytics.com.ar/v2/latest";
 var proxyUrl = "https://cors-anywhere.herokuapp.com/";
 var url = proxyUrl + apiUrl;
 
@@ -69,10 +69,8 @@ xhr.onreadystatechange = function () {
     // Procesamos la respuesta de la API
     var response = JSON.parse(xhr.responseText);
     
-    
-    document.getElementById('dolar-bna').innerHTML = "$"+response.oficial.value_sell.toFixed(2);
-    document.getElementById('dolar-blue').innerHTML = "$"+response.blue.value_sell.toFixed(2);
-
+    document.getElementById('dolar-bna').innerHTML = "$" + response.oficial.value_sell.toFixed(2);
+    document.getElementById('dolar-blue').innerHTML = "$" + response.blue.value_sell.toFixed(2);
   }
 };
 
