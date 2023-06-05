@@ -52,9 +52,7 @@ container.addEventListener('mouseleave', () => {
 var xhr = new XMLHttpRequest();
 
 // Definimos la URL de la API
-var apiUrl = "https://api.bluelytics.com.ar/v2/latest";
-var proxyUrl = "https://cors-anywhere.herokuapp.com/";
-var url = proxyUrl + apiUrl;
+var url = "https://api.bluelytics.com.ar/v2/latest";
 
 // Configuramos la solicitud XHR
 xhr.open("GET", url, true);
