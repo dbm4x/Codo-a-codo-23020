@@ -46,7 +46,7 @@ container.addEventListener('mouseleave', () => {
 });
 
 
-
+/*
 // Código para la API del dólar
 // Creamos una instancia del objeto XMLHttpRequest
 var xhr = new XMLHttpRequest();
@@ -71,6 +71,35 @@ xhr.onreadystatechange = function () {
     document.getElementById('dolar-blue').innerHTML = "$" + response.blue.value_sell.toFixed(2);
   }
 };
+*/
+
+// Código para la API del dólar
+// Creamos una instancia del objeto XMLHttpRequest
+var xhr = new XMLHttpRequest();
+
+// Definimos la URL de la API
+var url = "https://www.dolarsi.com/api/api.php?type=valoresprincipales";
+
+// Configuramos la solicitud XHR
+xhr.open("GET", url, true);
+
+// Enviamos la solicitud
+xhr.send();
+
+// Esperamos a la respuesta de la API
+xhr.onreadystatechange = function () {
+  if (xhr.readyState === 4 && xhr.status === 200) {
+    // Procesamos la respuesta de la API
+    var response = JSON.parse(xhr.responseText);
+    
+    var dolarOficial = response[0].casa;
+    var dolarBlue = response[1].casa;
+    
+    document.getElementById('dolar-bna').innerHTML = "$" + dolarOficial.venta;
+    document.getElementById('dolar-blue').innerHTML = "$" + dolarBlue.venta;
+  }
+};
+
 
 //Código para el carousel
 
