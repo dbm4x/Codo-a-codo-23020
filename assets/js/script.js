@@ -52,7 +52,7 @@ container.addEventListener('mouseleave', () => {
 var xhr = new XMLHttpRequest();
 
 // Definimos la URL de la API
-var url = "https://api.bluelytics.com.ar/v2/latest";
+var url = "https://api.bluelytics.com.ar/json/last_price";
 
 // Configuramos la solicitud XHR
 xhr.open("GET", url, true);
