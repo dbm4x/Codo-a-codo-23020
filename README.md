@@ -81,7 +81,6 @@ Demo: https://dbm4x.github.io/Codo-a-codo-23020/
 
 ## Autores
 
-- Lanfranco Darel Caballero [@dbm4x](https://www.github.com/dbm4x)
 - Hernan Exequiel Gramajo [@Viruxx23](https://github.com/Viruxx23)
 - Pablo Pombo [@papombo](https://github.com/papombo)
 
